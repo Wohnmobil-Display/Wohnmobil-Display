@@ -63,11 +63,20 @@ Die komplette **[Bedienungsanleitung (PDF)](docs/Bedienungsanleitung.pdf)** zeig
 
 ![Systemübersicht](bilder/systemuebersicht.svg)
 
+Das System besteht aus zwei Teilen, die **beide nötig** sind:
+
 - **Display:** Waveshare ESP32-S3-Touch-LCD-7B (7 Zoll, 1024×600, WLAN, Bluetooth).
-- **Steuerplatine** mit ESP32-H2 (Zigbee): sitzt an der Stelle des LT 100 und übernimmt dessen Stecker –
-  **ST1** (EBL: Hauptschalter, 12 V, Landstrom), **ST2** (Frischwasser) und **ST3** (Abwasser).
-  Mit dem Display ist sie über ein einziges USB-Kabel verbunden.
+  Bluetooth-Geräte (Victron, Mopeka, JK-BMS) empfängt es direkt.
+- **Steuerplatine mit ESP32-H2 – notwendig.** Sie ist die Erweiterung des Displays zum Fahrzeug:
+  - sitzt an der Stelle des LT 100 und wird **direkt an die vorhandenen Original-Stecker** angeschlossen –
+    **ST1** (EBL: Hauptschalter, 12 V, Landstrom), **ST2** (Frischwasser) und **ST3** (Abwasser),
+  - liefert **Tankstände, Spannungen, Landstrom, Wasserpumpe, Sirene und feste Temperaturfühler**,
+  - enthält das **Zigbee-Funkmodul** für Alarmanlage, Rauchmelder und Temperatursensoren,
+  - ist mit dem Display über ein einziges USB-Kabel verbunden.
+
+  Ohne Steuerplatine zeigt das Display nur die Bluetooth-Geräte – Tanks, Pumpe, EBL und alle Zigbee-Sensoren funktionieren dann nicht.
 - **Relaisplatine** für die Wasserpumpe.
+- **Gehäuse** für Steuer- und Relaisplatine zum 3D-Drucken: Ordner [`druck/`](druck/).
 
 | Steuerplatine (Stecker oben: ST1, ST3, ST2) | Relaisplatine |
 |---|---|
