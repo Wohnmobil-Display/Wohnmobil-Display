@@ -1,8 +1,20 @@
-# Wohnmobil-Display – mit 72 Stunden Testzeit
+# Wohnmobil-Display – dein Wohnmobil immer im Blick
 
-Ein 7-Zoll-Touchdisplay für das Wohnmobil: Batterien, Frisch- und Abwasser, Gasflaschen, Solarregler,
-Temperaturen, Alarmanlage mit Zigbee-Sensoren, Wasserpumpe und Push-Nachrichten aufs Handy – alles auf einen Blick.
+**Alles wird überwacht – und du bekommst eine Nachricht aufs Handy, wenn etwas nicht stimmt.**
+
+Ein 7-Zoll-Touchdisplay, das rund um die Uhr auf dein Wohnmobil aufpasst:
+
+- 🔋 **Spannung und Ladezustand** von Starter- und Aufbau-Batterie, jede einzelne Zelle des JK-BMS
+- ☀️ **Solarertrag** vom Victron-Laderegler, heute und die letzten 7 Tage
+- 💧 **Frisch- und Abwasser** – Warnung, bevor der Tank leer bzw. voll ist
+- 🔥 **Gasflaschen** in Prozent – Warnung, bevor das Gas ausgeht
+- 🌡️ **Temperaturen** innen, außen und im Kühlschrank – Warnung bei zu warm oder zu kalt
+- 🚨 **Alarmanlage** mit Tür-, Fenster- und Bewegungsmeldern, **Rauch- und Gasmelder** rund um die Uhr
+- 📱 **Push-Nachrichten per Telegram** für jede Warnung – du entscheidest, worüber du informiert werden willst
+- 📡 **Sensor offline oder Batterie schwach?** Auch das meldet das Display
+
 Es ersetzt das originale Schaudt-Bedienteil **LT 100** und nutzt dessen **vorhandene Stecker und Kabel**.
+Zum Ausprobieren läuft es **72 Stunden kostenlos und ohne Einschränkung**.
 
 ![Startseite](bilder/startseite.png)
 
