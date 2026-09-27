@@ -30,9 +30,17 @@ Es ersetzt das originale Schaudt-Bedienteil **LT 100** und nutzt dessen **vorhan
 
 Die komplette **[Bedienungsanleitung (PDF)](docs/Bedienungsanleitung.pdf)** zeigt jede Seite und jede Einstellung.
 
-**Alarmanlage einrichten** – PIN, Verlassens- und Eingangszeit, Zigbee-Sensoren, Sirene:
+| Alarmanlage ein-/ausschalten | Victron / Solar mit 7-Tage-Verlauf |
+|---|---|
+| ![PIN-Dialog](bilder/screenshots/alarmpin.png) | ![Victron](bilder/screenshots/victron.png) |
+| **JK-BMS mit Zellspannungen** | **Zigbee-Geräte** |
+| ![JK-BMS](bilder/screenshots/bms.png) | ![Zigbee](bilder/screenshots/zigbee.png) |
+| **Setup Alarmanlage** | **Setup Display** |
+| ![Setup Alarmanlage](bilder/screenshots/alarm.png) | ![Setup Display](bilder/screenshots/display.png) |
+| **Setup Push-Nachrichten** | **Setup Victron-Laderegler** |
+| ![Setup Push](bilder/screenshots/push.png) | ![Setup Victron](bilder/screenshots/victronsetup.png) |
 
-![Alarmanlage](bilder/alarm.png)
+*Victron- und BMS-Seite mit Beispielwerten; Bot-Token, Chat-ID und Victron-Schlüssel sind im Bild ausgeblendet.*
 
 - **Startseite:** 12 Kacheln, oben Uhrzeit, Landstrom, Störmeldungen, Wasserpumpe und Setup.
 - **Rote Kachel:** ein eingestellter Grenzwert ist verletzt (z. B. Frischwasser fast leer).
