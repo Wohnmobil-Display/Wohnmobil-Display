@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="470" viewBox="0 0 760 470" role="img"><title>Anschlüsse am Display-Board ESP32-S3-Touch-LCD-7B</title><desc>Klemmen links: POWER J9 (5V, GND) belegt, RS-485 J7 frei, CAN J6 frei, GPIO J8 (GP6 und GND für Summer) belegt, I2C H1 belegt (Näherungssensor VL53L0X), UART2 H3 frei. USB-C rechts: USB zum H2, UART1 zum Mac.</desc>
+<style>.t{font:14px sans-serif;fill:#2C2C2A}.ts{font:12px sans-serif;fill:#5F5E5A}.th{font:500 14px sans-serif;fill:#2C2C2A}.u rect{fill:#E1F5EE;stroke:#0F6E56}.u text{fill:#085041}.f rect{fill:#FFFFFF;stroke:#B4B2A9}.f text{fill:#888780}</style>
+<rect width="760" height="470" fill="#FFFFFF"/>
+<rect x="150" y="30" width="460" height="410" rx="12" fill="#F1EFE8" stroke="#888780"/>
+<text class="th" x="385" y="230" text-anchor="middle">ESP32-S3-Touch-LCD-7B</text>
+<text class="ts" x="385" y="250" text-anchor="middle">Klemmen links, USB-C rechts</text>
+<g class="u"><rect x="160" y="50" width="130" height="50" rx="6"/><text class="th" x="225" y="72" text-anchor="middle">POWER J9</text><text class="ts" x="225" y="90" text-anchor="middle">GND · 5V</text></g>
+<g class="f"><rect x="160" y="110" width="130" height="50" rx="6"/><text class="th" x="225" y="132" text-anchor="middle">RS-485 J7</text><text class="ts" x="225" y="150" text-anchor="middle">A · B (frei)</text></g>
+<g class="f"><rect x="160" y="170" width="130" height="50" rx="6"/><text class="th" x="225" y="192" text-anchor="middle">CAN J6</text><text class="ts" x="225" y="210" text-anchor="middle">L · H (frei)</text></g>
+<g class="u"><rect x="160" y="230" width="130" height="50" rx="6"/><text class="th" x="225" y="252" text-anchor="middle">GPIO J8</text><text class="ts" x="225" y="270" text-anchor="middle">3V3 · GND · GP6</text></g>
+<g class="u"><rect x="160" y="290" width="130" height="50" rx="6"/><text class="th" x="225" y="312" text-anchor="middle">I2C H1</text><text class="ts" x="225" y="330" text-anchor="middle">3V3 · GND · SDA · SCL</text></g>
+<g class="f"><rect x="160" y="350" width="130" height="50" rx="6"/><text class="th" x="225" y="372" text-anchor="middle">UART2 H3</text><text class="ts" x="225" y="390" text-anchor="middle">(frei)</text></g>
+<g class="u"><rect x="480" y="90" width="120" height="50" rx="6"/><text class="th" x="540" y="112" text-anchor="middle">USB-C „USB“</text><text class="ts" x="540" y="130" text-anchor="middle">oben rechts</text></g>
+<g class="u"><rect x="480" y="320" width="120" height="50" rx="6"/><text class="th" x="540" y="342" text-anchor="middle">USB-C „UART1“</text><text class="ts" x="540" y="360" text-anchor="middle">unten rechts</text></g>
+<path d="M160 75 H16" fill="none" stroke="#993C1D" stroke-width="2"/><text class="ts" x="16" y="66">5 V vom DC/DC</text><text class="ts" x="16" y="94">+ an 5V, − an GND</text>
+<path d="M160 255 H16" fill="none" stroke="#0F6E56" stroke-width="2"/><text class="ts" x="16" y="246">Summer</text><text class="ts" x="16" y="274">+ an GP6, − an GND</text><path d="M160 315 H16" fill="none" stroke="#0F6E56" stroke-width="2"/><text class="ts" x="16" y="306">Näherungssensor</text><text class="ts" x="16" y="334">VIN 3V3, GND, SDA, SCL</text>
+<path d="M600 115 H720" fill="none" stroke="#534AB7" stroke-width="2"/><text class="ts" x="620" y="106">zum H2,</text><text class="ts" x="620" y="134">Buchse „UART“</text>
+<path d="M600 345 H720" fill="none" stroke="#888780" stroke-width="2" stroke-dasharray="4 3"/><text class="ts" x="620" y="336">zum Mac</text><text class="ts" x="620" y="364">(Flashen, Log)</text>
+</svg>

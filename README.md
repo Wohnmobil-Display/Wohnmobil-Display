@@ -1,13 +1,82 @@
 # Wohnmobil-Display – mit 72 Stunden Testzeit
 
 Ein 7-Zoll-Touchdisplay für das Wohnmobil: Batterien, Frisch- und Abwasser, Gasflaschen, Solarregler,
-Temperaturen, Alarmanlage mit Zigbee-Sensoren, Wasserpumpe und Push-Nachrichten – alles auf einen Blick.
+Temperaturen, Alarmanlage mit Zigbee-Sensoren, Wasserpumpe und Push-Nachrichten aufs Handy – alles auf einen Blick.
+Es ersetzt das originale Schaudt-Bedienteil **LT 100** und nutzt dessen **vorhandene Stecker und Kabel**.
 
-Diese Anleitung beschreibt Schritt für Schritt den Weg von der Installation bis zur Freischaltung.
+![Startseite](bilder/startseite.png)
 
-## Unterstützte Hardware
+**Inhalt:** [Funktionen](#funktionen) · [Bedienung](#bedienung) · [Hardware](#hardware) · [Einkaufsliste](#einkaufsliste) ·
+[Installation](#1-installation) · [Testzeit](#2-erster-start-testzeit) · [Freischalten](#3-freischalten) · [Updates](#4-updates)
 
-- **Waveshare ESP32-S3-Touch-LCD-7B** (7 Zoll, 1024×600, Rev 1.2)
+## Funktionen
+
+| Bereich | Was das Display kann |
+|---|---|
+| **Batterien** | Motor- und Aufbau-Batterie, JK-BMS mit allen 12 Zellen, Temperaturen und Ladezustand (Bluetooth) |
+| **Solar** | Victron-MPPT-Laderegler: Leistung, Tagesertrag, Verlauf der letzten 7 Tage (Bluetooth) |
+| **Wasser** | Frischwasser über den Original-Geber oder Ultraschall, Abwasser über die Original-Elektrodenstäbe |
+| **Pumpe** | Wasserpumpe per Fingertipp ein/aus, automatisch gesperrt bei scharfer Alarmanlage |
+| **Gas** | Zwei Gasflaschen mit Mopeka-Pro-Sensoren in Prozent (Bluetooth) |
+| **Temperatur** | Innen (Wohn- und Schlafbereich), außen, Kühlschrank – über Zigbee-Sensoren oder fest verbaute Fühler |
+| **Alarmanlage** | Bis zu 12 Zigbee-Sensoren (Tür/Fenster, Bewegung, Wasser), Nachtmodus, Verlassens-/Eingangszeit, PIN, Summer, Sirene |
+| **Rauch / Gas** | Zigbee-Melder, rund um die Uhr überwacht |
+| **Landstrom** | Anzeige, ob 230 V anliegen |
+| **Push-Nachrichten** | Alarm, Grenzwerte, schwache Batterien, Sensor offline – per Telegram aufs Handy |
+| **Komfort** | Kachelnamen und Farben frei wählbar, Nachtabschaltung, Näherungssensor weckt das Display, Einstellen per Handy-Webseite |
+| **Updates** | Neue Versionen per WLAN direkt am Display |
+
+## Bedienung
+
+Die komplette **[Bedienungsanleitung (PDF)](docs/Bedienungsanleitung.pdf)** zeigt jede Seite und jede Einstellung.
+
+| Setup-Menü | Alarmanlage |
+|---|---|
+| ![Setup](bilder/setup.png) | ![Alarmanlage](bilder/alarm.png) |
+
+- **Startseite:** 12 Kacheln, oben Uhrzeit, Landstrom, Störmeldungen, Wasserpumpe und Setup.
+- **Rote Kachel:** ein eingestellter Grenzwert ist verletzt (z. B. Frischwasser fast leer).
+- **Antippen** öffnet Detailseiten (Solar, BMS, Temperaturen) bzw. die PIN-Eingabe der Alarmanlage.
+- **Setup:** keine Speichern-Taste – alles wird sofort gespeichert.
+
+## Hardware
+
+![Systemübersicht](bilder/systemuebersicht.svg)
+
+- **Display:** Waveshare ESP32-S3-Touch-LCD-7B (7 Zoll, 1024×600, WLAN, Bluetooth).
+- **Steuerplatine** mit ESP32-H2 (Zigbee): sitzt an der Stelle des LT 100 und übernimmt dessen Stecker –
+  **ST1** (EBL: Hauptschalter, 12 V, Landstrom), **ST2** (Frischwasser) und **ST3** (Abwasser).
+  Mit dem Display ist sie über ein einziges USB-Kabel verbunden.
+- **Relaisplatine** für die Wasserpumpe.
+
+| Steuerplatine (Stecker oben: ST1, ST3, ST2) | Relaisplatine |
+|---|---|
+| ![Steuerplatine](bilder/steuerplatine.png) | ![Relaisplatine](bilder/relaisplatine.png) |
+
+**Die Original-Stecker werden einfach umgesteckt – kein neues Kabel durchs Fahrzeug:**
+
+| LT 100 mit den Original-Steckern | Stecker abgezogen |
+|---|---|
+| ![LT 100 Platine](bilder/lt100_platine_stecker.jpg) | ![Stecker abgezogen](bilder/lt100_stecker_abgezogen.jpg) |
+
+| Kabel zum EBL (ST1) | EBL 31, Block 3 „Instr.-Tafel“ | Stecker am Frischwassertank |
+|---|---|---|
+| ![ST1](bilder/lt100_kabel_st1.jpg) | ![EBL 31](bilder/ebl31_block3.jpg) | ![Frischwassertank](bilder/stecker_frischwassertank.jpg) |
+
+Anschlüsse am Display:
+
+![Anschlüsse am Display](bilder/anschluesse_display.svg)
+
+## Einkaufsliste
+
+| Teil | Wofür | Link |
+|---|---|---|
+| Waveshare ESP32-S3-Touch-LCD-7B | Das Display | *folgt* |
+| ESP32-H2-DevKitM-1 | Zigbee und Steuerplatine | *folgt* |
+| Ultraschallsensor AJ-SR04M | Frischwasser (optional, statt Original-Geber) | *folgt* |
+| Zigbee-Sensoren (Tür/Fenster, Bewegung, Temperatur, Rauch) | Alarmanlage, Temperaturen | *folgt* |
+| Mopeka Pro | Gasflaschen (optional) | *folgt* |
+| VL53L0X-Näherungssensor | Display wird hell, wenn jemand davor steht (optional) | *folgt* |
 
 ## 1. Installation
 
@@ -86,7 +155,7 @@ Die Datei `Wohnmobil-Display.bin` ist nur für Updates gedacht.
 
 ## Hinweis
 
-Das Wohnmobil-Display ist ein privates DIY-Projekt ohne Firma dahinter und steht in keiner Verbindung zu den
-Herstellern der unterstützten Geräte. Die Nutzung erfolgt auf eigene Verantwortung.
+Das Wohnmobil-Display ist ein privates DIY-Projekt ohne Firma dahinter und steht in keiner Verbindung zu Schaudt,
+Waveshare, Victron, Mopeka oder anderen Herstellern der unterstützten Geräte. Die Nutzung erfolgt auf eigene Verantwortung.
 
 Kontakt: **wohnmobil.display@gmail.com**
