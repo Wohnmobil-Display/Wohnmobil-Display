@@ -30,9 +30,9 @@ Es ersetzt das originale Schaudt-Bedienteil **LT 100** und nutzt dessen **vorhan
 
 Die komplette **[Bedienungsanleitung (PDF)](docs/Bedienungsanleitung.pdf)** zeigt jede Seite und jede Einstellung.
 
-| Setup-Menü | Alarmanlage |
-|---|---|
-| ![Setup](bilder/setup.png) | ![Alarmanlage](bilder/alarm.png) |
+**Alarmanlage einrichten** – PIN, Verlassens- und Eingangszeit, Zigbee-Sensoren, Sirene:
+
+![Alarmanlage](bilder/alarm.png)
 
 - **Startseite:** 12 Kacheln, oben Uhrzeit, Landstrom, Störmeldungen, Wasserpumpe und Setup.
 - **Rote Kachel:** ein eingestellter Grenzwert ist verletzt (z. B. Frischwasser fast leer).
@@ -71,12 +71,17 @@ Anschlüsse am Display:
 
 | Teil | Wofür | Link |
 |---|---|---|
-| Waveshare ESP32-S3-Touch-LCD-7B | Das Display | *folgt* |
-| ESP32-H2-DevKitM-1 | Zigbee und Steuerplatine | *folgt* |
-| Ultraschallsensor AJ-SR04M | Frischwasser (optional, statt Original-Geber) | *folgt* |
-| Zigbee-Sensoren (Tür/Fenster, Bewegung, Temperatur, Rauch) | Alarmanlage, Temperaturen | *folgt* |
-| Mopeka Pro | Gasflaschen (optional) | *folgt* |
-| VL53L0X-Näherungssensor | Display wird hell, wenn jemand davor steht (optional) | *folgt* |
+| Waveshare ESP32-S3-Touch-LCD-7B (7 Zoll, 1024×600) | Das Display | [Amazon\*](https://www.amazon.de/dp/B0FG354VCN?tag=wohnmobildisp-21) |
+| ESP32-H2-DevKitM-1 (N4) | Zigbee und Steuerplatine | [Amazon\*](https://www.amazon.de/dp/B0D8XR48LF?tag=wohnmobildisp-21) |
+| Ultraschallsensor JSN-SR04M-2 / AJ-SR04M (wasserdicht) | Frischwasser (optional, statt Original-Geber) – funktioniert ohne Löten, wird automatisch erkannt | [Amazon\*](https://www.amazon.de/dp/B0FPPTTHTJ?tag=wohnmobildisp-21) |
+| frient Smoke Alarm (Zigbee-Rauchmelder mit Sirene) | Rauchmelder, auch als Alarm-Sirene nutzbar | [Amazon\*](https://www.amazon.de/dp/B08WXV3G8P?tag=wohnmobildisp-21) |
+| SONOFF SNZB-02B (Zigbee-Temperatur/Luftfeuchte) | Temperatur innen, außen, Kühlschrank | [Amazon\*](https://www.amazon.de/dp/B0H4QJQFKM?tag=wohnmobildisp-21) |
+| SONOFF SNZB-04P (Zigbee-Tür-/Fensterkontakt) | Alarmanlage | [Amazon\*](https://www.amazon.de/dp/B0DD3SQYV9?tag=wohnmobildisp-21) |
+| Zigbee-Bewegungsmelder | Alarmanlage | *folgt* |
+| Mopeka Pro (Ultraschallsensor mit Magnet) | Gasflaschen-Füllstand (optional) | [Amazon\*](https://www.amazon.de/dp/B0GCD1Q4HP?tag=wohnmobildisp-21) |
+| VL53L0X-Näherungssensor (6 Stück) | Display wird hell, wenn jemand davor steht (optional) | [Amazon\*](https://www.amazon.de/dp/B0D3PRSV3B?tag=wohnmobildisp-21) |
+
+\* Werbelink: Als Amazon-Partner verdiene ich an qualifizierten Verkäufen. Für dich ändert sich am Preis nichts.
 
 ## 1. Installation
 
