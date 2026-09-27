@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wohnmobil-Display – Installer</title>
+<script type="module" src="https://unpkg.com/esp-web-tools@10.4.0/dist/web/install-button.js?module"></script>
+<style>
+  :root {
+    --bg: #07111f; --card: #0f1e33; --line: #22324a; --text: #f8fafc;
+    --dim: #94a3b8; --blue: #2563eb; --info: #7dd3fc;
+    --warn-bg: #2a2210; --warn-line: #5c4a12; --warn: #e8c766;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f4f6f9; --card: #ffffff; --line: #dde3ec; --text: #0f172a;
+      --dim: #526077; --blue: #2563eb; --info: #0369a1;
+      --warn-bg: #fff8e6; --warn-line: #f0d98c; --warn: #7a5c00;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 1.7rem; margin: 0 0 4px; }
+  .sub { color: var(--dim); margin: 0 0 28px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+          padding: 20px 22px; margin-bottom: 18px; }
+  .card h2 { font-size: 1.05rem; margin: 0 0 8px; }
+  .card p { color: var(--dim); margin: 0 0 12px; }
+  .device { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .device b { display: block; }
+  .device span { color: var(--dim); font-size: .9rem; }
+  esp-web-install-button button { background: var(--blue); color: #fff; border: 0; border-radius: 8px;
+          padding: 11px 22px; font-size: 1rem; font-weight: 600; cursor: pointer; }
+  .warn { background: var(--warn-bg); border: 1px solid var(--warn-line); color: var(--warn);
+          border-radius: 10px; padding: 14px 16px; font-size: .92rem; margin-bottom: 22px; }
+  ol, ul { margin: 0; padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  code { background: rgba(125, 211, 252, .12); color: var(--info); padding: 1px 6px; border-radius: 5px; }
+  a { color: var(--info); }
+  .hidden { display: none; }
+  footer { color: var(--dim); font-size: .85rem; text-align: center; margin-top: 30px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Wohnmobil-Display – Installer</h1>
+  <p class="sub">Firmware direkt aus dem Browser auf dein Display spielen – ohne zusätzliche Software.</p>
+
+  <div class="warn">
+    Benötigt <b>Chrome oder Edge</b> am Computer (Windows, Mac oder Linux) und ein <b>USB-Datenkabel</b>
+    (kein reines Ladekabel). Safari, iPhone/iPad und Android werden nicht unterstützt.
+  </div>
+
+  <div class="card">
+    <h2>1. Display anschließen und installieren</h2>
+    <p>Display per USB-C an den Computer anschließen, dann auf „Installieren“ klicken.</p>
+    <div class="device">
+      <div>
+        <b>Waveshare ESP32-S3-Touch-LCD-7B (7 Zoll, 1024×600)</b>
+        <span id="version">Version –</span>
+      </div>
+      <esp-web-install-button manifest="./manifest.json">
+        <button slot="activate">Installieren</button>
+        <span slot="unsupported">Dein Browser unterstützt das leider nicht – bitte Chrome oder Edge verwenden.</span>
+        <span slot="not-allowed">Diese Seite muss über HTTPS geöffnet werden.</span>
+      </esp-web-install-button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>2. Hinweise zur Verbindung</h2>
+    <ul>
+      <li>Im Auswahlfenster heißt das Display z. B. <i>„USB JTAG/serial debug unit“</i> oder <i>„USB Single Serial“</i> – einfach auswählen.</li>
+      <li>Werden mehrere Einträge angezeigt: Display kurz abziehen, Fenster neu öffnen, wieder anstecken – der neue Eintrag ist der richtige.</li>
+      <li>Kein anderes Programm darf gleichzeitig auf den USB-Anschluss zugreifen (z. B. Arduino IDE, serieller Monitor).</li>
+      <li>Während der Installation das Kabel nicht abziehen. Danach startet das Display von selbst neu.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>3. Nach dem ersten Start: testen und freischalten</h2>
+    <ol>
+      <li>Das Display zeigt <b>Chip-ID</b> und <b>Freigabecode</b>, z. B. <code>AA:BB:CC:DD:EE:FF 1234</code>.</li>
+      <li>Mit „Test starten“ kannst du das Display <b>72 Betriebsstunden</b> kostenlos ausprobieren.</li>
+      <li>Zum dauerhaften Freischalten: bezahlen und dabei die Zeile vom Display eintragen –
+          Ablauf siehe <a href="https://github.com/Wohnmobil-Display/Wohnmobil-Display#readme">Anleitung</a>.</li>
+    </ol>
+  </div>
+
+  <footer>Wohnmobil-Display · <a href="mailto:wohnmobil.display@gmail.com">wohnmobil.display@gmail.com</a></footer>
+</main>
+<script>
+  fetch("./manifest.json").then(r => r.json()).then(m => {
+    document.getElementById("version").textContent = "Version " + m.version;
+  }).catch(() => {});
+</script>
+</body>
+</html>
