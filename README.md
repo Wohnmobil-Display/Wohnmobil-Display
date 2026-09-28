@@ -154,6 +154,9 @@ Die Firmware wird direkt im Browser installiert – ohne Download und ohne Zusat
 4. Bestätige die Installation und warte, bis sie fertig ist. Kabel nicht abziehen, Browser nicht schließen.
 5. Das Display startet danach von selbst neu. Falls nicht: kurz vom Strom trennen und wieder anschließen.
 
+**Steuerplatine:** Das ESP32-H2-Board bekommt seine Firmware ebenfalls über die Installer-Seite –
+einmal **vor dem Einbau**, per USB an der Buchse „USB“ des Boards (Knopf „Steuerplatine installieren“).
+
 > Wird kein Gerät angezeigt, probiere ein anderes Kabel oder einen anderen USB-Anschluss.
 > Stecke das Display kurz ab und wieder an und wähle dann den neu erschienenen Eintrag.
 
@@ -193,8 +196,9 @@ Den Freischalt-Bildschirm erreichst du während der Testzeit auch über **Setup 
 
 ## 4. Updates
 
-Freigeschaltete Displays holen neue Versionen selbst über WLAN:
+Freigeschaltete Displays holen neue Versionen selbst über WLAN – **für das Display und für die Steuerplatine**:
 **Setup → Allgemein → Update → Installieren.**
+Die Steuerplatine wird dabei über das USB-Kabel vom Display aus aktualisiert – nichts muss ausgebaut werden.
 Deine Einstellungen bleiben dabei erhalten. Startet eine neue Version einmal nicht richtig,
 kehrt das Display automatisch zur vorherigen Version zurück.
 

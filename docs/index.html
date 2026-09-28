@@ -70,7 +70,25 @@
   </div>
 
   <div class="card">
-    <h2>2. Hinweise zur Verbindung</h2>
+    <h2>2. Steuerplatine (ESP32-H2) einmal installieren</h2>
+    <p>Das ESP32-H2-Board der Steuerplatine bekommt seine Firmware <b>einmal vor dem Einbau</b>:
+       Board an der Buchse <b>„USB“</b> mit dem Computer verbinden und auf „Installieren“ klicken.
+       Spätere Updates der Steuerplatine installiert das Display selbst über WLAN.</p>
+    <div class="device">
+      <div>
+        <b>Steuerplatine – ESP32-H2-DevKitM-1</b>
+        <span id="version-h2">Version –</span>
+      </div>
+      <esp-web-install-button manifest="./manifest-h2.json">
+        <button slot="activate">Installieren</button>
+        <span slot="unsupported">Dein Browser unterstützt das leider nicht – bitte Chrome oder Edge verwenden.</span>
+        <span slot="not-allowed">Diese Seite muss über HTTPS geöffnet werden.</span>
+      </esp-web-install-button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>3. Hinweise zur Verbindung</h2>
     <ul>
       <li>Im Auswahlfenster heißt das Display z. B. <i>„USB JTAG/serial debug unit“</i> oder <i>„USB Single Serial“</i> – einfach auswählen.</li>
       <li>Werden mehrere Einträge angezeigt: Display kurz abziehen, Fenster neu öffnen, wieder anstecken – der neue Eintrag ist der richtige.</li>
@@ -80,7 +98,7 @@
   </div>
 
   <div class="card">
-    <h2>3. Nach dem ersten Start: testen und freischalten</h2>
+    <h2>4. Nach dem ersten Start: testen und freischalten</h2>
     <ol>
       <li>Das Display zeigt <b>Chip-ID</b> und <b>Freigabecode</b>, z. B. <code>AA:BB:CC:DD:EE:FF 1234</code>.</li>
       <li>Mit „Test starten“ kannst du das Display <b>72 Betriebsstunden</b> kostenlos ausprobieren.</li>
@@ -94,6 +112,9 @@
 <script>
   fetch("./manifest.json").then(r => r.json()).then(m => {
     document.getElementById("version").textContent = "Version " + m.version;
+  }).catch(() => {});
+  fetch("./manifest-h2.json").then(r => r.json()).then(m => {
+    document.getElementById("version-h2").textContent = "Version " + m.version;
   }).catch(() => {});
 </script>
 </body>
