@@ -63,24 +63,50 @@ Die komplette **[Bedienungsanleitung (PDF)](docs/Bedienungsanleitung.pdf)** zeig
 
 ![Systemübersicht](bilder/systemuebersicht.svg)
 
-Das System besteht aus zwei Teilen, die **beide nötig** sind:
+Das System besteht aus dem **Display** und der **Steuerplatine** – beide sind nötig.
+Die **Relaisplatine** für die Wasserpumpe ist eine Erweiterung, die man weglassen kann.
 
 - **Display:** Waveshare ESP32-S3-Touch-LCD-7B (7 Zoll, 1024×600, WLAN, Bluetooth).
   Bluetooth-Geräte (Victron, Mopeka, JK-BMS) empfängt es direkt.
-- **Steuerplatine mit ESP32-H2 – notwendig.** Sie ist die Erweiterung des Displays zum Fahrzeug:
-  - sitzt an der Stelle des LT 100 und wird **direkt an die vorhandenen Original-Stecker** angeschlossen –
-    **ST1** (EBL: Hauptschalter, 12 V, Landstrom), **ST2** (Frischwasser) und **ST3** (Abwasser),
-  - liefert **Tankstände, Spannungen, Landstrom, Wasserpumpe, Sirene und feste Temperaturfühler**,
-  - enthält das **Zigbee-Funkmodul** für Alarmanlage, Rauchmelder und Temperatursensoren,
-  - ist mit dem Display über ein einziges USB-Kabel verbunden.
-
-  Ohne Steuerplatine zeigt das Display nur die Bluetooth-Geräte – Tanks, Pumpe, EBL und alle Zigbee-Sensoren funktionieren dann nicht.
-- **Relaisplatine** für die Wasserpumpe.
 - **Gehäuse** für Steuer- und Relaisplatine zum 3D-Drucken: Ordner [`druck/`](druck/).
 
-| Steuerplatine (Stecker oben: ST1, ST3, ST2) | Relaisplatine |
+### Steuerplatine – notwendig
+
+![Steuerplatine](bilder/steuerplatine.png)
+
+Die Steuerplatine ist die Verbindung zwischen Display und Fahrzeug. Sie sitzt dort, wo vorher das LT 100 war,
+und bekommt **die vorhandenen Original-Stecker** – es muss kein neues Kabel durchs Fahrzeug gezogen werden.
+Auf ihr steckt das **ESP32-H2-Board**, das die Messwerte erfasst und das **Zigbee-Funknetz** betreibt.
+Mit dem Display ist sie über **ein USB-Kabel** verbunden.
+
+| Anschluss | Was angeschlossen wird |
 |---|---|
-| ![Steuerplatine](bilder/steuerplatine.png) | ![Relaisplatine](bilder/relaisplatine.png) |
+| **ST1 – EBL** (Original-Stecker) | Stromversorgung 12 V, Hauptschalter **EIN/AUS**, 12-V-Kontrolle, **Landstrom** (230 V liegt an) |
+| **ST2 – Frischwasser** (Original-Stecker) | Originaler Tankgeber (Stabsonde) **oder** Ultraschallsensor – umschaltbar per Steckbrücke |
+| **ST3 – Abwasser** (Original-Stecker) | Originale Elektrodenstäbe (25 / 50 / 75 / 100 %) |
+| **Klemme GRÜN** | Freie grüne Ader im Panelkabel: misst die **Starterbatterie** und schaltet die Relaisplatine |
+| **Klemme 5V DISPLAY** | Versorgt das Display – ein eigenes Netzteil ist nicht nötig |
+| **Klemme SIRENE** | Alarmsirene (überwacht auf Kurzschluss und offene Leitung) |
+| **Klemmen DS18B20** | Fest verbaute Temperaturfühler (z. B. innen, Kühlschrank) |
+| **USB** | Verbindung zum Display |
+
+Gemessen werden Starter- und Aufbau-Batterie, 12-V-Kontrolle und Landstrom.
+**Ohne Steuerplatine** zeigt das Display nur die Bluetooth-Geräte – Tanks, Hauptschalter, Landstrom,
+Pumpe und alle Zigbee-Sensoren (Alarmanlage, Rauchmelder, Temperaturen) funktionieren dann nicht.
+
+### Relaisplatine für die Frischwasserpumpe – optional
+
+![Relaisplatine](bilder/relaisplatine.png)
+
+Beim originalen LT 100 lässt sich die Wasserpumpe nicht schalten – hier schon:
+
+- **Pumpe per Fingertipp ein/aus** über das Wasserhahn-Symbol oben auf der Startseite.
+- **Automatisch aus, wenn die Alarmanlage scharf ist** – kein Wasser läuft unbemerkt, während du weg bist.
+- **Anschluss für einen Notschalter**: überbrückt das Relais, falls einmal etwas nicht funktioniert – die Pumpe läuft dann wie früher.
+- Die Platine wird am EBL in die Plus-Leitung der Pumpe eingesetzt und über die grüne Ader von der Steuerplatine geschaltet.
+
+**Keine Relaisplatine?** Unter *Setup → Allgemein → Wasserpumpe (Relaisplatine)* ausschalten –
+dann verschwinden das Wasserhahn-Symbol und alle Pumpen-Meldungen, alles andere läuft weiter.
 
 **Die Original-Stecker werden einfach umgesteckt – kein neues Kabel durchs Fahrzeug:**
 
