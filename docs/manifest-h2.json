@@ -1,0 +1,11 @@
+{
+  "name": "Wohnmobil-Display Steuerplatine (ESP32-H2)",
+  "version": "1.0.3.0",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-H2",
+      "parts": [ { "path": "./firmware/Steuerplatine-H2-FULL.bin", "offset": 0 } ]
+    }
+  ]
+}
