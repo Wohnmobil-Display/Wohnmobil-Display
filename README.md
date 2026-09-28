@@ -88,9 +88,9 @@ Das System besteht aus zwei Teilen, die **beide nötig** sind:
 |---|---|
 | ![LT 100 Platine](bilder/lt100_platine_stecker.jpg) | ![Stecker abgezogen](bilder/lt100_stecker_abgezogen.jpg) |
 
-| Kabel zum EBL (ST1) | EBL 31, Block 3 „Instr.-Tafel“ | Stecker am Frischwassertank |
-|---|---|---|
-| ![ST1](bilder/lt100_kabel_st1.jpg) | ![EBL 31](bilder/ebl31_block3.jpg) | ![Frischwassertank](bilder/stecker_frischwassertank.jpg) |
+| Kabel zum EBL (ST1) | EBL 31, Block 3 „Instr.-Tafel“ |
+|---|---|
+| ![ST1](bilder/lt100_kabel_st1.jpg) | ![EBL 31](bilder/ebl31_block3.jpg) |
 
 Anschlüsse am Display:
 
