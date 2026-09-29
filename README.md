@@ -98,6 +98,11 @@ Gemessen werden Starter- und Aufbau-Batterie, 12-V-Kontrolle und Landstrom.
 **Ohne Steuerplatine** zeigt das Display nur die Bluetooth-Geräte – Tanks, Hauptschalter, Landstrom,
 Pumpe und alle Zigbee-Sensoren (Alarmanlage, Rauchmelder, Temperaturen) funktionieren dann nicht.
 
+**Frischwasser mit Ultraschallsensor** – die vorhandene Leitung der Füllstandsstäbe wird weiterbenutzt,
+auf der Steuerplatine werden nur die beiden Steckbrücken J12/J13 auf „US“ gesteckt:
+
+![Ultraschallsensor an der Steuerplatine](bilder/anschluss_ultraschall_v2.svg)
+
 ### Relaisplatine für die Frischwasserpumpe – optional
 
 ![Relaisplatine](bilder/relaisplatine.png)
@@ -125,6 +130,11 @@ dann verschwinden das Wasserhahn-Symbol und alle Pumpen-Meldungen, alles andere 
 Anschlüsse am Display:
 
 ![Anschlüsse am Display](bilder/anschluesse_display.svg)
+
+**Summer und Näherungssensor** kommen direkt an das Display (Buchsen J8 und H1). Die Stecker mit Kabel
+sind vorhanden – nur die beiden Bauteile an die Kabelenden anlöten:
+
+![Summer und Näherungssensor am Display](bilder/anschluss_summer_sensor_display.svg)
 
 ## Einkaufsliste
 
