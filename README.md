@@ -147,7 +147,7 @@ sind vorhanden – nur die beiden Bauteile an die Kabelenden anlöten:
 | frient Smoke Alarm (Zigbee-Rauchmelder mit Sirene) | Rauchmelder, auch als Alarm-Sirene nutzbar | [Amazon\*](https://www.amazon.de/dp/B08WXV3G8P?tag=wohnmobildisp-21) |
 | SONOFF SNZB-02B (Zigbee-Temperatur/Luftfeuchte) | Temperatur innen, außen, Kühlschrank | [Amazon\*](https://www.amazon.de/dp/B0H4QJQFKM?tag=wohnmobildisp-21) |
 | SONOFF SNZB-04P (Zigbee-Tür-/Fensterkontakt) | Alarmanlage | [Amazon\*](https://www.amazon.de/dp/B0DD3SQYV9?tag=wohnmobildisp-21) |
-| Zigbee-Bewegungsmelder | Alarmanlage | *folgt* |
+| SONOFF SNZB-03P (Zigbee-Bewegungsmelder) | Alarmanlage | [Amazon\*](https://www.amazon.de/dp/B0C1GB4DVR?tag=wohnmobildisp-21) |
 | Mopeka Pro (Ultraschallsensor mit Magnet) | Gasflaschen-Füllstand (optional) | [Amazon\*](https://www.amazon.de/dp/B0GCD1Q4HP?tag=wohnmobildisp-21) |
 | VL53L0X-Näherungssensor (6 Stück) | Display wird hell, wenn jemand davor steht (optional) | [Amazon\*](https://www.amazon.de/dp/B0D3PRSV3B?tag=wohnmobildisp-21) |
 
