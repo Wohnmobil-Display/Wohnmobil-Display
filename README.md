@@ -99,6 +99,7 @@ Gemessen werden Starter- und Aufbau-Batterie, 12-V-Kontrolle und Landstrom.
 Pumpe und alle Zigbee-Sensoren (Alarmanlage, Rauchmelder, Temperaturen) funktionieren dann nicht.
 
 **Frischwasser mit Ultraschallsensor** – die vorhandene Leitung der Füllstandsstäbe wird weiterbenutzt,
+am Tank wird der alte Stecker abgeschnitten und die Adern nach Farbe an die Sensorplatine gelötet,
 auf der Steuerplatine werden nur die beiden Steckbrücken J12/J13 auf „US“ gesteckt:
 
 ![Ultraschallsensor an der Steuerplatine](bilder/anschluss_ultraschall_v2.svg)
