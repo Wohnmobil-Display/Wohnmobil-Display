@@ -11,6 +11,7 @@ Ein 7-Zoll-Touchdisplay, das rund um die Uhr auf dein Wohnmobil aufpasst:
 - 🌡️ **Temperaturen** innen, außen und im Kühlschrank – Warnung bei zu warm oder zu kalt
 - 🚨 **Alarmanlage** mit Tür-, Fenster- und Bewegungsmeldern, **Rauch- und Gasmelder** rund um die Uhr
 - 📱 **Push-Nachrichten per Telegram** für jede Warnung – du entscheidest, worüber du informiert werden willst
+- 🗓️ **Tagesbericht per Telegram:** einmal am Tag zur Wunschzeit alle wichtigen Werte aufs Handy – Batterien, Tanks, Gas, Solar, Temperaturen, Alarm (ab dem nächsten Update)
 - 📡 **Sensor offline oder Batterie schwach?** Auch das meldet das Display
 
 Es ersetzt das originale Schaudt-Bedienteil **LT 100** und nutzt dessen **vorhandene Stecker und Kabel**.
@@ -35,6 +36,7 @@ Zum Ausprobieren läuft es **72 Stunden kostenlos und ohne Einschränkung**.
 | **Rauch / Gas** | Zigbee-Melder, rund um die Uhr überwacht |
 | **Landstrom** | Anzeige, ob 230 V anliegen |
 | **Push-Nachrichten** | Alarm, Grenzwerte, schwache Batterien, Sensor offline – per Telegram aufs Handy |
+| **Tagesbericht** | täglich zur eingestellten Uhrzeit eine Zusammenfassung per Telegram, Inhalte frei wählbar (ab dem nächsten Update) |
 | **Komfort** | Kachelnamen und Farben frei wählbar, Nachtabschaltung, Näherungssensor weckt das Display, Einstellen per Handy-Webseite |
 | **Updates** | Neue Versionen per WLAN direkt am Display |
 
@@ -49,8 +51,10 @@ Die komplette **[Bedienungsanleitung (PDF)](docs/Bedienungsanleitung.pdf)** zeig
 | ![JK-BMS](bilder/screenshots/bms.png) | ![Zigbee](bilder/screenshots/zigbee.png) |
 | **Setup Alarmanlage** | **Setup Display** |
 | ![Setup Alarmanlage](bilder/screenshots/alarm.png) | ![Setup Display](bilder/screenshots/display.png) |
-| **Setup Push-Nachrichten** | **Setup Victron-Laderegler** |
-| ![Setup Push](bilder/screenshots/push.png) | ![Setup Victron](bilder/screenshots/victronsetup.png) |
+| **Setup Push-Nachrichten** | **Tagesbericht per Telegram** |
+| ![Setup Push](bilder/screenshots/push.png) | ![Tagesbericht](bilder/screenshots/tagesbericht.png) |
+| **Setup Victron-Laderegler** | |
+| ![Setup Victron](bilder/screenshots/victronsetup.png) | |
 
 *Victron- und BMS-Seite mit Beispielwerten; Bot-Token, Chat-ID und Victron-Schlüssel sind im Bild ausgeblendet.*
 
