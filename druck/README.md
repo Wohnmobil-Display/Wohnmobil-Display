@@ -4,7 +4,7 @@
 |---|---|---|
 | Gehäuse Steuerplatine V2 | [Unterschale](steuerplatine_v2_unterschale.stl) · [Deckel](steuerplatine_v2_deckel.stl) | 127 × 112 × 34 mm (mit Laschen) |
 | Gehäuse Relaisplatine V2 | [Unterschale](relaisplatine_v2_unterschale.stl) · [Deckel](relaisplatine_v2_deckel.stl) | 75 × 56 × 30 mm (mit Laschen) |
-| Rahmen für das Display | folgt | |
+| Rahmen für das Display (7 Zoll) | [Rahmen](display_rahmen.stl) | 193 × 123 × 27 mm |
 
 **Drucken:** PLA oder PETG, 0,2 mm Schichthöhe, 3 Wände. Beide Teile ohne Stützmaterial druckbar
 (Unterschale mit dem Boden nach unten, Deckel mit der Oberseite nach unten). Die Kabelschlitze sind oben offen,
