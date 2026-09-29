@@ -4,7 +4,7 @@
 |---|---|---|
 | Gehäuse Steuerplatine V2 | [Unterschale](steuerplatine_v2_unterschale.stl) · [Deckel](steuerplatine_v2_deckel.stl) | 127 × 112 × 34 mm (mit Laschen) |
 | Gehäuse Relaisplatine V2 | [Unterschale](relaisplatine_v2_unterschale.stl) · [Deckel](relaisplatine_v2_deckel.stl) | 75 × 56 × 30 mm (mit Laschen) |
-| Rahmen für das Display (7 Zoll) – ersetzt das alte LT-100-Panel | [Rahmen](display_rahmen.stl) | 193 × 123 × 27 mm |
+| Rahmen für das Display (7 Zoll) – ersetzt das alte LT-100-Panel | [mit Näherungssensor](display_rahmen_mit_sensor.stl) · [ohne Sensor](display_rahmen_ohne_sensor.stl) | 193 × 123 × 27 mm / 193 × 111 × 27 mm |
 | Türkontakt-Halter Standard, 2-mm-Boden (nur Kleben) | [Sensorhalter](tuerkontakt_sensorhalter_standard.stl) · [Magnethalter](tuerkontakt_magnethalter_standard.stl) | 94 × 15 × 28 mm / 50 × 9 × 16 mm |
 | Türkontakt-Halter mit 5-mm-Sockel (Kleben oder Schrauben) | [Sensorhalter](tuerkontakt_sensorhalter_5mm.stl) · [Magnethalter](tuerkontakt_magnethalter_5mm.stl) | 94 × 20 × 28 mm / 50 × 14 × 16 mm |
 
