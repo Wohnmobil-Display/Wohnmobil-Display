@@ -68,7 +68,7 @@ Die **Relaisplatine** für die Wasserpumpe ist eine Erweiterung, die man weglass
 
 - **Display:** Waveshare ESP32-S3-Touch-LCD-7B (7 Zoll, 1024×600, WLAN, Bluetooth).
   Bluetooth-Geräte (Victron, Mopeka, JK-BMS) empfängt es direkt.
-- **Gehäuse** für Steuer- und Relaisplatine zum 3D-Drucken: Ordner [`druck/`](druck/).
+- **3D-Druckteile** im Ordner [`druck/`](druck/): **Rahmen für das Display** (ersetzt das LT 100 im vorhandenen Ausschnitt), **Halter für Türkontakte** (Sensor und Magnet, verschiedene Sockelhöhen) und **Gehäuse** für Steuer- und Relaisplatine.
 
 ### Steuerplatine – notwendig
 
