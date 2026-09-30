@@ -60,13 +60,13 @@
   </div>
 
   <div class="jump">
-    <a href="#display"><b>① Display</b><span>Waveshare 7 Zoll, USB-C am Display</span></a>
+    <a href="#display"><b>① Display</b><span>Waveshare 7 Zoll, Buchse „UART1“ (SW1 auf „UART1“)</span></a>
     <a href="#steuerplatine"><b>② Steuerplatine</b><span>ESP32-H2-Board, Buchse „USB“, einmal vor dem Einbau</span></a>
   </div>
 
   <div class="card" id="display">
     <h2>1. Display anschließen und installieren</h2>
-    <p>Display per USB-C an den Computer anschließen, dann auf „Display installieren“ klicken.</p>
+    <p>Display an der USB-C-Buchse <b>„UART1“</b> an den Computer anschließen (Schalter SW1 auf „UART1“), dann auf „Display installieren“ klicken.</p>
     <div class="device">
       <div>
         <b>Waveshare ESP32-S3-Touch-LCD-7B (7 Zoll, 1024×600)</b>
@@ -85,6 +85,9 @@
     <p>Das ESP32-H2-Board der Steuerplatine bekommt seine Firmware <b>einmal vor dem Einbau</b>:
        Board an der Buchse <b>„USB“</b> mit dem Computer verbinden (nicht die Buchse „UART“) und auf „Steuerplatine installieren“ klicken.
        Spätere Updates der Steuerplatine installiert das Display selbst über WLAN.</p>
+    <div class="warn"><b>Wichtig – Jumper J5:</b> Auf dem H2-Board muss die kleine Steckbrücke (Jumper) auf den
+       beiden Stiften <b>J5</b> stecken. Ohne sie bekommt der Chip keinen Strom – er wird am Computer nicht erkannt
+       und läuft auch später auf der Steuerplatine nicht. Liegt der Jumper lose in der Packung: einfach aufstecken.</div>
     <div class="device">
       <div>
         <b>Steuerplatine – ESP32-H2-DevKitM-1</b>

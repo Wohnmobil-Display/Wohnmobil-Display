@@ -166,8 +166,14 @@ Es werden **zwei Geräte** installiert – beide auf derselben Installer-Seite, 
 
 | Gerät | Anschluss am Computer | Direkt zum Knopf |
 |---|---|---|
-| **① Display** (Waveshare 7 Zoll) | USB-C am Display | **[Display installieren](https://wohnmobil-display.github.io/Wohnmobil-Display/#display)** |
+| **① Display** (Waveshare 7 Zoll) | USB-C-Buchse **„UART1“** am Display (Schalter SW1 auf „UART1“) | **[Display installieren](https://wohnmobil-display.github.io/Wohnmobil-Display/#display)** |
 | **② Steuerplatine** (ESP32-H2-Board) | Buchse **„USB“** am H2-Board (nicht „UART“), einmal **vor dem Einbau** | **[Steuerplatine installieren](https://wohnmobil-display.github.io/Wohnmobil-Display/#steuerplatine)** |
+
+![Display und Steuerplatine verbinden](bilder/anschluss_display_h2_usb.svg)
+
+> **Wichtig – Jumper J5 am H2-Board:** Die kleine Steckbrücke (Jumper) muss auf den beiden Stiften **J5** stecken.
+> Ohne sie bekommt der Chip keinen Strom – er wird am Computer nicht erkannt und läuft auch auf der Steuerplatine nicht.
+> Liegt der Jumper lose in der Packung, einfach aufstecken.
 
 **So geht's (für beide Geräte gleich):**
 1. Link oben anklicken – die Installer-Seite öffnet sich beim passenden Knopf.
