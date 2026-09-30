@@ -5,7 +5,12 @@
   "builds": [
     {
       "chipFamily": "ESP32-H2",
-      "parts": [ { "path": "./firmware/Steuerplatine-H2-FULL.bin", "offset": 0 } ]
+      "parts": [
+        {
+          "path": "./firmware/Steuerplatine-H2-FULL.bin",
+          "offset": 0
+        }
+      ]
     }
   ]
 }
