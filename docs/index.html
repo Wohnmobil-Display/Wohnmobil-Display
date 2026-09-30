@@ -40,39 +40,50 @@
   code { background: rgba(125, 211, 252, .12); color: var(--info); padding: 1px 6px; border-radius: 5px; }
   a { color: var(--info); }
   .hidden { display: none; }
+  .jump { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 18px; }
+  .jump a { display: block; background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+            padding: 14px 16px; text-decoration: none; color: var(--text); }
+  .jump a b { display: block; }
+  .jump a span { color: var(--dim); font-size: .88rem; }
+  @media (max-width: 520px) { .jump { grid-template-columns: 1fr; } }
   footer { color: var(--dim); font-size: .85rem; text-align: center; margin-top: 30px; }
 </style>
 </head>
 <body>
 <main>
   <h1>Wohnmobil-Display – Installer</h1>
-  <p class="sub">Firmware direkt aus dem Browser auf dein Display spielen – ohne zusätzliche Software.</p>
+  <p class="sub">Firmware direkt aus dem Browser installieren – ohne zusätzliche Software. Es gibt <b>zwei Geräte</b> mit je einem eigenen Knopf: das <b>Display</b> und die <b>Steuerplatine</b>.</p>
 
   <div class="warn">
     Benötigt <b>Chrome oder Edge</b> am Computer (Windows, Mac oder Linux) und ein <b>USB-Datenkabel</b>
     (kein reines Ladekabel). Safari, iPhone/iPad und Android werden nicht unterstützt.
   </div>
 
-  <div class="card">
+  <div class="jump">
+    <a href="#display"><b>① Display</b><span>Waveshare 7 Zoll, USB-C am Display</span></a>
+    <a href="#steuerplatine"><b>② Steuerplatine</b><span>ESP32-H2-Board, Buchse „USB“, einmal vor dem Einbau</span></a>
+  </div>
+
+  <div class="card" id="display">
     <h2>1. Display anschließen und installieren</h2>
-    <p>Display per USB-C an den Computer anschließen, dann auf „Installieren“ klicken.</p>
+    <p>Display per USB-C an den Computer anschließen, dann auf „Display installieren“ klicken.</p>
     <div class="device">
       <div>
         <b>Waveshare ESP32-S3-Touch-LCD-7B (7 Zoll, 1024×600)</b>
         <span id="version">Version –</span>
       </div>
       <esp-web-install-button manifest="./manifest.json">
-        <button slot="activate">Installieren</button>
+        <button slot="activate">Display installieren</button>
         <span slot="unsupported">Dein Browser unterstützt das leider nicht – bitte Chrome oder Edge verwenden.</span>
         <span slot="not-allowed">Diese Seite muss über HTTPS geöffnet werden.</span>
       </esp-web-install-button>
     </div>
   </div>
 
-  <div class="card">
+  <div class="card" id="steuerplatine">
     <h2>2. Steuerplatine (ESP32-H2) einmal installieren</h2>
     <p>Das ESP32-H2-Board der Steuerplatine bekommt seine Firmware <b>einmal vor dem Einbau</b>:
-       Board an der Buchse <b>„USB“</b> mit dem Computer verbinden und auf „Installieren“ klicken.
+       Board an der Buchse <b>„USB“</b> mit dem Computer verbinden (nicht die Buchse „UART“) und auf „Steuerplatine installieren“ klicken.
        Spätere Updates der Steuerplatine installiert das Display selbst über WLAN.</p>
     <div class="device">
       <div>
@@ -80,7 +91,7 @@
         <span id="version-h2">Version –</span>
       </div>
       <esp-web-install-button manifest="./manifest-h2.json">
-        <button slot="activate">Installieren</button>
+        <button slot="activate">Steuerplatine installieren</button>
         <span slot="unsupported">Dein Browser unterstützt das leider nicht – bitte Chrome oder Edge verwenden.</span>
         <span slot="not-allowed">Diese Seite muss über HTTPS geöffnet werden.</span>
       </esp-web-install-button>
@@ -90,7 +101,7 @@
   <div class="card">
     <h2>3. Hinweise zur Verbindung</h2>
     <ul>
-      <li>Im Auswahlfenster heißt das Display z. B. <i>„USB JTAG/serial debug unit“</i> oder <i>„USB Single Serial“</i> – einfach auswählen.</li>
+      <li>Im Auswahlfenster heißen Display und Steuerplatine z. B. <i>„USB JTAG/serial debug unit“</i> oder <i>„USB Single Serial“</i> – einfach auswählen.</li>
       <li>Werden mehrere Einträge angezeigt: Display kurz abziehen, Fenster neu öffnen, wieder anstecken – der neue Eintrag ist der richtige.</li>
       <li>Kein anderes Programm darf gleichzeitig auf den USB-Anschluss zugreifen (z. B. Arduino IDE, serieller Monitor).</li>
       <li>Während der Installation das Kabel nicht abziehen. Danach startet das Display von selbst neu.</li>

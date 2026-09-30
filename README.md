@@ -162,18 +162,25 @@ Die Firmware wird direkt im Browser installiert – ohne Download und ohne Zusat
 - einen Computer mit **Google Chrome** oder **Microsoft Edge**,
 - kein anderes Programm, das gerade auf den USB-Anschluss zugreift (z. B. Arduino IDE, serieller Monitor).
 
-**So geht's:**
-1. Öffne die Installer-Seite: **[wohnmobil-display.github.io/Wohnmobil-Display](https://wohnmobil-display.github.io/Wohnmobil-Display/)**
-2. Schließe das Display per USB-C an und klicke auf **Installieren**.
-3. Wähle im Fenster den Eintrag deines Displays (z. B. „USB JTAG/serial debug unit“ oder „USB Single Serial“) und klicke auf **Verbinden**.
-4. Bestätige die Installation und warte, bis sie fertig ist. Kabel nicht abziehen, Browser nicht schließen.
-5. Das Display startet danach von selbst neu. Falls nicht: kurz vom Strom trennen und wieder anschließen.
+Es werden **zwei Geräte** installiert – beide auf derselben Installer-Seite, jedes mit eigenem Knopf:
 
-**Steuerplatine:** Das ESP32-H2-Board bekommt seine Firmware ebenfalls über die Installer-Seite –
-einmal **vor dem Einbau**, per USB an der Buchse „USB“ des Boards (Knopf „Steuerplatine installieren“).
+| Gerät | Anschluss am Computer | Direkt zum Knopf |
+|---|---|---|
+| **① Display** (Waveshare 7 Zoll) | USB-C am Display | **[Display installieren](https://wohnmobil-display.github.io/Wohnmobil-Display/#display)** |
+| **② Steuerplatine** (ESP32-H2-Board) | Buchse **„USB“** am H2-Board (nicht „UART“), einmal **vor dem Einbau** | **[Steuerplatine installieren](https://wohnmobil-display.github.io/Wohnmobil-Display/#steuerplatine)** |
+
+**So geht's (für beide Geräte gleich):**
+1. Link oben anklicken – die Installer-Seite öffnet sich beim passenden Knopf.
+2. Gerät per USB anschließen und auf **Display installieren** bzw. **Steuerplatine installieren** klicken.
+3. Im Fenster den Eintrag des Geräts wählen (z. B. „USB JTAG/serial debug unit“ oder „USB Single Serial“) und auf **Verbinden** klicken.
+4. Installation bestätigen und warten, bis sie fertig ist. Kabel nicht abziehen, Browser nicht schließen.
+5. Das Gerät startet danach von selbst neu. Falls nicht: kurz vom Strom trennen und wieder anschließen.
+
+Die Steuerplatine muss nur **ein einziges Mal** so installiert werden. Spätere Updates spielt das Display
+selbst über das USB-Kabel auf (siehe [Updates](#4-updates)).
 
 > Wird kein Gerät angezeigt, probiere ein anderes Kabel oder einen anderen USB-Anschluss.
-> Stecke das Display kurz ab und wieder an und wähle dann den neu erschienenen Eintrag.
+> Stecke das Gerät kurz ab und wieder an und wähle dann den neu erschienenen Eintrag.
 
 ## 2. Erster Start: Testzeit
 
@@ -229,8 +236,11 @@ Was sich geändert hat, steht bei den [Versionen (Releases)](https://github.com/
 ## Manuelle Installation
 
 Falls die Installer-Seite nicht funktioniert: Unter [Releases](https://github.com/Wohnmobil-Display/Wohnmobil-Display/releases)
-liegt die Datei `Wohnmobil-Display-FULL.bin`. Sie wird mit einem eigenen Flash-Programm an **Adresse 0x0** geschrieben.
-Die Datei `Wohnmobil-Display.bin` ist nur für Updates gedacht.
+liegen zwei Dateien, die mit einem eigenen Flash-Programm jeweils an **Adresse 0x0** geschrieben werden:
+- `Wohnmobil-Display-FULL.bin` → Display
+- `Steuerplatine-H2-FULL.bin` → Steuerplatine (ESP32-H2, Buchse „USB“)
+
+Die Dateien ohne „FULL“ sind nur für Updates gedacht.
 
 ## Hinweis
 
