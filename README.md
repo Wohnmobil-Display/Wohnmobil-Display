@@ -149,7 +149,7 @@ sind vorhanden – nur die beiden Bauteile an die Kabelenden anlöten:
 | SONOFF SNZB-04P (Zigbee-Tür-/Fensterkontakt) | Alarmanlage | [Amazon\*](https://www.amazon.de/dp/B0DD3SQYV9?tag=wohnmobildisp-21) |
 | SONOFF SNZB-03P (Zigbee-Bewegungsmelder) | Alarmanlage | [Amazon\*](https://www.amazon.de/dp/B0C1GB4DVR?tag=wohnmobildisp-21) |
 | Mopeka Pro (Ultraschallsensor mit Magnet) | Gasflaschen-Füllstand (optional) | [Amazon\*](https://www.amazon.de/dp/B0GCD1Q4HP?tag=wohnmobildisp-21) |
-| VL53L0X-Näherungssensor (6 Stück) | Display wird hell, wenn jemand davor steht (optional) | [Amazon\*](https://www.amazon.de/dp/B0D3PRSV3B?tag=wohnmobildisp-21) |
+| VL53L0X-Näherungssensor (2 Stück) | Display wird hell, wenn jemand davor steht (optional) – getestet, funktioniert sofort | [Amazon\*](https://www.amazon.de/dp/B0FPQRKR9T?tag=wohnmobildisp-21) |
 
 \* Werbelink: Als Amazon-Partner verdiene ich an qualifizierten Verkäufen. Für dich ändert sich am Preis nichts.
 
