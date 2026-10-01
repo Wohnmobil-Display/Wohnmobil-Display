@@ -150,6 +150,9 @@ sind vorhanden – nur die beiden Bauteile an die Kabelenden anlöten:
 | SONOFF SNZB-03P (Zigbee-Bewegungsmelder) | Alarmanlage | [Amazon\*](https://www.amazon.de/dp/B0C1GB4DVR?tag=wohnmobildisp-21) |
 | Mopeka Pro (Ultraschallsensor mit Magnet) | Gasflaschen-Füllstand (optional) | [Amazon\*](https://www.amazon.de/dp/B0GCD1Q4HP?tag=wohnmobildisp-21) |
 | VL53L0X-Näherungssensor (2 Stück) | Display wird hell, wenn jemand davor steht (optional) – getestet, funktioniert sofort | [Amazon\*](https://www.amazon.de/dp/B0FPQRKR9T?tag=wohnmobildisp-21) |
+| Crimpkontakte (100 Stück: 50 Stift- und 50 Buchsenkontakte, 14–20 AWG, Molex .093/MLX) | Zum Anlöten der 12-V-Dauerspannung an das EBL-Kabel (Block 5, Pin 3) | [Amazon\*](https://www.amazon.de/dp/B0DM92JFC7?tag=wohnmobildisp-21) |
+| USB-C-Datenkabel (240 W, Set: 1 m + 1 m + 1,5 m + 1,5 m) | Verbindung Display ↔ Steuerplatine und Anschluss am Computer – reines Ladekabel funktioniert nicht | [Amazon\*](https://www.amazon.de/dp/B0GX5WF5B9?tag=wohnmobildisp-21) |
+| Schrauben M3 × 8 mm (100 Stück, Edelstahl, Flachkopf, vollgewinde) | Montage | [Amazon\*](https://www.amazon.de/dp/B0FHGSGFY4?tag=wohnmobildisp-21) |
 
 \* Werbelink: Als Amazon-Partner verdiene ich an qualifizierten Verkäufen. Für dich ändert sich am Preis nichts.
 
