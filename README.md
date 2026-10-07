@@ -143,7 +143,7 @@ sind vorhanden – nur die beiden Bauteile an die Kabelenden anlöten:
 |---|---|---|
 | Waveshare ESP32-S3-Touch-LCD-7B (7 Zoll, 1024×600) | Das Display | [Amazon\*](https://www.amazon.de/dp/B0FG354VCN?tag=wohnmobildisp-21) |
 | ESP32-H2-DevKitM-1 (N4) | Zigbee und Steuerplatine | [Amazon\*](https://www.amazon.de/dp/B0D8XR48LF?tag=wohnmobildisp-21) |
-| Ultraschallsensor JSN-SR04M-2 / AJ-SR04M (wasserdicht) | Frischwasser (optional, statt Original-Geber) – funktioniert ohne Löten, wird automatisch erkannt | [Amazon\*](https://www.amazon.de/dp/B0FPPTTHTJ?tag=wohnmobildisp-21) |
+| Ultraschallsensor JSN-SR04M-2 / AJ-SR04M / A02YYPWM (wasserdicht) | Frischwasser (optional, statt Original-Geber) – funktioniert ohne Löten, wird automatisch erkannt | [Amazon\*](https://www.amazon.de/dp/B0FPPTTHTJ?tag=wohnmobildisp-21) |
 | frient Smoke Alarm (Zigbee-Rauchmelder mit Sirene) | Rauchmelder, auch als Alarm-Sirene nutzbar | [Amazon\*](https://www.amazon.de/dp/B08WXV3G8P?tag=wohnmobildisp-21) |
 | SONOFF SNZB-02B (Zigbee-Temperatur/Luftfeuchte) | Temperatur innen, außen, Kühlschrank | [Amazon\*](https://www.amazon.de/dp/B0H4QJQFKM?tag=wohnmobildisp-21) |
 | SONOFF SNZB-04P (Zigbee-Tür-/Fensterkontakt) | Alarmanlage | [Amazon\*](https://www.amazon.de/dp/B0DD3SQYV9?tag=wohnmobildisp-21) |
