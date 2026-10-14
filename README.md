@@ -172,6 +172,12 @@ sind vorhanden – nur die beiden Bauteile an die Kabelenden anlöten:
 
 ![Summer und Näherungssensor am Display](bilder/anschluss_summer_sensor_display.svg)
 
+**Der Näherungssensor ist optional.** Er macht das System nur komfortabler: das Display wird hell, sobald jemand davor
+steht. Das Display funktioniert genauso **ohne Sensor** – dann weckt man es einfach per Fingertipp. Die Auswertung
+lässt sich unter *Setup → Display → Näherungssensor* ausschalten. Für den Rahmen gibt es beide Varianten:
+[Rahmen mit Näherungssensor](druck/display_rahmen_mit_sensor.stl) und
+[Rahmen ohne Sensor](druck/display_rahmen_ohne_sensor.stl) (ohne Aussparung für den Sensor).
+
 ## Einkaufsliste
 
 | Teil | Wofür | Link |
