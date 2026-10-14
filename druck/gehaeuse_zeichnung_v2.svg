@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 550" width="1080" height="550" font-family="Helvetica,Arial,sans-serif">
+<rect width="1080" height="550" fill="#fff"/>
+<rect x="66.4" y="369.0" width="37.4" height="47.6" fill="#e5e7eb" stroke="#111" stroke-width="0.8"/>
+<circle cx="85.1" cy="392.8" r="7.6" fill="#fff" stroke="#111"/>
+<rect x="66.4" y="205.8" width="37.4" height="47.6" fill="#e5e7eb" stroke="#111" stroke-width="0.8"/>
+<circle cx="85.1" cy="229.6" r="7.6" fill="#fff" stroke="#111"/>
+<rect x="460.2" y="369.0" width="37.4" height="47.6" fill="#e5e7eb" stroke="#111" stroke-width="0.8"/>
+<circle cx="478.9" cy="392.8" r="7.6" fill="#fff" stroke="#111"/>
+<rect x="460.2" y="205.8" width="37.4" height="47.6" fill="#e5e7eb" stroke="#111" stroke-width="0.8"/>
+<circle cx="478.9" cy="229.6" r="7.6" fill="#fff" stroke="#111"/>
+<rect x="102.1" y="144.9" width="359.7" height="332.5" fill="#f3f4f6" stroke="#111" stroke-width="1.2"/>
+<rect x="110.3" y="153.1" width="343.4" height="316.2" fill="#fff" stroke="#111" stroke-width="0.8"/>
+<circle cx="93.3" cy="136.1" r="15.3" fill="#d1d5db" stroke="#111"/>
+<circle cx="93.3" cy="136.1" r="5.4" fill="#fff" stroke="#111"/>
+<circle cx="470.7" cy="136.1" r="15.3" fill="#d1d5db" stroke="#111"/>
+<circle cx="470.7" cy="136.1" r="5.4" fill="#fff" stroke="#111"/>
+<circle cx="93.3" cy="486.3" r="15.3" fill="#d1d5db" stroke="#111"/>
+<circle cx="93.3" cy="486.3" r="5.4" fill="#fff" stroke="#111"/>
+<circle cx="470.7" cy="486.3" r="15.3" fill="#d1d5db" stroke="#111"/>
+<circle cx="470.7" cy="486.3" r="5.4" fill="#fff" stroke="#111"/>
+<rect x="112.0" y="154.8" width="340.0" height="312.8" fill="none" stroke="#2563eb" stroke-width="1.2" stroke-dasharray="6 4"/>
+<circle cx="438.4" cy="168.4" r="11.0" fill="#fff" stroke="#2563eb"/>
+<circle cx="438.4" cy="168.4" r="4.4" fill="#2563eb"/>
+<circle cx="122.9" cy="326.5" r="11.0" fill="#fff" stroke="#2563eb"/>
+<circle cx="122.9" cy="326.5" r="4.4" fill="#2563eb"/>
+<circle cx="441.1" cy="456.7" r="11.0" fill="#fff" stroke="#2563eb"/>
+<circle cx="441.1" cy="456.7" r="4.4" fill="#2563eb"/>
+<circle cx="251.4" cy="333.3" r="11.0" fill="#fff" stroke="#2563eb"/>
+<circle cx="251.4" cy="333.3" r="4.4" fill="#2563eb"/>
+<rect x="118.8" y="144.9" width="40.8" height="8.2" fill="#fecaca" stroke="#dc2626"/>
+<text x="139.2" y="139.0" font-size="10" text-anchor="middle" fill="#991b1b">ST1 12</text>
+<rect x="173.9" y="144.9" width="54.4" height="8.2" fill="#fecaca" stroke="#dc2626"/>
+<text x="201.1" y="139.0" font-size="10" text-anchor="middle" fill="#991b1b">ST3 16</text>
+<rect x="242.2" y="144.9" width="64.6" height="8.2" fill="#fecaca" stroke="#dc2626"/>
+<text x="274.5" y="139.0" font-size="10" text-anchor="middle" fill="#991b1b">ST2 19</text>
+<rect x="116.9" y="469.3" width="30.6" height="8.2" fill="#fecaca" stroke="#dc2626"/>
+<text x="132.2" y="495.4" font-size="10" text-anchor="middle" fill="#991b1b">J4 9</text>
+<rect x="161.9" y="469.3" width="30.6" height="8.2" fill="#fecaca" stroke="#dc2626"/>
+<text x="177.2" y="495.4" font-size="10" text-anchor="middle" fill="#991b1b">J6 9</text>
+<rect x="207.0" y="469.3" width="30.6" height="8.2" fill="#fecaca" stroke="#dc2626"/>
+<text x="222.3" y="495.4" font-size="10" text-anchor="middle" fill="#991b1b">J5 9</text>
+<rect x="252.1" y="469.3" width="30.6" height="8.2" fill="#fecaca" stroke="#dc2626"/>
+<text x="267.4" y="495.4" font-size="10" text-anchor="middle" fill="#991b1b">J11 9</text>
+<rect x="297.3" y="469.3" width="47.6" height="8.2" fill="#fecaca" stroke="#dc2626"/>
+<text x="321.1" y="495.4" font-size="10" text-anchor="middle" fill="#991b1b">J10 14</text>
+<rect x="365.3" y="469.3" width="27.2" height="8.2" fill="#fecaca" stroke="#dc2626"/>
+<text x="378.9" y="495.4" font-size="10" text-anchor="middle" fill="#991b1b">USB 8</text>
+<rect x="102.1" y="336.7" width="8.2" height="47.6" fill="#fecaca" stroke="#dc2626"/>
+<text x="98.2" y="363.5" font-size="10" text-anchor="end" fill="#991b1b">J14 14</text>
+<text x="20" y="28" font-size="16" font-weight="bold">Gehäuse Steuerplatine V2 (Draufsicht)</text>
+<text x="20" y="46" font-size="11" fill="#374151">Außenmaß Unterschale 126,8 × 112,0 × 33,6 mm (mit Laschen)</text>
+<text x="20" y="60" font-size="11" fill="#374151">Deckel 120,0 × 112,0 × 20,0 mm; Wand 2,4 mm; Boden 2 mm</text>
+<text x="20" y="74" font-size="11" fill="#374151">Platine 100 × 92 mm (blau gestrichelt), Stehbolzen 6 mm, M3 selbstschneidend, Eckpfosten Ø9</text>
+<rect x="616.4" y="192.2" width="37.4" height="47.6" fill="#e5e7eb" stroke="#111" stroke-width="0.8"/>
+<circle cx="635.1" cy="216.0" r="7.6" fill="#fff" stroke="#111"/>
+<rect x="833.4" y="192.2" width="37.4" height="47.6" fill="#e5e7eb" stroke="#111" stroke-width="0.8"/>
+<circle cx="852.1" cy="216.0" r="7.6" fill="#fff" stroke="#111"/>
+<rect x="652.1" y="144.9" width="182.9" height="142.1" fill="#f3f4f6" stroke="#111" stroke-width="1.2"/>
+<rect x="660.3" y="153.1" width="166.6" height="125.8" fill="#fff" stroke="#111" stroke-width="0.8"/>
+<circle cx="643.3" cy="136.1" r="15.3" fill="#d1d5db" stroke="#111"/>
+<circle cx="643.3" cy="136.1" r="5.4" fill="#fff" stroke="#111"/>
+<circle cx="843.9" cy="136.1" r="15.3" fill="#d1d5db" stroke="#111"/>
+<circle cx="843.9" cy="136.1" r="5.4" fill="#fff" stroke="#111"/>
+<circle cx="643.3" cy="295.9" r="15.3" fill="#d1d5db" stroke="#111"/>
+<circle cx="643.3" cy="295.9" r="5.4" fill="#fff" stroke="#111"/>
+<circle cx="843.9" cy="295.9" r="15.3" fill="#d1d5db" stroke="#111"/>
+<circle cx="843.9" cy="295.9" r="5.4" fill="#fff" stroke="#111"/>
+<rect x="662.0" y="154.8" width="163.2" height="122.4" fill="none" stroke="#2563eb" stroke-width="1.2" stroke-dasharray="6 4"/>
+<circle cx="808.2" cy="171.8" r="11.0" fill="#fff" stroke="#2563eb"/>
+<circle cx="808.2" cy="171.8" r="4.4" fill="#2563eb"/>
+<circle cx="808.2" cy="210.9" r="11.0" fill="#fff" stroke="#2563eb"/>
+<circle cx="808.2" cy="210.9" r="4.4" fill="#2563eb"/>
+<rect x="666.6" y="278.9" width="30.6" height="8.2" fill="#fecaca" stroke="#dc2626"/>
+<text x="681.9" y="305.0" font-size="10" text-anchor="middle" fill="#991b1b">J1 9</text>
+<rect x="711.6" y="278.9" width="51.0" height="8.2" fill="#fecaca" stroke="#dc2626"/>
+<text x="737.1" y="305.0" font-size="10" text-anchor="middle" fill="#991b1b">J2 15</text>
+<rect x="770.9" y="278.9" width="30.6" height="8.2" fill="#fecaca" stroke="#dc2626"/>
+<text x="786.2" y="305.0" font-size="10" text-anchor="middle" fill="#991b1b">J3 9</text>
+<text x="570" y="28" font-size="16" font-weight="bold">Gehäuse Relaisplatine V2 (Draufsicht)</text>
+<text x="570" y="46" font-size="11" fill="#374151">Außenmaß Unterschale 74,8 × 56,0 × 29,6 mm (mit Laschen)</text>
+<text x="570" y="60" font-size="11" fill="#374151">Deckel 68,0 × 56,0 × 16,0 mm; Wand 2,4 mm; Boden 2 mm</text>
+<text x="570" y="74" font-size="11" fill="#374151">Platine 48 × 36 mm (blau gestrichelt), Stehbolzen 6 mm, Auflage links oben ohne Loch</text>
+<text x="10" y="540" font-size="11" fill="#6b7280">Alle Maße in mm. Rot = Kabelschlitze/Öffnungen in der Wand, blau = Platine mit Befestigungslöchern, grau = Laschen (Loch Ø4,5) und Eckpfosten (M3). Quelle: gehaeuse_v2.fs</text>
+</svg>

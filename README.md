@@ -15,12 +15,12 @@ Ein 7-Zoll-Touchdisplay, das rund um die Uhr auf dein Wohnmobil aufpasst:
 - 📡 **Sensor offline oder Batterie schwach?** Auch das meldet das Display
 
 Es ersetzt das originale Schaudt-Bedienteil **LT 100** und nutzt dessen **vorhandene Stecker und Kabel**.
-Zum Ausprobieren läuft es **72 Stunden kostenlos und ohne Einschränkung**.
+Für die dauerhafte Nutzung ist ein einmaliger **Freischaltcode** nötig (siehe [Freischalten](#3-freischalten)).
 
 ![Startseite](bilder/startseite.png)
 
 **Inhalt:** [Funktionen](#funktionen) · [Bedienung](#bedienung) · [Hardware](#hardware) · [Einkaufsliste](#einkaufsliste) ·
-[Installation](#1-installation) · [Testzeit](#2-erster-start-testzeit) · [Freischalten](#3-freischalten) · [Updates](#4-updates)
+[Installation](#1-installation) · [Erster Start](#2-erster-start) · [Freischalten](#3-freischalten) · [Updates](#4-updates)
 
 ## Funktionen
 
@@ -115,6 +115,8 @@ Der Votronic-Tankfühler 5545 wird im Display eingemessen: bei leerem Tank **Lee
 
 ![Relaisplatine](bilder/relaisplatine.png)
 
+**Aufbau und Bestückung:** [Relaisplatine V2 – Bauteile, Reihenfolge, Anschluss](hardware/relaisplatine_v2/README.md) (Gerber-Dateien und Stückliste liegen dort).
+
 Beim originalen LT 100 lässt sich die Wasserpumpe nicht schalten – hier schon:
 
 - **Pumpe per Fingertipp ein/aus** über das Wasserhahn-Symbol oben auf der Startseite.
@@ -200,7 +202,7 @@ selbst über das USB-Kabel auf (siehe [Updates](#4-updates)).
 > Wird kein Gerät angezeigt, probiere ein anderes Kabel oder einen anderen USB-Anschluss.
 > Stecke das Gerät kurz ab und wieder an und wähle dann den neu erschienenen Eintrag.
 
-## 2. Erster Start: Testzeit
+## 2. Erster Start
 
 Beim ersten Start zeigt das Display den Bildschirm **Freischaltung** mit zwei Werten:
 
@@ -213,9 +215,7 @@ Darunter steht die fertige Zeile zum Freischalten, z. B.:
 AA:BB:CC:DD:EE:FF 1234
 ```
 
-Mit **„Test starten (72 Std.)“** kannst du das Display 72 Betriebsstunden lang kostenlos und uneingeschränkt nutzen.
-Gezählt wird nur die Zeit, in der das Display eingeschaltet ist. Die restliche Testzeit steht oben in der Kopfzeile.
-Nach Ablauf zeigt das Display nur noch den Freischalt-Bildschirm.
+Ohne Freischaltcode zeigt das Display nur diesen Freischalt-Bildschirm. Die Zeile notierst du dir und gibst sie beim Bezahlen an (siehe unten).
 
 ## 3. Freischalten
 
@@ -228,7 +228,7 @@ Das Wohnmobil-Display ist ein privat entwickeltes Hobbyprojekt. Für die dauerha
 3. Nach Eingang der Zahlung bekommst du den Freischaltcode per E-Mail, in der Regel **innerhalb von 24 Stunden**.
 4. Gib den Code am Display ein und bestätige mit **OK**. Fertig – das Display ist dauerhaft freigeschaltet.
 
-Den Freischalt-Bildschirm erreichst du während der Testzeit auch über **Setup → Allgemein → Freischaltung**.
+Bei einem freigeschalteten Display erreichst du die Seite jederzeit über **Setup → Allgemein → Freischaltung**.
 
 > Feld beim Bezahlen vergessen? Schick die Zeile einfach an **wohnmobil.display@gmail.com**.
 >

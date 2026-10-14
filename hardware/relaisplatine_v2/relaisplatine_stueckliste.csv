@@ -1,0 +1,6 @@
+Comment,Designator,Footprint,LCSC Part #,Anzahl
+1N4007,D1,D_DO-41_SOD81_P10.16mm_Horizontal,C2985028,1
+Starter / Gruen,J1,"TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",C474881,1
+Pumpe,J2,"TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",C474881,1
+Notschalter,J3,"TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",C474881,1
+ALQ312,K1,Relay_SPST_Panasonic_ALQ3,C425093,1
