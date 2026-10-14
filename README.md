@@ -127,6 +127,10 @@ mit 3 Wänden**. Zusatzinfo: Es kann auch der **Original-Dichtring** des Tanks w
 
 Der Votronic-Tankfühler 5545 wird im Display eingemessen: bei leerem Tank **Leer = jetzt**, bei vollem Tank **Voll = jetzt** antippen.
 
+**Votronic-Tankfühler am Original-Stecker anschließen** (Pin 1 = +12 V, Pin 4 = Signal, Pin 5 = Masse, Pin 2/3/6 bleiben frei):
+
+![Votronic-Tankfühler am Stecker ST2](bilder/anschluss_frischwasser_votronic_v2.svg)
+
 ![Steckbrücken J12/J13: rechts Originalgeber, links Votronic](bilder/frischwasser_jumper_v2.png)
 
 ![Lage der Anschlüsse auf der Steuerplatine V2](bilder/steuerplatine_v2_uebersicht.png)
