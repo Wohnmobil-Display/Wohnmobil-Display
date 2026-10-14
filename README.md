@@ -251,8 +251,16 @@ Ohne Freischaltcode zeigt das Display nur diesen Freischalt-Bildschirm. Die Zeil
 
 ## 3. Freischalten
 
-Das Wohnmobil-Display ist ein privat entwickeltes Hobbyprojekt. Für die dauerhafte Nutzung ist ein persönlicher,
-6-stelliger **Freischaltcode** nötig. Er kostet einmalig **29 €** und gilt für immer – auch nach Neustarts und Updates.
+> **Ein Hobbyprojekt – kein Geschäft.** Das Wohnmobil-Display ist aus Freude am Basteln entstanden, in unzähligen
+> Abenden und Wochenenden, für mein eigenes Wohnmobil – und weil ich es auch anderen Wohnmobilisten ermöglichen
+> möchte. Es steckt viel Arbeit darin: Firmware, Platinen, Gehäuse, Anleitung und die laufende Pflege.
+> Der Freischaltcode ist deshalb **keine Bezahlung für ein Produkt**, sondern eine **kleine Anerkennung und
+> Unterstützung** für diese Arbeit – und hilft, Entwicklungsmaterial, Platinen-Prototypen und Updates weiter zu
+> finanzieren. Ein Verdienst entsteht daraus nicht, und es ist kein Gewerbe. Wenn dir das Projekt gefällt,
+> freue ich mich über deinen Beitrag. Danke!
+
+Für die dauerhafte Nutzung ist ein persönlicher, 6-stelliger **Freischaltcode** nötig. Mit deiner Unterstützung von
+einmalig **29 €** bekommst du ihn – er gilt für immer, auch nach Neustarts und Updates.
 
 1. Öffne den PayPal-Link: **[paypal.com/ncp/payment/MHXFBPU9TVV2L](https://www.paypal.com/ncp/payment/MHXFBPU9TVV2L)**
 2. Trage im Feld **„Chip-ID + Freigabecode“** die Zeile vom Display ein – genau so, wie sie dort steht:
