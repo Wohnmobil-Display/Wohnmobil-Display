@@ -16,6 +16,7 @@ Ein 7-Zoll-Touchdisplay, das rund um die Uhr auf dein Wohnmobil aufpasst:
 
 Es ersetzt das originale Schaudt-Bedienteil **LT 100** und nutzt dessen **vorhandene Stecker und Kabel**.
 Für die dauerhafte Nutzung ist ein einmaliger **Freischaltcode** nötig (siehe [Freischalten](#3-freischalten)).
+Es ist ein **privates Hobbyprojekt**; Einbau und Nutzung erfolgen **auf eigene Verantwortung** (siehe [Hinweis](#hinweis-haftung-und-eigenverantwortung)).
 
 ![Startseite](bilder/startseite.png)
 
@@ -318,9 +319,22 @@ liegen zwei Dateien, die mit einem eigenen Flash-Programm jeweils an **Adresse 0
 
 Die Dateien ohne „FULL“ sind nur für Updates gedacht.
 
-## Hinweis
+## Hinweis, Haftung und Eigenverantwortung
 
-Das Wohnmobil-Display ist ein privates DIY-Projekt ohne Firma dahinter und steht in keiner Verbindung zu Schaudt,
-Waveshare, Victron, Mopeka oder anderen Herstellern der unterstützten Geräte. Die Nutzung erfolgt auf eigene Verantwortung.
+**Das Wohnmobil-Display ist ein privates Hobbyprojekt ohne Firma dahinter und ohne Gewinnabsicht.** Es steht in keiner
+Verbindung zu Schaudt, Waveshare, Victron, Mopeka oder anderen Herstellern der unterstützten Geräte.
+
+- **Selbstbau und Einbau auf eigene Verantwortung:** Wer die Platinen fertigen lässt, das Display installiert oder in
+  sein Fahrzeug einbaut, tut das auf eigene Gefahr und ist selbst für die fachgerechte Ausführung verantwortlich
+  (Absicherung, Verkabelung, Funktion, Versicherungs- und Zulassungsfragen).
+- **Arbeiten an der Fahrzeugelektrik** nur mit entsprechenden Kenntnissen: vorher Sicherung ziehen bzw. das Bordnetz
+  stromlos schalten, Landstrom trennen. Im Zweifel eine Fachwerkstatt fragen.
+- **Keine Sicherheitseinrichtung:** Alarmanlage, Rauch-/Gaswarnung, Sirene, Pumpensperre und Füllstandsanzeigen sind
+  ein Komfort für Bastler und **kein Ersatz** für geprüfte und zugelassene Geräte (z. B. Rauchmelder nach EN 14604,
+  Gaswarner nach EN 50291).
+- **Keine Garantie, kein Support-Anspruch:** Hardware, Firmware und Anleitung werden „wie besehen“ und ohne
+  Gewähr für Funktion, Verfügbarkeit oder Fehlerfreiheit bereitgestellt.
+- **Haftung:** Soweit gesetzlich zulässig ist meine Haftung ausgeschlossen. Gesetzlich zwingende Haftung (insbesondere
+  bei Vorsatz, grober Fahrlässigkeit sowie bei Verletzung von Leben, Körper oder Gesundheit) bleibt unberührt.
 
 Kontakt: **wohnmobil.display@gmail.com**
