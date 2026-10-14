@@ -120,8 +120,10 @@ Der Votronic-Tankfühler 5545 wird im Display eingemessen: bei leerem Tank **Lee
 Die Steuerplatine habe ich im Rahmen meines Hobbys für mich selbst entwickelt und bestellt. Da man bei der
 Fertigung eine Mindestmenge abnehmen muss, sind **9 Stück** übrig. Einzelne Platinen gebe ich zum reinen
 **Selbstkostenpreis von 21,89 € zuzüglich Versand** von Bastler zu Bastler ab.
-Die Platinen sind **fertig bestückt – nur das ESP32-H2-Board fehlt** (das steckt man selbst auf, siehe Einkaufsliste). Wer lieber selbst bestellt:
-Die Fertigungsdaten (Gerber, Stückliste, Bestückung) liegen im Projekt und lassen sich bei jedem Platinenfertiger hochladen.
+Die Platinen sind **fertig bestückt – nur das ESP32-H2-Board fehlt** (das steckt man selbst auf, siehe Einkaufsliste). Du kannst die Platine auch **selbst fertigen lassen**:
+Die Fertigungsdaten (Gerber, Stückliste, Bestückung) liegen unter
+[`hardware/steuerplatine_v2/`](hardware/steuerplatine_v2/) und lassen sich bei jedem Platinenfertiger (z. B. JLCPCB) hochladen –
+oft schon ab 1 Stück, direkt nach Hause geliefert.
 
 Interesse? Bitte ein **Issue** hier auf GitHub öffnen oder eine Mail an **wohnmobil.display@gmail.com** schreiben.
 
