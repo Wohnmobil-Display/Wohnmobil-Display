@@ -125,6 +125,12 @@ J12/J13 neben ST2. **Beide immer auf dieselbe Seite** stecken, nur stromlos umst
 [Dichtungsring](druck/wassertank_dichtring_tpu.stl)). Den **Deckel in PETG mit 4 Wänden** drucken, den **Dichtungsring in TPU
 mit 3 Wänden**. Zusatzinfo: Es kann auch der **Original-Dichtring** des Tanks weiterverwendet werden.
 
+| 6-poliger Original-Stecker des Tankfühlers | Gedruckter Tankdeckel mit Dichtungsring |
+|---|---|
+| ![Tankfühler-Stecker](bilder/tankfuehler_stecker_6polig.jpg) | ![Tankdeckel](bilder/tankdeckel_votronic_gedruckt.jpg) |
+
+![Tankdeckel von oben](bilder/tankdeckel_votronic_oben.jpg)
+
 Der Votronic-Tankfühler 5545 wird im Display eingemessen: bei leerem Tank **Leer = jetzt**, bei vollem Tank **Voll = jetzt** antippen.
 
 **Votronic-Tankfühler am Original-Stecker anschließen** (Pin 1 = +12 V, Pin 4 = Signal, Pin 5 = Masse, Pin 2/3/6 bleiben frei):
@@ -186,6 +192,24 @@ dann verschwinden das Wasserhahn-Symbol und alle Pumpen-Meldungen, alles andere 
 | Kabel zum EBL (ST1) | EBL 31, Block 3 „Instr.-Tafel“ |
 |---|---|
 | ![ST1](bilder/lt100_kabel_st1.jpg) | ![EBL 31](bilder/ebl31_block3.jpg) |
+
+**Wichtig: Die grüne Ader muss durchverbunden werden.** Die freie grüne Ader im Panelkabel misst die **Spannung der
+Motor-(Starter-)Batterie** und **schaltet die Wasserpumpe** (Relaisplatine). Am EBL (Block 3) ist sie das freie grüne
+Aderende. Damit sie an der Steuerplatine ankommt, muss sie **unten im Schrank unter dem Kühlschrank durchverbunden
+werden** (dort stecken die Stecker des Panelkabels) – z. B. mit einem Quetschverbinder und einer Zusatzleitung:
+
+| Die grüne Ader am EBL | Im Schrank unter dem Kühlschrank durchverbinden |
+|---|---|
+| ![Grüne Ader am EBL](bilder/gruene_ader_ebl_ende.jpg) | ![Grüne Ader durchverbunden](bilder/gruene_ader_schrank_verbindung.jpg) |
+| **Stecker des Panelkabels im Schrank** | **Übersicht mit Verbinder** |
+| ![Stecker im Schrank](bilder/gruene_ader_schrank_stecker.jpg) | ![Übersicht im Schrank](bilder/gruene_ader_schrank_ueberblick.jpg) |
+
+**12-V-Dauerspannung am EBL-Stecker Block 5 (Pin 3):** Den passenden **Crimpkontakt (Stift)** aus dem Steckverbinder-Set
+(siehe Einkaufsliste) auf die Ader crimpen und in den freien Platz am Stecker stecken:
+
+| EBL Block 5 – freie Plätze | Passender Crimpkontakt (Stift) |
+|---|---|
+| ![Block 5](bilder/ebl_block5_stecker.jpg) | ![Crimpkontakt](bilder/ebl_block5_crimpkontakt.jpg) |
 
 Anschlüsse am Display:
 

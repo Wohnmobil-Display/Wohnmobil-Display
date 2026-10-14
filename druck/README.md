@@ -20,6 +20,8 @@ Die Kabelschlitze der Gehäuse sind oben offen, die Zungen am Deckel schließen 
 Den **Deckel in PETG mit 4 Wänden** drucken, den **Dichtungsring in TPU mit 3 Wänden**.
 Zusatzinfo: Statt des gedruckten Rings kann auch der **Original-Dichtring** des Tanks weiterverwendet werden.
 
+![Tankdeckel mit Dichtungsring](../bilder/tankdeckel_votronic_gedruckt.jpg)
+
 **Montage:**
 - Platine mit M3-Schrauben (selbstschneidend, ca. 8 mm) auf die Stehbolzen schrauben.
 - Deckel mit 4 × M3 (ca. 16 mm) in die Eckpfosten schrauben.
