@@ -115,6 +115,26 @@ Der Votronic-Tankfühler 5545 wird im Display eingemessen: bei leerem Tank **Lee
 
 ![Frischwasser-Anschluss an der Steuerplatine](bilder/anschluss_frischwasser_original_v2.svg)
 
+#### Steuerplatine aus meinem Restbestand
+
+Die Steuerplatine habe ich im Rahmen meines Hobbys für mich selbst entwickelt und bestellt. Da man bei der
+Fertigung eine Mindestmenge abnehmen muss, sind **9 Stück** übrig. Einzelne Platinen gebe ich zum reinen
+**Selbstkostenpreis von 21,89 € zuzüglich Versand** von Bastler zu Bastler ab.
+Die Platinen sind **fertig bestückt – nur das ESP32-H2-Board fehlt** (das steckt man selbst auf, siehe Einkaufsliste). Wer lieber selbst bestellt:
+Die Fertigungsdaten (Gerber, Stückliste, Bestückung) liegen im Projekt und lassen sich bei jedem Platinenfertiger hochladen.
+
+Interesse? Bitte ein **Issue** hier auf GitHub öffnen oder eine Mail an **wohnmobil.display@gmail.com** schreiben.
+
+**Wichtig beim Einbau:** Vor dem Tausch unbedingt die entsprechende **Sicherung im Wohnmobil ziehen oder das
+Bordnetz komplett stromlos schalten**. Beim Ab- und Anstecken kann ein Werkzeug sonst einen Kurzschluss am
+Fahrzeugrahmen (Masse) verursachen. Danach die Original-Stecker von der alten Platine abziehen, auf die neue
+Platine stecken und vor dem Einsetzen der Sicherung prüfen, dass alle Stecker fest und gerade sitzen.
+
+**Haftungsausschluss:** Dies ist ein rein privater Gefälligkeitsdienst ohne Gewinnabsicht und kein kommerzielles
+Angebot. Ich schließe jegliche Gewährleistung, Garantie, Sachmängelhaftung und ein Rückgaberecht komplett aus.
+Einbau und Nutzung erfolgen **auf eigene Gefahr**. Für Schäden am Fahrzeug, an der Bordelektronik oder
+Folgeschäden (z. B. durch Kurzschlüsse) wird keine Haftung übernommen.
+
 ### Relaisplatine für die Frischwasserpumpe – optional
 
 ![Relaisplatine](bilder/relaisplatine.png)
