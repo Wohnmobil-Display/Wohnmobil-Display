@@ -72,7 +72,7 @@ Die **Relaisplatine** für die Wasserpumpe ist eine Erweiterung, die man weglass
 
 - **Display:** Waveshare ESP32-S3-Touch-LCD-7B (7 Zoll, 1024×600, WLAN, Bluetooth).
   Bluetooth-Geräte (Victron, Mopeka, JK-BMS) empfängt es direkt.
-- **3D-Druckteile** im Ordner [`druck/`](druck/): **Rahmen für das Display** (ersetzt das LT 100 im vorhandenen Ausschnitt, mit oder ohne Näherungssensor), **Halter für Türkontakte** (Sensor und Magnet, verschiedene Sockelhöhen) und **Gehäuse** für Steuer- und Relaisplatine.
+- **3D-Druckteile** im Ordner [`druck/`](druck/): **Rahmen für das Display** (ersetzt das LT 100 im vorhandenen Ausschnitt, mit oder ohne Näherungssensor), **Halter für Türkontakte** (Sensor und Magnet, verschiedene Sockelhöhen), **Gehäuse** für Steuer- und Relaisplatine und ein **Wassertank-Deckel für den Votronic-Tankfühler 5545** (Deckel in PETG mit 4 Wänden, Dichtungsring in TPU mit 3 Wänden – es geht auch der Original-Dichtring).
 
 ### Steuerplatine – notwendig
 
@@ -106,6 +106,11 @@ J12/J13 neben ST2. **Beide immer auf dieselbe Seite** stecken, nur stromlos umst
 |---|---|---|---|---|
 | **rechts „ORIG“** (Standard) | Stab Voll | Stab ¼ | Basis | Originalgeber (Stabsonde des LT 100), Stufen 25 / 50 / 75 / 100 % |
 | **links „VOT“** | +12 V (über selbstrückstellende Sicherung) | Signal 0–2,2 V | Masse | Votronic-Tankelektrode 15-50 K, stufenlos |
+
+**Deckel für den Votronic-Tankfühler:** Für den Einbau des Fühlers gibt es einen **Wassertank-Deckel mit 37-mm-Bohrung** und einen
+**Dichtungsring** zum Selbstdrucken ([Deckel](druck/wassertank_deckel_votronic_5545.stl),
+[Dichtungsring](druck/wassertank_dichtring_tpu.stl)). Den **Deckel in PETG mit 4 Wänden** drucken, den **Dichtungsring in TPU
+mit 3 Wänden**. Zusatzinfo: Es kann auch der **Original-Dichtring** des Tanks weiterverwendet werden.
 
 Der Votronic-Tankfühler 5545 wird im Display eingemessen: bei leerem Tank **Leer = jetzt**, bei vollem Tank **Voll = jetzt** antippen.
 
