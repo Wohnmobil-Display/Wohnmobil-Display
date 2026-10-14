@@ -109,6 +109,10 @@ J12/J13 neben ST2. **Beide immer auf dieselbe Seite** stecken, nur stromlos umst
 
 Der Votronic-Tankfühler 5545 wird im Display eingemessen: bei leerem Tank **Leer = jetzt**, bei vollem Tank **Voll = jetzt** antippen.
 
+![Steckbrücken J12/J13: rechts Originalgeber, links Votronic](bilder/frischwasser_jumper_v2.png)
+
+![Lage der Anschlüsse auf der Steuerplatine V2](bilder/steuerplatine_v2_uebersicht.png)
+
 ![Frischwasser-Anschluss an der Steuerplatine](bilder/anschluss_frischwasser_original_v2.svg)
 
 ### Relaisplatine für die Frischwasserpumpe – optional
