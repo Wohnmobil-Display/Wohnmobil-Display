@@ -28,7 +28,7 @@ Zum Ausprobieren läuft es **72 Stunden kostenlos und ohne Einschränkung**.
 |---|---|
 | **Batterien** | Motor- und Aufbau-Batterie, JK-BMS mit allen 12 Zellen, Temperaturen und Ladezustand (Bluetooth) |
 | **Solar** | Victron-MPPT-Laderegler: Leistung, Tagesertrag, Verlauf der letzten 7 Tage (Bluetooth) |
-| **Wasser** | Frischwasser über den Original-Geber oder Ultraschall, Abwasser über die Original-Elektrodenstäbe |
+| **Wasser** | Frischwasser über den Original-Geber oder die Votronic-Tankelektrode, Abwasser über die Original-Elektrodenstäbe |
 | **Pumpe** | Wasserpumpe per Fingertipp ein/aus, automatisch gesperrt bei scharfer Alarmanlage |
 | **Gas** | Zwei Gasflaschen mit Mopeka-Pro-Sensoren in Prozent (Bluetooth) |
 | **Temperatur** | Innen (Wohn- und Schlafbereich), außen, Kühlschrank – über Zigbee-Sensoren oder fest verbaute Fühler |
@@ -86,7 +86,7 @@ Mit dem Display ist sie über **ein USB-Kabel** verbunden.
 | Anschluss | Was angeschlossen wird |
 |---|---|
 | **ST1 – EBL** (Original-Stecker) | Stromversorgung 12 V, Hauptschalter **EIN/AUS**, 12-V-Kontrolle, **Landstrom** (230 V liegt an) |
-| **ST2 – Frischwasser** (Original-Stecker) | Originaler Tankgeber (Stabsonde) **oder** Ultraschallsensor – umschaltbar per Steckbrücke |
+| **ST2 – Frischwasser** (Original-Stecker) | Originaler Tankgeber (Stabsonde) **oder** Votronic-Tankfühler 5545 (Tankelektrode 15-50 K) – umschaltbar per Steckbrücken J12/J13 |
 | **ST3 – Abwasser** (Original-Stecker) | Originale Elektrodenstäbe (25 / 50 / 75 / 100 %) |
 | **Klemme GRÜN** | Freie grüne Ader im Panelkabel: misst die **Starterbatterie** und schaltet die Relaisplatine |
 | **Klemme 5V DISPLAY** | Versorgt das Display – ein eigenes Netzteil ist nicht nötig |
@@ -98,11 +98,18 @@ Gemessen werden Starter- und Aufbau-Batterie, 12-V-Kontrolle und Landstrom.
 **Ohne Steuerplatine** zeigt das Display nur die Bluetooth-Geräte – Tanks, Hauptschalter, Landstrom,
 Pumpe und alle Zigbee-Sensoren (Alarmanlage, Rauchmelder, Temperaturen) funktionieren dann nicht.
 
-**Frischwasser mit Ultraschallsensor** – die vorhandene Leitung der Füllstandsstäbe wird weiterbenutzt,
-am Tank wird der alte Stecker abgeschnitten und die Adern nach Farbe an die Sensorplatine gelötet,
-auf der Steuerplatine werden nur die beiden Steckbrücken J12/J13 auf „US“ gesteckt:
+**Frischwasser: Originalgeber oder Votronic-Tankelektrode** – die Steuerplatine hat dafür zwei Steckbrücken
+J12/J13 neben ST2. **Beide immer auf dieselbe Seite** stecken, nur stromlos umstecken. Danach im Display unter
+*Setup → Frischwasser → Geber* den passenden Geber wählen:
 
-![Ultraschallsensor an der Steuerplatine](bilder/anschluss_ultraschall_v2.svg)
+| Steckbrücken | ST2 Pin 1 | ST2 Pin 4 | ST2 Pin 5 | Geber |
+|---|---|---|---|---|
+| **rechts „ORIG“** (Standard) | Stab Voll | Stab ¼ | Basis | Originalgeber (Stabsonde des LT 100), Stufen 25 / 50 / 75 / 100 % |
+| **links „VOT“** | +12 V (über selbstrückstellende Sicherung) | Signal 0–2,2 V | Masse | Votronic-Tankelektrode 15-50 K, stufenlos |
+
+Der Votronic-Tankfühler 5545 wird im Display eingemessen: bei leerem Tank **Leer = jetzt**, bei vollem Tank **Voll = jetzt** antippen.
+
+![Frischwasser-Anschluss an der Steuerplatine](bilder/anschluss_frischwasser_original_v2.svg)
 
 ### Relaisplatine für die Frischwasserpumpe – optional
 
@@ -143,7 +150,7 @@ sind vorhanden – nur die beiden Bauteile an die Kabelenden anlöten:
 |---|---|---|
 | Waveshare ESP32-S3-Touch-LCD-7B (7 Zoll, 1024×600) | Das Display | [Amazon\*](https://www.amazon.de/dp/B0FG354VCN?tag=wohnmobildisp-21) |
 | ESP32-H2-DevKitM-1 (N4) | Zigbee und Steuerplatine | [Amazon\*](https://www.amazon.de/dp/B0D8XR48LF?tag=wohnmobildisp-21) |
-| Ultraschallsensor JSN-SR04M-2 / AJ-SR04M / A02YYPWM (wasserdicht) | Frischwasser (optional, statt Original-Geber) – funktioniert ohne Löten, wird automatisch erkannt | [Amazon\*](https://www.amazon.de/dp/B0FPPTTHTJ?tag=wohnmobildisp-21) |
+| Votronic Tankfühler 5545 (Tankelektrode 15-50 K, 50 cm) | Frischwasser (optional, statt Original-Geber) – 3 Adern: +12 V, Masse, Signal; Steckbrücken J12/J13 auf „VOT“ | [Amazon\*](https://www.amazon.de/dp/B00IG69OOI/?tag=wohnmobil-21) |
 | frient Smoke Alarm (Zigbee-Rauchmelder mit Sirene) | Rauchmelder, auch als Alarm-Sirene nutzbar | [Amazon\*](https://www.amazon.de/dp/B08WXV3G8P?tag=wohnmobildisp-21) |
 | SONOFF SNZB-02B (Zigbee-Temperatur/Luftfeuchte) | Temperatur innen, außen, Kühlschrank | [Amazon\*](https://www.amazon.de/dp/B0H4QJQFKM?tag=wohnmobildisp-21) |
 | SONOFF SNZB-04P (Zigbee-Tür-/Fensterkontakt) | Alarmanlage | [Amazon\*](https://www.amazon.de/dp/B0DD3SQYV9?tag=wohnmobildisp-21) |

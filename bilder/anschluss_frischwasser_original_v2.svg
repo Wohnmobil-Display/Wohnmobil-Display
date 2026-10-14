@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="620" viewBox="0 0 820 620" role="img"><title>Frischwasser-Originalgeber und DS18B20 an der Steuerplatine V2</title><desc>ST2 Pin 1 über Jumper J12 an Stab Voll oder +5V, Pin 5 über J13 an Basis oder GND. Stäbe über 20k nach GND und 1k an ADS1115 0x49, Basis über 1k an GPIO10. DS18B20 an J10 und J14 parallel an GPIO5.</desc>
+<style>.t{font:14px sans-serif;fill:#2C2C2A}.ts{font:12px sans-serif;fill:#5F5E5A}.th{font:500 14px sans-serif;fill:#2C2C2A}.g rect{fill:#F1EFE8;stroke:#888780}.b rect{fill:#E6F1FB;stroke:#185FA5}.a rect{fill:#FAEEDA;stroke:#854F0B}.w{fill:none;stroke-width:2}</style>
+<rect width="820" height="620" fill="#FFFFFF"/>
+<!-- ST2 -->
+<g class="g"><rect x="16" y="60" width="170" height="250" rx="8" stroke-width="1"/></g>
+<text class="th" x="101" y="84" text-anchor="middle">ST2 Originalgeber</text>
+<text class="ts" x="101" y="102" text-anchor="middle">LT-100-Kabel vom Tank</text>
+<text class="t" x="30" y="134">1 grün  Voll</text>
+<text class="t" x="30" y="164">2 grau  ¾</text>
+<text class="t" x="30" y="194">3 gelb  ½</text>
+<text class="t" x="30" y="224">4 braun ¼</text>
+<text class="t" x="30" y="254">5 weiß  Basis</text>
+<text class="ts" x="30" y="290">6 leer (n.c.)</text>
+<!-- Platine -->
+<g class="b"><rect x="220" y="20" width="584" height="380" rx="8" stroke-width="1"/></g>
+<text class="th" x="232" y="42">Steuerplatine V2</text>
+<!-- J12 -->
+<text class="th" x="250" y="72">J12</text>
+<circle cx="270" cy="92" r="6" fill="#444441"/><circle cx="310" cy="92" r="6" fill="#444441"/><circle cx="350" cy="92" r="6" fill="#444441"/>
+<g class="a"><rect x="300" y="83" width="60" height="18" rx="4" stroke-width="1.5" fill-opacity="0.5"/></g>
+<text class="ts" x="270" y="118" text-anchor="middle">+5V</text><text class="ts" x="310" y="118" text-anchor="middle">Pin 1</text><text class="ts" x="350" y="118" text-anchor="middle">Voll</text>
+<!-- J13 -->
+<text class="th" x="250" y="312">J13</text>
+<circle cx="270" cy="332" r="6" fill="#444441"/><circle cx="310" cy="332" r="6" fill="#444441"/><circle cx="350" cy="332" r="6" fill="#444441"/>
+<g class="a"><rect x="300" y="323" width="60" height="18" rx="4" stroke-width="1.5" fill-opacity="0.5"/></g>
+<text class="ts" x="270" y="358" text-anchor="middle">GND</text><text class="ts" x="310" y="358" text-anchor="middle">Pin 5</text><text class="ts" x="350" y="358" text-anchor="middle">Basis</text>
+<g class="a"><rect x="410" y="60" width="16" height="12" rx="3" stroke-width="1.5" fill-opacity="0.5"/></g>
+<text class="ts" x="432" y="70">= Jumper. Rechts (Pin 2–3) = ORIG, Standard.</text>
+<text class="ts" x="432" y="86">Links (Pin 1–2) = Ultraschall: Pin 1 +5 V, Pin 5 GND.</text>
+<text class="ts" x="432" y="102">Beide Jumper immer auf dieselbe Seite, nur stromlos umstecken.</text>
+<!-- ST2 -> J12/J13 -->
+<path class="w" d="M186 130 H206 V92 H304" stroke="#1D9E75"/>
+<path class="w" d="M186 250 H206 V332 H304" stroke="#888780"/>
+<!-- ADS -->
+<g class="g"><rect x="670" y="140" width="120" height="140" rx="8" stroke-width="1"/></g>
+<text class="th" x="730" y="162" text-anchor="middle">ADS1115</text>
+<text class="ts" x="730" y="178" text-anchor="middle">0x49 (I2C)</text>
+<text class="t" x="682" y="204">A3 Voll</text><text class="t" x="682" y="228">A2 ¾</text><text class="t" x="682" y="252">A1 ½</text><text class="t" x="682" y="276">A0 ¼</text>
+<path class="w" d="M356 92 H390 V199 H670" stroke="#1D9E75"/>
+<path class="w" d="M186 160 H380 V223 H670" stroke="#1D9E75"/>
+<path class="w" d="M186 190 H370 V247 H670" stroke="#1D9E75"/>
+<path class="w" d="M186 220 H360 V271 H670" stroke="#1D9E75"/>
+<!-- Basis -->
+<path class="w" d="M356 332 H660" stroke="#D85A30"/>
+<text class="t" x="666" y="337">H2 GPIO10</text>
+<text class="ts" x="410" y="324">1 kΩ – Messimpuls, gemeinsam mit dem Abwasser-Basisstab</text>
+<!-- Legende Stäbe -->
+<text class="ts" x="410" y="140">Jeder Stab: 20 kΩ nach GND, 1 kΩ zum ADS.</text>
+<text class="ts" x="410" y="156">¾: Leitung US_RX (GPIO11 dann Eingang).</text>
+<text class="ts" x="410" y="172">½: über Teiler 10k/20k (IO12, Wert × ⅔).</text>
+<text class="ts" x="410" y="296">Nass ab ca. 800 mV (Anzeige im Setup Frischwasser).</text>
+<!-- DS18B20 -->
+<g class="b"><rect x="220" y="420" width="584" height="184" rx="8" stroke-width="1"/></g>
+<text class="th" x="232" y="442">Temperaturfühler DS18B20 (1-Wire, gleicher Bus)</text>
+<g class="g"><rect x="16" y="450" width="170" height="60" rx="8" stroke-width="1"/><rect x="16" y="530" width="170" height="60" rx="8" stroke-width="1"/></g>
+<text class="th" x="101" y="474" text-anchor="middle">J10 DS18B20</text><text class="ts" x="101" y="494" text-anchor="middle">3V3 rot · D gelb · GND schw.</text>
+<text class="th" x="101" y="554" text-anchor="middle">J14 DS18B20 2</text><text class="ts" x="101" y="574" text-anchor="middle">linker Platinenrand</text>
+<path class="w" d="M186 480 H320" stroke="#534AB7"/><path class="w" d="M186 560 H300 V480" stroke="#534AB7"/>
+<text class="ts" x="232" y="468">je 100 Ω</text>
+<path class="w" d="M320 480 H660" stroke="#534AB7"/>
+<text class="t" x="666" y="485">H2 GPIO5</text>
+<text class="ts" x="340" y="470">4,7 kΩ Pull-up auf 3,3 V</text>
+<text class="ts" x="340" y="516">Jeder Fühler hat eine eigene Seriennummer (bis 4 werden ausgewertet),</text>
+<text class="ts" x="340" y="534">beliebig an J10 und/oder J14, auch zwei an einer Klemme.</text>
+<text class="ts" x="340" y="552">Zuordnung im Display: Setup → Temperatur … → Sensor</text>
+<text class="ts" x="340" y="570">„Fest verbaut 1, 2 …“ (mit aktueller Temperatur zum Erkennen).</text>
+</svg>
