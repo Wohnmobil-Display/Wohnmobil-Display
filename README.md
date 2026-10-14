@@ -44,19 +44,31 @@ Für die dauerhafte Nutzung ist ein einmaliger **Freischaltcode** nötig (siehe 
 
 Die komplette **[Bedienungsanleitung (PDF)](docs/Bedienungsanleitung.pdf)** zeigt jede Seite und jede Einstellung.
 
-| Alarmanlage ein-/ausschalten | Victron / Solar mit 7-Tage-Verlauf |
+| **Startseite mit Beispielwerten** | **Innen: Detailseite mit zwei Sensoren** |
 |---|---|
+| ![Startseite](bilder/screenshots/dash.png) | ![Detailseite Innen](bilder/screenshots/detail0.png) |
+| **Detailseite Außen** | **Detailseite Rauch/Gas** |
+| ![Detailseite Außen](bilder/screenshots/detail1.png) | ![Detailseite Rauch/Gas](bilder/screenshots/detail3.png) |
+| **Alarmanlage ein-/ausschalten** | **Victron / Solar mit 7-Tage-Verlauf** |
 | ![PIN-Dialog](bilder/screenshots/alarmpin.png) | ![Victron](bilder/screenshots/victron.png) |
 | **JK-BMS mit Zellspannungen** | **Zigbee-Geräte** |
 | ![JK-BMS](bilder/screenshots/bms.png) | ![Zigbee](bilder/screenshots/zigbee.png) |
-| **Setup Alarmanlage** | **Setup Display** |
-| ![Setup Alarmanlage](bilder/screenshots/alarm.png) | ![Setup Display](bilder/screenshots/display.png) |
-| **Setup Push-Nachrichten** | **Tagesbericht per Telegram** |
-| ![Setup Push](bilder/screenshots/push.png) | ![Tagesbericht](bilder/screenshots/tagesbericht.png) |
-| **Setup Victron-Laderegler** | |
-| ![Setup Victron](bilder/screenshots/victronsetup.png) | |
 
-*Victron- und BMS-Seite mit Beispielwerten; Bot-Token, Chat-ID und Victron-Schlüssel sind im Bild ausgeblendet.*
+**Einstellungen (Setup):**
+
+| Alarmanlage | Display |
+|---|---|
+| ![Setup Alarmanlage](bilder/screenshots/alarm.png) | ![Setup Display](bilder/screenshots/display.png) |
+| **Nachtabschaltung** | **Allgemein** |
+| ![Nachtabschaltung](bilder/screenshots/night.png) | ![Setup Allgemein](bilder/screenshots/allgemein.png) |
+| **Wasserpumpe** | **Gasflaschen (Mopeka)** |
+| ![Setup Wasserpumpe](bilder/screenshots/pump.png) | ![Setup Gasflaschen](bilder/screenshots/mopeka.png) |
+| **Push-Nachrichten** | **Tagesbericht** |
+| ![Setup Push](bilder/screenshots/push.png) | ![Tagesbericht](bilder/screenshots/tagesbericht.png) |
+| **Victron-Laderegler** | **Farbauswahl Kachel** |
+| ![Setup Victron](bilder/screenshots/victronsetup.png) | ![Farbauswahl](bilder/screenshots/tilecolors.png) |
+
+*Alle Bilder mit Beispielwerten; Bot-Token, Chat-ID und Victron-Schlüssel sind im Bild ausgeblendet.*
 
 - **Startseite:** 12 Kacheln, oben Uhrzeit, Landstrom, Störmeldungen, Wasserpumpe und Setup.
 - **Rote Kachel:** ein eingestellter Grenzwert ist verletzt (z. B. Frischwasser fast leer).
