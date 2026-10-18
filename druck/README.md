@@ -20,6 +20,11 @@ Die Kabelschlitze der Gehäuse sind oben offen, die Zungen am Deckel schließen 
 Den **Deckel in PETG mit 4 Wänden** drucken, den **Dichtungsring in TPU mit 3 Wänden**.
 Zusatzinfo: Statt des gedruckten Rings kann auch der **Original-Dichtring** des Tanks weiterverwendet werden.
 
+**So gehören die drei Teile zusammen:** Das Öffnen und Schließen des Tankdeckels braucht etwas Kraft. Deshalb gibt es zwei **Griffe**,
+die als Hebel auf dem **Deckel** sitzen. Die **Bolzen** stecken Griff und Deckel zusammen, sorgen für eine saubere, passgenaue Verbindung
+und verhindern, dass sich der Griff verdreht. Weil alles **in drei Einzelteilen** gedruckt wird, liegt jedes Teil sauber auf dem Druckbett
+und die Teile lassen sich **ohne Stützmaterial** drucken.
+
 ![Tankdeckel mit Dichtungsring](../bilder/tankdeckel_votronic_gedruckt.jpg)
 
 **Montage:**

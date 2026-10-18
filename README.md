@@ -126,6 +126,11 @@ J12/J13 neben ST2. **Beide immer auf dieselbe Seite** stecken, nur stromlos umst
 [Dichtungsring](druck/wassertank_dichtring_tpu.stl). Den **Deckel in PETG mit 4 Wänden** drucken, den **Dichtungsring in TPU
 mit 3 Wänden**. Zusatzinfo: Es kann auch der **Original-Dichtring** des Tanks weiterverwendet werden.
 
+**So gehören die drei Teile zusammen:** Das Öffnen und Schließen des Tankdeckels braucht etwas Kraft. Deshalb gibt es zwei **Griffe**,
+die als Hebel auf dem **Deckel** sitzen. Die **Bolzen** stecken Griff und Deckel zusammen, sorgen für eine saubere, passgenaue Verbindung
+und verhindern, dass sich der Griff verdreht. Weil alles **in drei Einzelteilen** gedruckt wird, liegt jedes Teil sauber auf dem Druckbett
+und die Teile lassen sich **ohne Stützmaterial** drucken.
+
 **Fühler kürzen:** Der Votronic-Tankfühler lässt sich kürzen. Bei meinem Tank habe ich ihn auf **165 mm** eingekürzt, sodass das
 untere Ende **mindestens 1 cm Abstand zum Tankboden** hat und nicht aufsetzt; danach wird unten wieder die **Endkappe** aufgesetzt. Die passende Länge
 hängt von deinem Tank ab – vorher ausmessen. Nach dem Einbau im Display unter *Setup → Frischwasser* neu einmessen (Leer/Voll).
