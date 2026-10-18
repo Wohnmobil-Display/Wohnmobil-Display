@@ -127,7 +127,7 @@ J12/J13 neben ST2. **Beide immer auf dieselbe Seite** stecken, nur stromlos umst
 mit 3 Wänden**. Zusatzinfo: Es kann auch der **Original-Dichtring** des Tanks weiterverwendet werden.
 
 **Fühler kürzen:** Der Votronic-Tankfühler lässt sich kürzen. Bei meinem Tank habe ich ihn auf **165 mm** eingekürzt, sodass das
-untere Ende etwa **1 cm Abstand zum Tankboden** hat; danach wird unten wieder die **Endkappe** aufgesetzt. Die passende Länge
+untere Ende **mindestens 1 cm Abstand zum Tankboden** hat und nicht aufsetzt; danach wird unten wieder die **Endkappe** aufgesetzt. Die passende Länge
 hängt von deinem Tank ab – vorher ausmessen. Nach dem Einbau im Display unter *Setup → Frischwasser* neu einmessen (Leer/Voll).
 
 | 6-poliger Original-Stecker des Tankfühlers | Gedruckter Tankdeckel mit Dichtungsring |
@@ -146,6 +146,8 @@ sitzt in der 37-mm-Bohrung, der Dichtring dichtet ihn ab, und am unteren Ende is
 | Deckel von unten (Bohrung 37 mm) | Deckel von oben mit den zwei Griffen |
 |---|---|
 | ![Deckel Unterseite](bilder/tankdeckel_unterseite.jpg) | ![Deckel Oberseite](bilder/tankdeckel_oberseite_griffe.jpg) |
+
+![Deckel mit schwarzem TPU-Dichtring auf dem Tankstutzen](bilder/tankdeckel_mit_tpu_dichtung.jpg)
 
 Der Votronic-Tankfühler 5545 wird im Display eingemessen: bei leerem Tank **Leer = jetzt**, bei vollem Tank **Voll = jetzt** antippen.
 
