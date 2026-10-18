@@ -25,7 +25,7 @@ die als Hebel auf dem **Deckel** sitzen. Die **Bolzen** stecken Griff und Deckel
 und verhindern, dass sich der Griff verdreht. Weil alles **in drei Einzelteilen** gedruckt wird, liegt jedes Teil sauber auf dem Druckbett
 und die Teile lassen sich **ohne Stützmaterial** drucken.
 
-![Tankdeckel mit Dichtungsring](../bilder/tankdeckel/tankdeckel_votronic_gedruckt.jpg)
+![Tankdeckel mit Votronic-Fühler](../bilder/tankdeckel/tankdeckel_fuehler_montiert.jpg)
 
 **Montage:**
 - Platine mit M3-Schrauben (selbstschneidend, ca. 8 mm) auf die Stehbolzen schrauben.

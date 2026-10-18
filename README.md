@@ -18,7 +18,7 @@ Es ersetzt das originale Schaudt-Bedienteil **LT 100** und nutzt dessen **vorhan
 Für die dauerhafte Nutzung ist ein einmaliger **Freischaltcode** nötig (siehe [Freischalten](#3-freischalten)).
 Es ist ein **privates Hobbyprojekt**; Einbau und Nutzung erfolgen **auf eigene Verantwortung** (siehe [Hinweis](#hinweis-haftung-und-eigenverantwortung)).
 
-![Startseite](bilder/startseite.png)
+![Startseite](bilder/display/startseite.png)
 
 **Inhalt:** [Funktionen](#funktionen) · [Bedienung](#bedienung) · [Hardware](#hardware) · [Einkaufsliste](#einkaufsliste) ·
 [Installation](#1-installation) · [Erster Start](#2-erster-start) · [Freischalten](#3-freischalten) · [Updates](#4-updates)
@@ -47,27 +47,27 @@ Die komplette **[Bedienungsanleitung (PDF)](docs/Bedienungsanleitung.pdf)** zeig
 
 | **Startseite mit Beispielwerten** | **Innen: Detailseite mit zwei Sensoren** |
 |---|---|
-| ![Startseite](bilder/screenshots/dash.png) | ![Detailseite Innen](bilder/screenshots/detail0.png) |
+| ![Startseite](bilder/display/screenshots/dash.png) | ![Detailseite Innen](bilder/display/screenshots/detail0.png) |
 | **Detailseite Außen** | **Detailseite Rauch/Gas** |
-| ![Detailseite Außen](bilder/screenshots/detail1.png) | ![Detailseite Rauch/Gas](bilder/screenshots/detail3.png) |
+| ![Detailseite Außen](bilder/display/screenshots/detail1.png) | ![Detailseite Rauch/Gas](bilder/display/screenshots/detail3.png) |
 | **Alarmanlage ein-/ausschalten** | **Victron / Solar mit 7-Tage-Verlauf** |
-| ![PIN-Dialog](bilder/screenshots/alarmpin.png) | ![Victron](bilder/screenshots/victron.png) |
+| ![PIN-Dialog](bilder/display/screenshots/alarmpin.png) | ![Victron](bilder/display/screenshots/victron.png) |
 | **JK-BMS mit Zellspannungen** | **Zigbee-Geräte** |
-| ![JK-BMS](bilder/screenshots/bms.png) | ![Zigbee](bilder/screenshots/zigbee.png) |
+| ![JK-BMS](bilder/display/screenshots/bms.png) | ![Zigbee](bilder/display/screenshots/zigbee.png) |
 
 **Einstellungen (Setup):**
 
 | Alarmanlage | Display |
 |---|---|
-| ![Setup Alarmanlage](bilder/screenshots/alarm.png) | ![Setup Display](bilder/screenshots/display.png) |
+| ![Setup Alarmanlage](bilder/display/screenshots/alarm.png) | ![Setup Display](bilder/display/screenshots/display.png) |
 | **Nachtabschaltung** | **Allgemein** |
-| ![Nachtabschaltung](bilder/screenshots/night.png) | ![Setup Allgemein](bilder/screenshots/allgemein.png) |
+| ![Nachtabschaltung](bilder/display/screenshots/night.png) | ![Setup Allgemein](bilder/display/screenshots/allgemein.png) |
 | **Wasserpumpe** | **Gasflaschen (Mopeka)** |
-| ![Setup Wasserpumpe](bilder/screenshots/pump.png) | ![Setup Gasflaschen](bilder/screenshots/mopeka.png) |
+| ![Setup Wasserpumpe](bilder/display/screenshots/pump.png) | ![Setup Gasflaschen](bilder/display/screenshots/mopeka.png) |
 | **Push-Nachrichten** | **Tagesbericht** |
-| ![Setup Push](bilder/screenshots/push.png) | ![Tagesbericht](bilder/screenshots/tagesbericht.png) |
+| ![Setup Push](bilder/display/screenshots/push.png) | ![Tagesbericht](bilder/display/screenshots/tagesbericht.png) |
 | **Victron-Laderegler** | **Farbauswahl Kachel** |
-| ![Setup Victron](bilder/screenshots/victronsetup.png) | ![Farbauswahl](bilder/screenshots/tilecolors.png) |
+| ![Setup Victron](bilder/display/screenshots/victronsetup.png) | ![Farbauswahl](bilder/display/screenshots/tilecolors.png) |
 
 *Alle Bilder mit Beispielwerten; Bot-Token, Chat-ID und Victron-Schlüssel sind im Bild ausgeblendet.*
 
@@ -78,7 +78,7 @@ Die komplette **[Bedienungsanleitung (PDF)](docs/Bedienungsanleitung.pdf)** zeig
 
 ## Hardware
 
-![Systemübersicht](bilder/systemuebersicht.svg)
+![Systemübersicht](bilder/system/systemuebersicht.svg)
 
 Das System besteht aus dem **Display** und der **Steuerplatine** – beide sind nötig.
 Die **Relaisplatine** für die Wasserpumpe ist eine Erweiterung, die man weglassen kann.
@@ -89,7 +89,7 @@ Die **Relaisplatine** für die Wasserpumpe ist eine Erweiterung, die man weglass
 
 ### Steuerplatine – notwendig
 
-![Steuerplatine](bilder/steuerplatine.png)
+![Steuerplatine](bilder/platinen/steuerplatine.png)
 
 Die Steuerplatine ist die Verbindung zwischen Display und Fahrzeug. Sie sitzt dort, wo vorher das LT 100 war,
 und bekommt **die vorhandenen Original-Stecker** – es muss kein neues Kabel durchs Fahrzeug gezogen werden.
@@ -135,11 +135,9 @@ und die Teile lassen sich **ohne Stützmaterial** drucken.
 untere Ende **mindestens 1 cm Abstand zum Tankboden** hat und nicht aufsetzt; danach wird unten wieder die **Endkappe** aufgesetzt. Die passende Länge
 hängt von deinem Tank ab – vorher ausmessen. Nach dem Einbau im Display unter *Setup → Frischwasser* neu einmessen (Leer/Voll).
 
-| 6-poliger Original-Stecker des Tankfühlers | Gedruckter Tankdeckel mit Dichtungsring |
-|---|---|
-| ![Tankfühler-Stecker](bilder/tankdeckel/tankfuehler_stecker_6polig.jpg) | ![Tankdeckel](bilder/tankdeckel/tankdeckel_votronic_gedruckt.jpg) |
+**6-poliger Original-Stecker des Tankfühlers:**
 
-![Tankdeckel von oben](bilder/tankdeckel/tankdeckel_votronic_oben.jpg)
+![Tankfühler-Stecker](bilder/tankdeckel/tankfuehler_stecker_6polig.jpg)
 
 **Fertiger Tankdeckel mit Votronic-Fühler:** Deckel, Griffe und Bolzen sind gedruckt, der Fühler (hier auf die Tanklänge gekürzt)
 sitzt in der 37-mm-Bohrung, der Dichtring dichtet ihn ab, und am unteren Ende ist wieder die Endkappe aufgesetzt.
@@ -158,13 +156,13 @@ Der Votronic-Tankfühler 5545 wird im Display eingemessen: bei leerem Tank **Lee
 
 **Votronic-Tankfühler am Original-Stecker anschließen** (Pin 1 = +12 V, Pin 4 = Signal, Pin 5 = Masse, Pin 2/3/6 bleiben frei):
 
-![Votronic-Tankfühler am Stecker ST2](bilder/anschluss_frischwasser_votronic_v2.svg)
+![Votronic-Tankfühler am Stecker ST2](bilder/anschluesse/anschluss_frischwasser_votronic_v2.svg)
 
-![Steckbrücken J12/J13: rechts Originalgeber, links Votronic](bilder/frischwasser_jumper_v2.png)
+![Steckbrücken J12/J13: rechts Originalgeber, links Votronic](bilder/anschluesse/frischwasser_jumper_v2.png)
 
-![Lage der Anschlüsse auf der Steuerplatine V2](bilder/steuerplatine_v2_uebersicht.png)
+![Lage der Anschlüsse auf der Steuerplatine V2](bilder/platinen/steuerplatine_v2_uebersicht.png)
 
-![Frischwasser-Anschluss an der Steuerplatine](bilder/anschluss_frischwasser_original_v2.svg)
+![Frischwasser-Anschluss an der Steuerplatine](bilder/anschluesse/anschluss_frischwasser_original_v2.svg)
 
 #### Steuerplatine aus meinem Restbestand
 
@@ -192,7 +190,7 @@ Folgeschäden (z. B. durch Kurzschlüsse) wird keine Haftung übernommen.
 
 ### Relaisplatine für die Frischwasserpumpe – optional
 
-![Relaisplatine](bilder/relaisplatine.png)
+![Relaisplatine](bilder/platinen/relaisplatine.png)
 
 **Aufbau und Bestückung:** [Relaisplatine V2 – Bauteile, Reihenfolge, Anschluss](hardware/relaisplatine_v2/README.md) (Gerber-Dateien und Stückliste liegen dort).
 
@@ -210,11 +208,11 @@ dann verschwinden das Wasserhahn-Symbol und alle Pumpen-Meldungen, alles andere 
 
 | LT 100 mit den Original-Steckern | Stecker abgezogen |
 |---|---|
-| ![LT 100 Platine](bilder/lt100_platine_stecker.jpg) | ![Stecker abgezogen](bilder/lt100_stecker_abgezogen.jpg) |
+| ![LT 100 Platine](bilder/fahrzeug/lt100_platine_stecker.jpg) | ![Stecker abgezogen](bilder/fahrzeug/lt100_stecker_abgezogen.jpg) |
 
 | Kabel zum EBL (ST1) | EBL 31, Block 3 „Instr.-Tafel“ |
 |---|---|
-| ![ST1](bilder/lt100_kabel_st1.jpg) | ![EBL 31](bilder/ebl31_block3.jpg) |
+| ![ST1](bilder/fahrzeug/lt100_kabel_st1.jpg) | ![EBL 31](bilder/fahrzeug/ebl31_block3.jpg) |
 
 **Wichtig: Die grüne Ader muss durchverbunden werden.** Die freie grüne Ader im Panelkabel misst die **Spannung der
 Motor-(Starter-)Batterie** und **schaltet die Wasserpumpe** (Relaisplatine). Am EBL (Block 3) ist sie das freie grüne
@@ -223,25 +221,25 @@ werden** (dort stecken die Stecker des Panelkabels) – z. B. mit einem Quetschv
 
 | Die grüne Ader am EBL | Im Schrank unter dem Kühlschrank durchverbinden |
 |---|---|
-| ![Grüne Ader am EBL](bilder/gruene_ader_ebl_ende.jpg) | ![Grüne Ader durchverbunden](bilder/gruene_ader_schrank_verbindung.jpg) |
+| ![Grüne Ader am EBL](bilder/fahrzeug/gruene_ader_ebl_ende.jpg) | ![Grüne Ader durchverbunden](bilder/fahrzeug/gruene_ader_schrank_verbindung.jpg) |
 | **Stecker des Panelkabels im Schrank** | **Übersicht mit Verbinder** |
-| ![Stecker im Schrank](bilder/gruene_ader_schrank_stecker.jpg) | ![Übersicht im Schrank](bilder/gruene_ader_schrank_ueberblick.jpg) |
+| ![Stecker im Schrank](bilder/fahrzeug/gruene_ader_schrank_stecker.jpg) | ![Übersicht im Schrank](bilder/fahrzeug/gruene_ader_schrank_ueberblick.jpg) |
 
 **12-V-Dauerspannung am EBL-Stecker Block 5 (Pin 3):** Den passenden **Crimpkontakt (Stift)** aus dem Steckverbinder-Set
 (siehe Einkaufsliste) auf die Ader crimpen und in den freien Platz am Stecker stecken:
 
 | EBL Block 5 – freie Plätze | Passender Crimpkontakt (Stift) |
 |---|---|
-| ![Block 5](bilder/ebl_block5_stecker.jpg) | ![Crimpkontakt](bilder/ebl_block5_crimpkontakt.jpg) |
+| ![Block 5](bilder/fahrzeug/ebl_block5_stecker.jpg) | ![Crimpkontakt](bilder/fahrzeug/ebl_block5_crimpkontakt.jpg) |
 
 Anschlüsse am Display:
 
-![Anschlüsse am Display](bilder/anschluesse_display.svg)
+![Anschlüsse am Display](bilder/anschluesse/anschluesse_display.svg)
 
 **Summer und Näherungssensor** kommen direkt an das Display (Buchsen J8 und H1). Die Stecker mit Kabel
 sind vorhanden – nur die beiden Bauteile an die Kabelenden anlöten:
 
-![Summer und Näherungssensor am Display](bilder/anschluss_summer_sensor_display.svg)
+![Summer und Näherungssensor am Display](bilder/anschluesse/anschluss_summer_sensor_display.svg)
 
 **Der Näherungssensor ist optional.** Er macht das System nur komfortabler: das Display wird hell, sobald jemand davor
 steht. Das Display funktioniert genauso **ohne Sensor** – dann weckt man es einfach per Fingertipp. Die Auswertung
@@ -284,9 +282,9 @@ Es werden **zwei Geräte** installiert – beide auf derselben Installer-Seite, 
 | **① Display** (Waveshare 7 Zoll) | USB-C-Buchse **„UART1“** am Display (Schalter SW1 auf „UART1“) | **[Display installieren](https://wohnmobil-display.github.io/Wohnmobil-Display/#display)** |
 | **② Steuerplatine** (ESP32-H2-Board) | Buchse **„USB“** am H2-Board (nicht „UART“), einmal **vor dem Einbau** | **[Steuerplatine installieren](https://wohnmobil-display.github.io/Wohnmobil-Display/#steuerplatine)** |
 
-![Welche Buchse wofür – Display-Rückseite und H2-Board](bilder/buchsen_display_h2.svg)
+![Welche Buchse wofür – Display-Rückseite und H2-Board](bilder/anschluesse/buchsen_display_h2.svg)
 
-![Display und Steuerplatine verbinden](bilder/anschluss_display_h2_usb.svg)
+![Display und Steuerplatine verbinden](bilder/anschluesse/anschluss_display_h2_usb.svg)
 
 > **Wichtig – Jumper J5 am H2-Board:** Die kleine Steckbrücke (Jumper) muss auf den beiden Stiften **J5** stecken.
 > Ohne sie bekommt der Chip keinen Strom – er wird am Computer nicht erkannt und läuft auch auf der Steuerplatine nicht.
