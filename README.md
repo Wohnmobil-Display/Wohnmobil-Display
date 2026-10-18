@@ -121,9 +121,14 @@ J12/J13 neben ST2. **Beide immer auf dieselbe Seite** stecken, nur stromlos umst
 | **links „VOT“** | +12 V (über selbstrückstellende Sicherung) | Signal 0–2,2 V | Masse | Votronic-Tankelektrode 15-50 K, stufenlos |
 
 **Deckel für den Votronic-Tankfühler:** Für den Einbau des Fühlers gibt es einen **Wassertank-Deckel mit 37-mm-Bohrung** und einen
-**Dichtungsring** zum Selbstdrucken ([Deckel](druck/wassertank_deckel_votronic_5545.stl),
-[Dichtungsring](druck/wassertank_dichtring_tpu.stl)). Den **Deckel in PETG mit 4 Wänden** drucken, den **Dichtungsring in TPU
+**Dichtungsring** zum Selbstdrucken. **Deckel, Griff und Bolzen gehören zusammen** ([Deckel](druck/wassertank_deckel_votronic_5545.stl),
+[Griff](druck/wassertank_griff_votronic_5545.stl), [Bolzen](druck/wassertank_bolzen_votronic_5545.stl)), dazu der
+[Dichtungsring](druck/wassertank_dichtring_tpu.stl). Den **Deckel in PETG mit 4 Wänden** drucken, den **Dichtungsring in TPU
 mit 3 Wänden**. Zusatzinfo: Es kann auch der **Original-Dichtring** des Tanks weiterverwendet werden.
+
+**Fühler kürzen:** Der Votronic-Tankfühler lässt sich kürzen. Bei meinem Tank habe ich ihn auf **165 mm** eingekürzt, sodass das
+untere Ende etwa **1 cm Abstand zum Tankboden** hat; danach wird unten wieder die **Endkappe** aufgesetzt. Die passende Länge
+hängt von deinem Tank ab – vorher ausmessen. Nach dem Einbau im Display unter *Setup → Frischwasser* neu einmessen (Leer/Voll).
 
 | 6-poliger Original-Stecker des Tankfühlers | Gedruckter Tankdeckel mit Dichtungsring |
 |---|---|
