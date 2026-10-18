@@ -136,6 +136,17 @@ hängt von deinem Tank ab – vorher ausmessen. Nach dem Einbau im Display unter
 
 ![Tankdeckel von oben](bilder/tankdeckel_votronic_oben.jpg)
 
+**Fertiger Tankdeckel mit Votronic-Fühler:** Deckel, Griffe und Bolzen sind gedruckt, der Fühler (hier auf die Tanklänge gekürzt)
+sitzt in der 37-mm-Bohrung, der Dichtring dichtet ihn ab, und am unteren Ende ist wieder die Endkappe aufgesetzt.
+
+| Deckel mit eingebautem Fühler | Fühlerfuß von innen | Fühlerfuß mit Dichtring |
+|---|---|---|
+| ![Deckel mit Fühler](bilder/tankdeckel_fuehler_montiert.jpg) | ![Fühlerfuß](bilder/tankfuehler_fuss_von_innen.jpg) | ![Fühlerfuß mit Dichtring](bilder/tankfuehler_fuss_mit_dichtring.jpg) |
+
+| Deckel von unten (Bohrung 37 mm) | Deckel von oben mit den zwei Griffen |
+|---|---|
+| ![Deckel Unterseite](bilder/tankdeckel_unterseite.jpg) | ![Deckel Oberseite](bilder/tankdeckel_oberseite_griffe.jpg) |
+
 Der Votronic-Tankfühler 5545 wird im Display eingemessen: bei leerem Tank **Leer = jetzt**, bei vollem Tank **Voll = jetzt** antippen.
 
 **Votronic-Tankfühler am Original-Stecker anschließen** (Pin 1 = +12 V, Pin 4 = Signal, Pin 5 = Masse, Pin 2/3/6 bleiben frei):
