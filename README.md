@@ -137,22 +137,22 @@ hängt von deinem Tank ab – vorher ausmessen. Nach dem Einbau im Display unter
 
 | 6-poliger Original-Stecker des Tankfühlers | Gedruckter Tankdeckel mit Dichtungsring |
 |---|---|
-| ![Tankfühler-Stecker](bilder/tankfuehler_stecker_6polig.jpg) | ![Tankdeckel](bilder/tankdeckel_votronic_gedruckt.jpg) |
+| ![Tankfühler-Stecker](bilder/tankdeckel/tankfuehler_stecker_6polig.jpg) | ![Tankdeckel](bilder/tankdeckel/tankdeckel_votronic_gedruckt.jpg) |
 
-![Tankdeckel von oben](bilder/tankdeckel_votronic_oben.jpg)
+![Tankdeckel von oben](bilder/tankdeckel/tankdeckel_votronic_oben.jpg)
 
 **Fertiger Tankdeckel mit Votronic-Fühler:** Deckel, Griffe und Bolzen sind gedruckt, der Fühler (hier auf die Tanklänge gekürzt)
 sitzt in der 37-mm-Bohrung, der Dichtring dichtet ihn ab, und am unteren Ende ist wieder die Endkappe aufgesetzt.
 
 | Deckel mit eingebautem Fühler | Fühlerfuß von innen | Fühlerfuß mit Dichtring |
 |---|---|---|
-| ![Deckel mit Fühler](bilder/tankdeckel_fuehler_montiert.jpg) | ![Fühlerfuß](bilder/tankfuehler_fuss_von_innen.jpg) | ![Fühlerfuß mit Dichtring](bilder/tankfuehler_fuss_mit_dichtring.jpg) |
+| ![Deckel mit Fühler](bilder/tankdeckel/tankdeckel_fuehler_montiert.jpg) | ![Fühlerfuß](bilder/tankdeckel/tankfuehler_fuss_von_innen.jpg) | ![Fühlerfuß mit Dichtring](bilder/tankdeckel/tankfuehler_fuss_mit_dichtring.jpg) |
 
 | Deckel von unten (Bohrung 37 mm) | Deckel von oben mit den zwei Griffen |
 |---|---|
-| ![Deckel Unterseite](bilder/tankdeckel_unterseite.jpg) | ![Deckel Oberseite](bilder/tankdeckel_oberseite_griffe.jpg) |
+| ![Deckel Unterseite](bilder/tankdeckel/tankdeckel_unterseite.jpg) | ![Deckel Oberseite](bilder/tankdeckel/tankdeckel_oberseite_griffe.jpg) |
 
-![Deckel mit schwarzem TPU-Dichtring auf dem Tankstutzen](bilder/tankdeckel_mit_tpu_dichtung.jpg)
+![Deckel mit schwarzem TPU-Dichtring auf dem Tankstutzen](bilder/tankdeckel/tankdeckel_mit_tpu_dichtung.jpg)
 
 Der Votronic-Tankfühler 5545 wird im Display eingemessen: bei leerem Tank **Leer = jetzt**, bei vollem Tank **Voll = jetzt** antippen.
 

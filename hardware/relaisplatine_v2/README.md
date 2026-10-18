@@ -46,4 +46,4 @@ Spulenanschluss am ALQ312: Pin 1 / 5, COM Pin 2, NO Pin 3.
 - Mit Pumpe: im Display unter *Setup → Wasserpumpe* die Relaisplatine einschalten und das Wasserhahn-Symbol bedienen.
 
 ## Gehäuse
-3D-Druck: [`../../druck/relaisplatine_v2_unterschale.stl`](../../druck/relaisplatine_v2_unterschale.stl) und [`../../druck/relaisplatine_v2_deckel.stl`](../../druck/relaisplatine_v2_deckel.stl), Maße siehe [Gehäusezeichnung](../../druck/gehaeuse_zeichnung_v2.png).
+3D-Druck: [`../../druck/relaisplatine_v2_unterschale.stl`](../../druck/relaisplatine_v2_unterschale.stl) und [`../../druck/relaisplatine_v2_deckel.stl`](../../druck/relaisplatine_v2_deckel.stl), Maße siehe [Gehäusezeichnung](../../druck/zeichnungen/gehaeuse_zeichnung_v2.png).
