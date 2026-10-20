@@ -154,7 +154,20 @@ sitzt in der 37-mm-Bohrung, der Dichtring dichtet ihn ab, und am unteren Ende is
 
 Der Votronic-Tankfühler 5545 wird im Display eingemessen: bei leerem Tank **Leer = jetzt**, bei vollem Tank **Voll = jetzt** antippen.
 
-**Votronic-Tankfühler am Original-Stecker anschließen** (Pin 1 = +12 V, Pin 4 = Signal, Pin 5 = Masse, Pin 2/3/6 bleiben frei):
+**Votronic-Tankfühler anschließen:** Der Fühler hat ein 3-adriges Kabel (weiß = +12 V, grün = Signal, braun = Masse). Reihenfolge: **Steuerplatine (Stiftleiste ST2) → Leitung mit 5 Adern → 6-poliger Buchsenstecker hinten am Tank → Fühler**. Der Fühlerstecker (3 Adern, Crimp-Stifte) wird in den Buchsenstecker am Tank gesteckt:
+
+| Fühler-Ader (Stecker) | Kupplung, Ader der Fahrzeugleitung | Pin / ST2 |
+|---|---|---|
+| weiß (+12 V) | grün | Pin 1 = +12 V |
+| grün (Signal) | braun | Pin 4 = Signal 0–2,2 V |
+| braun (Masse) | weiß | Pin 5 = Masse |
+
+Pin 2, 3 und 6 (grau, gelb, frei) bleiben unbenutzt.
+
+| Fühlerstecker mit 3 Adern | Crimp-Stifte der Fühleradern, daneben der Buchsenstecker am Tank (5 Adern) |
+|---|---|
+| ![Fühlerstecker mit 3 Adern](bilder/tankdeckel/tankfuehler_stecker_adern.jpg) | ![Crimp-Stifte und Kupplung](bilder/tankdeckel/tankfuehler_stecker_stifte.jpg) |
+
 
 ![Votronic-Tankfühler am Stecker ST2](bilder/anschluesse/anschluss_frischwasser_votronic_v2.svg)
 

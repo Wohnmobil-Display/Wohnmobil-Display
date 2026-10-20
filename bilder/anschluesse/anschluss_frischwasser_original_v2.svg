@@ -18,7 +18,7 @@
 <text class="th" x="250" y="72">J12</text>
 <circle cx="270" cy="92" r="6" fill="#444441"/><circle cx="310" cy="92" r="6" fill="#444441"/><circle cx="350" cy="92" r="6" fill="#444441"/>
 <g class="a"><rect x="300" y="83" width="60" height="18" rx="4" stroke-width="1.5" fill-opacity="0.5"/></g>
-<text class="ts" x="270" y="118" text-anchor="middle">+5V</text><text class="ts" x="310" y="118" text-anchor="middle">Pin 1</text><text class="ts" x="350" y="118" text-anchor="middle">Voll</text>
+<text class="ts" x="270" y="118" text-anchor="middle">+12 V</text><text class="ts" x="310" y="118" text-anchor="middle">Pin 1</text><text class="ts" x="350" y="118" text-anchor="middle">Voll</text>
 <!-- J13 -->
 <text class="th" x="250" y="312">J13</text>
 <circle cx="270" cy="332" r="6" fill="#444441"/><circle cx="310" cy="332" r="6" fill="#444441"/><circle cx="350" cy="332" r="6" fill="#444441"/>
@@ -26,7 +26,7 @@
 <text class="ts" x="270" y="358" text-anchor="middle">GND</text><text class="ts" x="310" y="358" text-anchor="middle">Pin 5</text><text class="ts" x="350" y="358" text-anchor="middle">Basis</text>
 <g class="a"><rect x="410" y="60" width="16" height="12" rx="3" stroke-width="1.5" fill-opacity="0.5"/></g>
 <text class="ts" x="432" y="70">= Jumper. Rechts (Pin 2–3) = ORIG, Standard.</text>
-<text class="ts" x="432" y="86">Links (Pin 1–2) = Ultraschall: Pin 1 +5 V, Pin 5 GND.</text>
+<text class="ts" x="432" y="86">Links (Pin 1–2) = Votronic: Pin 1 +12 V, Pin 4 Signal, Pin 5 GND.</text>
 <text class="ts" x="432" y="102">Beide Jumper immer auf dieselbe Seite, nur stromlos umstecken.</text>
 <!-- ST2 -> J12/J13 -->
 <path class="w" d="M186 130 H206 V92 H304" stroke="#1D9E75"/>
@@ -46,7 +46,7 @@
 <text class="ts" x="410" y="324">1 kΩ – Messimpuls, gemeinsam mit dem Abwasser-Basisstab</text>
 <!-- Legende Stäbe -->
 <text class="ts" x="410" y="140">Jeder Stab: 20 kΩ nach GND, 1 kΩ zum ADS.</text>
-<text class="ts" x="410" y="156">¾: Leitung US_RX (GPIO11 dann Eingang).</text>
+<text class="ts" x="410" y="156">¾ liegt hinter einem Teiler 10k/20k (Firmware gleicht aus).</text>
 <text class="ts" x="410" y="172">½: über Teiler 10k/20k (IO12, Wert × ⅔).</text>
 <text class="ts" x="410" y="296">Nass ab ca. 800 mV (Anzeige im Setup Frischwasser).</text>
 <!-- DS18B20 -->

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="520" viewBox="0 0 940 520" role="img"><title>Abwasser-Elektrodenstäbe an ST3 der Steuerplatine V2</title><desc>Abwassertank mit gemeinsamem Stab (Basis) und Stäben 25, 50, 75 und 100 Prozent. Die 5-adrige Leitung endet im Original-Stecker ST3, der auf die Steuerplatine V2 gesteckt wird: Pin 1 weiß 100 Prozent, Pin 2 braun 75 Prozent, Pin 3 grün 50 Prozent, Pin 4 gelb 25 Prozent, Pin 5 grau Basis. Gemeinsamer Stab darf keine Verbindung zur Fahrzeugmasse haben.</desc>
+<style>.t{font:14px sans-serif;fill:#2C2C2A}.ts{font:12px sans-serif;fill:#5F5E5A}.th{font:600 14px sans-serif;fill:#2C2C2A}.g rect{fill:#F1EFE8;stroke:#888780}.b rect{fill:#E6F1FB;stroke:#185FA5}.p rect{fill:#EEEDFE;stroke:#534AB7}.w{fill:none;stroke-width:4;stroke-linecap:round}.n{stroke:#444441;stroke-width:1.5}</style>
+<rect width="940" height="520" fill="#FFFFFF"/>
+<text class="th" x="16" y="26" font-size="17">Abwasser: Elektrodenstäbe an ST3</text>
+<text class="ts" x="16" y="46">Reihenfolge: Tank mit Stäben → Leitung mit 5 Adern → Original-Stecker ST3 → Steuerplatine V2</text>
+
+<!-- Tank -->
+<g class="g"><rect x="16" y="100" width="200" height="330" rx="8" stroke-width="1"/></g>
+<rect x="17" y="290" width="198" height="139" fill="#B5D4F4"/>
+<text class="th" x="116" y="418" text-anchor="middle">Abwassertank</text>
+<g stroke="#5F5E5A" stroke-width="3"><line x1="45" y1="100" x2="45" y2="385"/><line x1="80" y1="100" x2="80" y2="335"/><line x1="115" y1="100" x2="115" y2="270"/><line x1="150" y1="100" x2="150" y2="205"/><line x1="185" y1="100" x2="185" y2="150"/></g>
+<text class="ts" x="45" y="400" text-anchor="middle">Basis</text><text class="ts" x="80" y="350" text-anchor="middle">25 %</text><text class="ts" x="115" y="285" text-anchor="middle">50 %</text><text class="ts" x="150" y="220" text-anchor="middle">75 %</text><text class="ts" x="185" y="165" text-anchor="middle">100 %</text>
+
+<!-- Adern vom Tank zum Stecker -->
+<path class="w" d="M45 100 V80 H300 V310 H342" stroke="#9A9A9A"/>
+<path class="w" d="M80 100 V70 H290 V270 H342" stroke="#E0B000"/>
+<path class="w" d="M115 100 V60 H280 V230 H342" stroke="#2E9E4F"/>
+<path class="w" d="M150 100 V50 H270 V190 H342" stroke="#8B5A2B"/>
+<path class="w" d="M185 100 V40 H260 V150 H342" stroke="#C8C6BC"/>
+<text class="ts" x="226" y="34">Leitung, 5 Adern</text>
+
+<!-- Stecker ST3 -->
+<g class="p"><rect x="320" y="100" width="260" height="260" rx="8" stroke-width="1.5"/></g>
+<text class="th" x="450" y="124" text-anchor="middle" fill="#3C3489">Original-Stecker ST3</text>
+<text class="ts" x="450" y="142" text-anchor="middle">Micro-Fit, 5-polig (vom LT 100)</text>
+<g>
+<circle class="n" cx="355" cy="150" r="12" fill="#FFFFFF"/><text class="t" x="355" y="155" text-anchor="middle">1</text>
+<circle class="n" cx="355" cy="190" r="12" fill="#8B5A2B"/><text class="t" x="355" y="195" text-anchor="middle" fill="#FFFFFF">2</text>
+<circle class="n" cx="355" cy="230" r="12" fill="#2E9E4F"/><text class="t" x="355" y="235" text-anchor="middle" fill="#FFFFFF">3</text>
+<circle class="n" cx="355" cy="270" r="12" fill="#E0B000"/><text class="t" x="355" y="275" text-anchor="middle">4</text>
+<circle class="n" cx="355" cy="310" r="12" fill="#9A9A9A"/><text class="t" x="355" y="315" text-anchor="middle" fill="#FFFFFF">5</text>
+</g>
+<text class="t" x="380" y="155">weiß: 100 %</text><text class="t" x="380" y="195">braun: 75 %</text><text class="t" x="380" y="235">grün: 50 %</text><text class="t" x="380" y="275">gelb: 25 %</text><text class="t" x="380" y="315">grau: Basis</text>
+
+<!-- Platine -->
+<g class="b"><rect x="650" y="100" width="274" height="260" rx="8" stroke-width="1"/></g>
+<text class="th" x="787" y="124" text-anchor="middle">Steuerplatine V2</text>
+<text class="ts" x="787" y="142" text-anchor="middle">ST3 Abwasser steckt hier</text>
+<text class="ts" x="666" y="190">Pin 1–4: Stäbe, gelesen am H2</text>
+<text class="ts" x="666" y="208">(GPIO 4, 3, 2, 1)</text>
+<text class="ts" x="666" y="238">Pin 5: gemeinsamer Stab</text>
+<text class="ts" x="666" y="256">(GPIO 10)</text>
+<text class="ts" x="666" y="290">Messung nur alle 5 s für ca. 2 ms,</text>
+<text class="ts" x="666" y="308">danach umgepolt: keine Elektrolyse.</text>
+<path class="w" d="M580 230 H650" stroke="#B4B2A9" stroke-width="3"/>
+<text class="ts" x="586" y="222">steckt</text>
+
+<text class="th" x="16" y="470">Vor dem Anschließen</text>
+<text class="ts" x="16" y="490">Das alte LT 100 muss abgeklemmt sein. Den gemeinsamen Stab (Pin 5) gegen Fahrzeugmasse messen: es darf keine Verbindung bestehen.</text>
+</svg>

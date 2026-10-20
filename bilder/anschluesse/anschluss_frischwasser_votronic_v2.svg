@@ -1,56 +1,71 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="820" height="470" viewBox="0 0 820 470" role="img"><title>Votronic-Tankfühler 5545 am 6-poligen Original-Stecker ST2</title><desc>Votronic-Tankfühler mit 3 Adern: +12 V an Pin 1, Signal an Pin 4, Masse an Pin 5 des 6-poligen Original-Steckers ST2. Steckbrücken J12 und J13 links (VOT).</desc>
-<style>.t{font:15px sans-serif;fill:#2C2C2A}.ts{font:13px sans-serif;fill:#5F5E5A}.th{font:600 15px sans-serif;fill:#2C2C2A}.g rect{fill:#F1EFE8;stroke:#888780}.b rect{fill:#E6F1FB;stroke:#185FA5}.a rect{fill:#FAEEDA;stroke:#854F0B}.w{fill:none;stroke-width:3}.n{fill:#FFFFFF;stroke:#444441;stroke-width:1.5}.u{fill:#F1EFE8;stroke:#B4B2A9;stroke-width:1.5}</style>
-<rect width="820" height="470" fill="#FFFFFF"/>
-<text class="th" x="16" y="28" font-size="18">Votronic-Tankfühler 5545 am Original-Stecker ST2 anschließen</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="600" viewBox="0 0 1100 600" role="img"><title>Votronic-Tankfühler 5545: Steuerplatine ST2, Buchsenstecker am Tank, Fühler</title><desc>Von links: Steuerplatine V2 mit Stiftleiste ST2, 5-adrige Fahrzeugleitung, 6-poliger Buchsenstecker am Tank (violett), Votronic-Fühler mit 3 Adern. Fühler weiß (+12 V) an Pin 1 grün, Fühler grün (Signal) an Pin 4 braun, Fühler braun (Masse) an Pin 5 weiß. Pin 2, 3, 6 frei. Steckbrücken J12 und J13 links (VOT).</desc>
+<style>.t{font:15px sans-serif;fill:#2C2C2A}.ts{font:13px sans-serif;fill:#5F5E5A}.th{font:600 15px sans-serif;fill:#2C2C2A}.g rect{fill:#F1EFE8;stroke:#888780}.b rect{fill:#E6F1FB;stroke:#185FA5}.a rect{fill:#FAEEDA;stroke:#854F0B}.p rect{fill:#EEEDFE;stroke:#534AB7}.w{fill:none;stroke-width:5;stroke-linecap:round}.n{stroke:#444441;stroke-width:1.5}.u{fill:#F1EFE8;stroke:#B4B2A9;stroke-width:1.5}.k{fill:#CECBF6;stroke:#534AB7;stroke-width:1.5}</style>
+<rect width="1100" height="600" fill="#FFFFFF"/>
+<text class="th" x="16" y="28" font-size="18">Votronic-Tankfühler 5545 anschließen</text>
+<text class="ts" x="16" y="48">Reihenfolge: Steuerplatine (ST2) → Leitung mit 5 Adern → Buchsenstecker hinten am Tank → Fühler</text>
 
-<!-- Fühler -->
-<g class="g"><rect x="16" y="70" width="190" height="200" rx="8" stroke-width="1"/></g>
-<text class="th" x="111" y="94" text-anchor="middle">Votronic 5545</text>
-<text class="ts" x="111" y="112" text-anchor="middle">Tankelektrode 15-50 K</text>
-<text class="t" x="34" y="156">+12 V</text>
-<text class="t" x="34" y="206">Signal</text>
-<text class="t" x="34" y="256">Masse</text>
-
-<!-- Stecker -->
-<g class="g"><rect x="300" y="70" width="190" height="300" rx="8" stroke-width="1"/></g>
-<text class="th" x="395" y="94" text-anchor="middle">Original-Stecker ST2</text>
-<text class="ts" x="395" y="112" text-anchor="middle">6-polig, von der Tankleitung</text>
+<!-- 1 Platine mit ST2 -->
+<g class="b"><rect x="16" y="70" width="290" height="330" rx="8" stroke-width="1"/></g>
+<text class="th" x="161" y="94" text-anchor="middle">1 Steuerplatine V2</text>
+<text class="ts" x="161" y="112" text-anchor="middle">Stiftleiste ST2 (Frischwasser)</text>
 <g>
-<circle class="n" cx="340" cy="150" r="13"/><text class="t" x="340" y="155" text-anchor="middle">1</text>
-<circle class="u" cx="340" cy="190" r="13"/><text class="ts" x="340" y="195" text-anchor="middle">2</text>
-<circle class="u" cx="340" cy="230" r="13"/><text class="ts" x="340" y="235" text-anchor="middle">3</text>
-<circle class="n" cx="340" cy="270" r="13"/><text class="t" x="340" y="275" text-anchor="middle">4</text>
-<circle class="n" cx="340" cy="310" r="13"/><text class="t" x="340" y="315" text-anchor="middle">5</text>
-<circle class="u" cx="340" cy="350" r="13"/><text class="ts" x="340" y="355" text-anchor="middle">6</text>
+<circle class="n" cx="270" cy="150" r="13" fill="#2E9E4F"/><text class="t" x="270" y="155" text-anchor="middle" fill="#FFFFFF">1</text>
+<circle class="u" cx="270" cy="190" r="13"/><text class="ts" x="270" y="195" text-anchor="middle">2</text>
+<circle class="u" cx="270" cy="230" r="13"/><text class="ts" x="270" y="235" text-anchor="middle">3</text>
+<circle class="n" cx="270" cy="270" r="13" fill="#8B5A2B"/><text class="t" x="270" y="275" text-anchor="middle" fill="#FFFFFF">4</text>
+<circle class="n" cx="270" cy="310" r="13" fill="#FFFFFF"/><text class="t" x="270" y="315" text-anchor="middle">5</text>
+<circle class="u" cx="270" cy="350" r="13"/><text class="ts" x="270" y="355" text-anchor="middle">6</text>
 </g>
-<text class="t" x="366" y="155">+12 V</text>
-<text class="ts" x="366" y="195">frei (unbenutzt)</text>
-<text class="ts" x="366" y="235">frei (unbenutzt)</text>
-<text class="t" x="366" y="275">Signal</text>
-<text class="t" x="366" y="315">Masse</text>
-<text class="ts" x="366" y="355">frei (unbenutzt)</text>
+<text class="t" x="246" y="155" text-anchor="end">+12 V (F1)</text>
+<text class="ts" x="246" y="195" text-anchor="end">frei</text>
+<text class="ts" x="246" y="235" text-anchor="end">frei</text>
+<text class="t" x="246" y="275" text-anchor="end">Signal 0–2,2 V</text>
+<text class="t" x="246" y="315" text-anchor="end">Masse</text>
+<text class="ts" x="246" y="355" text-anchor="end">frei</text>
+<text class="th" x="16" y="430">Steckbrücken J12 + J13 auf „VOT“ (links)</text>
+<g class="a"><rect x="16" y="442" width="60" height="22" rx="5" stroke-width="1.5" fill-opacity="0.5"/></g>
+<text class="ts" x="88" y="458">immer beide auf dieselbe Seite, nur stromlos umstecken</text>
 
-<!-- Adern -->
-<path class="w" d="M150 150 H327" stroke="#D85A30"/>
-<path class="w" d="M150 200 H250 V270 H327" stroke="#1D9E75"/>
-<path class="w" d="M150 250 H230 V310 H327" stroke="#444441"/>
+<!-- 2 Buchsenstecker am Tank -->
+<g class="p"><rect x="440" y="70" width="250" height="330" rx="8" stroke-width="1.5"/></g>
+<text class="th" x="565" y="94" text-anchor="middle" fill="#3C3489">2 Buchsenstecker am Tank</text>
+<text class="ts" x="565" y="112" text-anchor="middle">6-polig, Fahrzeugleitung 5 Adern</text>
+<g>
+<circle class="k" cx="480" cy="150" r="13"/><text class="ts" x="480" y="155" text-anchor="middle">1</text>
+<circle class="k" cx="480" cy="190" r="13"/><text class="ts" x="480" y="195" text-anchor="middle">2</text>
+<circle class="k" cx="480" cy="230" r="13"/><text class="ts" x="480" y="235" text-anchor="middle">3</text>
+<circle class="k" cx="480" cy="270" r="13"/><text class="ts" x="480" y="275" text-anchor="middle">4</text>
+<circle class="k" cx="480" cy="310" r="13"/><text class="ts" x="480" y="315" text-anchor="middle">5</text>
+<circle class="k" cx="480" cy="350" r="13"/><text class="ts" x="480" y="355" text-anchor="middle">6</text>
+</g>
+<text class="t" x="506" y="155">Ader grün</text>
+<text class="ts" x="506" y="195">grau, frei</text>
+<text class="ts" x="506" y="235">gelb, frei</text>
+<text class="t" x="506" y="275">Ader braun</text>
+<text class="t" x="506" y="315">Ader weiß</text>
+<text class="ts" x="506" y="355">ohne Ader</text>
 
-<!-- Platine -->
-<g class="b"><rect x="540" y="70" width="264" height="300" rx="8" stroke-width="1"/></g>
-<text class="th" x="672" y="94" text-anchor="middle">Steuerplatine V2</text>
-<text class="ts" x="672" y="112" text-anchor="middle">ST2 steckt hier</text>
-<text class="th" x="560" y="150">J12 + J13</text>
-<g class="a"><rect x="560" y="162" width="70" height="26" rx="5" stroke-width="1.5" fill-opacity="0.5"/></g>
-<text class="t" x="640" y="181">links = „VOT“</text>
-<text class="ts" x="560" y="212">Beide Steckbrücken immer auf</text>
-<text class="ts" x="560" y="229">dieselbe Seite, nur stromlos</text>
-<text class="ts" x="560" y="246">umstecken.</text>
-<text class="ts" x="560" y="280">Pin 1: +12 V über selbstrück-</text>
-<text class="ts" x="560" y="297">stellende Sicherung (F1)</text>
-<text class="ts" x="560" y="321">Pin 4: Signal 0–2,2 V</text>
-<text class="ts" x="560" y="345">Pin 5: Masse</text>
+<!-- 3 Fühler -->
+<g class="g"><rect x="840" y="70" width="230" height="330" rx="8" stroke-width="1"/></g>
+<text class="th" x="955" y="94" text-anchor="middle">3 Votronic 5545</text>
+<text class="ts" x="955" y="112" text-anchor="middle">Stecker mit 3 Adern</text>
+<text class="t" x="900" y="156">weiß = +12 V</text>
+<text class="t" x="900" y="276">grün = Signal</text>
+<text class="t" x="900" y="316">braun = Masse</text>
+<circle class="n" cx="866" cy="150" r="12" fill="#FFFFFF"/><circle class="n" cx="866" cy="270" r="12" fill="#2E9E4F"/><circle class="n" cx="866" cy="310" r="12" fill="#8B5A2B"/>
 
-<text class="t" x="16" y="410">Im Display: Setup → Frischwasser → Geber „Votronic“ wählen,</text>
-<text class="t" x="16" y="434">dann bei leerem Tank „Leer = jetzt“, bei vollem Tank „Voll = jetzt“ antippen.</text>
-<text class="ts" x="16" y="456">Die Adernfarben können je nach Fühler abweichen – maßgeblich ist die Beschriftung +12 V / Signal / Masse am Fühler.</text>
+<!-- Verbindungen: Adern in echten Farben, Weiß mit dunklem Rand -->
+<path class="w" d="M283 150 H467" stroke="#444441" stroke-width="9"/><path class="w" d="M283 150 H467" stroke="#2E9E4F" stroke-width="5"/>
+<path class="w" d="M283 270 H467" stroke="#444441" stroke-width="9"/><path class="w" d="M283 270 H467" stroke="#8B5A2B" stroke-width="5"/>
+<path class="w" d="M283 310 H467" stroke="#444441" stroke-width="9"/><path class="w" d="M283 310 H467" stroke="#FFFFFF" stroke-width="5"/>
+<text class="ts" x="294" y="140">Leitung, 5 Adern</text>
+<path class="w" d="M493 150 H854" stroke="#444441" stroke-width="9"/><path class="w" d="M493 150 H854" stroke="#FFFFFF" stroke-width="5"/>
+<path class="w" d="M493 270 H854" stroke="#444441" stroke-width="9"/><path class="w" d="M493 270 H854" stroke="#2E9E4F" stroke-width="5"/>
+<path class="w" d="M493 310 H854" stroke="#444441" stroke-width="9"/><path class="w" d="M493 310 H854" stroke="#8B5A2B" stroke-width="5"/>
+<text class="ts" x="640" y="140" fill="#3C3489">wird gesteckt (Fühler-Adern)</text>
+
+<text class="th" x="16" y="500">Merkregel: Fühler-Ader → Buchse mit Ader der Fahrzeugleitung</text>
+<text class="t" x="16" y="526">weiß (+12 V) → grün (Pin 1) · grün (Signal) → braun (Pin 4) · braun (Masse) → weiß (Pin 5)</text>
+<text class="t" x="16" y="552">Im Display: Setup → Frischwasser → Geber „Votronic“, dann „Leer = jetzt“ / „Voll = jetzt“.</text>
+<text class="ts" x="16" y="578">Fühleradern laut Votronic-Anleitung: weiß 5 = Plus, grün 4 = Signal, braun 1 = Minus.</text>
 </svg>
