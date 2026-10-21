@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="740" viewBox="0 0 1040 740" role="img"><title>Wasserpumpe über die Relaisplatine am EBL 31</title><desc>Block 8 Pin 9 (+Pumpe, 5 A, blaue Ader) wird aufgetrennt und läuft über die Relaisplatine (+PUMPE, Schließer NO) zur Pumpe. Das Minus (Block 8 Pin 14, braun) geht direkt zur Pumpe. Die Relaisspule bekommt +Starterbatterie von Block 3 Pin 8 (Klemme START), ihr Ende (Klemme GRÜN) geht über die grüne Ader zur Steuerplatine. Das Display zieht die Ader auf Masse, dann zieht das Relais an.</desc>
+<style>.t{font:14px sans-serif;fill:#2C2C2A}.ts{font:12px sans-serif;fill:#5F5E5A}.th{font:600 14px sans-serif;fill:#2C2C2A}.g rect{fill:#F1EFE8;stroke:#888780}.b rect{fill:#E6F1FB;stroke:#185FA5}.k rect{fill:#E1F5EE;stroke:#0F6E56}.o rect{fill:#FAECE7;stroke:#993C1D}.w{fill:none;stroke-linecap:round;stroke-linejoin:round}.o1{stroke:#444441;stroke-width:9}.n{fill:#FFFFFF;stroke:#444441;stroke-width:1.5}</style>
+<rect width="1040" height="740" fill="#FFFFFF"/>
+<text class="th" x="16" y="28" font-size="18">Wasserpumpe über die Relaisplatine am EBL 31</text>
+<text class="ts" x="16" y="48">Schaubild, Klemmen nur schematisch angeordnet</text>
+
+<!-- EBL -->
+<g class="g"><rect x="16" y="70" width="240" height="330" rx="8" stroke-width="1"/></g>
+<text class="th" x="136" y="94" text-anchor="middle">Elektroblock EBL 31</text>
+<text class="ts" x="30" y="125">Block 8 (15-polig)</text>
+<text class="t" x="30" y="148">Pin 14: Pumpe −</text>
+<text class="t" x="30" y="178">Pin 9: Pumpe +, 5 A</text>
+<text class="ts" x="30" y="222">Block 3 (12-polig, Instr.-Tafel)</text>
+<text class="t" x="30" y="245">Pin 8: +Starterbatterie</text>
+<text class="ts" x="30" y="265">(intern über Polyswitch 2,5 A)</text>
+<circle class="n" cx="256" cy="140" r="6"/><circle class="n" cx="256" cy="180" r="6"/><circle class="n" cx="256" cy="240" r="6"/>
+
+<!-- Relaisplatine -->
+<g class="k"><rect x="400" y="110" width="300" height="290" rx="8" stroke-width="1.5"/></g>
+<text class="th" x="550" y="134" text-anchor="middle">Relaisplatine am EBL</text>
+<text class="ts" x="414" y="204">+PUMPE</text><text class="ts" x="686" y="204" text-anchor="end">NO</text>
+<text class="ts" x="414" y="262">START</text><text class="ts" x="686" y="262" text-anchor="end">GRÜN</text>
+<text class="ts" x="414" y="326">NOTSCHALTER</text>
+<circle class="n" cx="400" cy="180" r="6"/><circle class="n" cx="700" cy="180" r="6"/>
+<circle class="n" cx="400" cy="240" r="6"/><circle class="n" cx="700" cy="240" r="6"/>
+<circle class="n" cx="400" cy="320" r="6"/>
+<!-- Kontakt -->
+<path class="w" d="M406 180 H470" stroke="#444441" stroke-width="2"/>
+<path class="w" d="M470 180 L545 160" stroke="#444441" stroke-width="2"/>
+<path class="w" d="M560 180 H694" stroke="#444441" stroke-width="2"/>
+<circle cx="470" cy="180" r="3" fill="#444441"/><circle cx="560" cy="180" r="3" fill="#444441"/>
+<path d="M510 170 V228" stroke="#888780" stroke-width="1.5" stroke-dasharray="4 3" fill="none"/>
+<!-- Spule -->
+<path class="w" d="M406 240 H470" stroke="#444441" stroke-width="2"/>
+<rect x="470" y="226" width="80" height="28" fill="#FFFFFF" stroke="#444441" stroke-width="2"/>
+<text class="ts" x="510" y="245" text-anchor="middle">Spule</text>
+<path class="w" d="M550 240 H694" stroke="#444441" stroke-width="2"/>
+<text class="ts" x="414" y="352">überbrückt das Relais</text><text class="ts" x="414" y="368">(nur im Notfall, sonst leer)</text>
+<text class="ts" x="414" y="390">Relais an = Pumpe frei</text>
+
+<!-- Pumpe -->
+<g class="b"><rect x="800" y="70" width="210" height="150" rx="8" stroke-width="1"/></g>
+<text class="th" x="905" y="94" text-anchor="middle">Wasserpumpe</text>
+<text class="t" x="820" y="148">Pumpe −</text><text class="t" x="820" y="188">Pumpe +</text>
+<circle class="n" cx="800" cy="140" r="6"/><circle class="n" cx="800" cy="180" r="6"/>
+
+<!-- Steuerplatine -->
+<g class="o"><rect x="400" y="470" width="300" height="130" rx="8" stroke-width="1.5"/></g>
+<text class="th" x="550" y="494" text-anchor="middle">Steuerplatine V2 mit Display</text>
+<text class="ts" x="414" y="520">Klemme GRÜN / GND:</text>
+<text class="ts" x="414" y="540">Display zieht die grüne Ader auf Masse</text>
+<text class="ts" x="414" y="558">→ Relais zieht an, Pumpe frei.</text>
+<text class="ts" x="414" y="578">Relais aus: Messung der Starterbatterie.</text>
+<circle class="n" cx="700" cy="520" r="6"/>
+
+<!-- Adern (dunkler Rand, darüber Farbe) -->
+<path class="w o1" d="M262 140 H280 V100 H780 V140 H794"/><path class="w" d="M262 140 H280 V100 H780 V140 H794" stroke="#8B5A2B" stroke-width="5"/>
+<path class="w o1" d="M262 180 H394"/><path class="w" d="M262 180 H394" stroke="#1E88E5" stroke-width="5"/>
+<path class="w o1" d="M262 240 H300 V240 H394"/><path class="w" d="M262 240 H394" stroke="#D32F2F" stroke-width="5"/>
+<path class="w o1" d="M706 180 H794"/><path class="w" d="M706 180 H794" stroke="#1E88E5" stroke-width="5"/>
+<path class="w o1" d="M706 240 H760 V520 H706"/><path class="w" d="M706 240 H760 V520 H706" stroke="#2E9E4F" stroke-width="5"/>
+<text class="ts" x="300" y="94">braun: Minus, direkt zur Pumpe (unverändert)</text>
+<text class="ts" x="268" y="168">blau: Pumpe +</text><text class="ts" x="268" y="204">hier aufgetrennt</text>
+<text class="ts" x="268" y="228">rot: +Starterbatterie</text>
+<text class="ts" x="704" y="168">blau (verlängert)</text>
+<text class="ts" x="768" y="400">grüne Ader</text><text class="ts" x="768" y="416">(im Schrank durchverbunden)</text>
+
+<text class="th" x="16" y="640">So läuft es</text>
+<text class="ts" x="16" y="662">1. Die Pumpen-Plus-Ader von Block 8 Pin 9 (blau) wird aufgetrennt: EBL-Seite an +PUMPE.</text>
+<text class="ts" x="16" y="680">2. Vom Schließer (NO) geht es mit der verlängerten blauen Ader zur Pumpe.</text>
+<text class="ts" x="16" y="698">3. Spule: START bekommt +Starterbatterie von Block 3 Pin 8, GRÜN geht per grüner Ader zur Steuerplatine.</text>
+<text class="ts" x="16" y="716">4. Block 8 Pin 14 (braun, Minus) bleibt unverändert.</text>
+</svg>

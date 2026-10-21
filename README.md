@@ -238,12 +238,24 @@ werden** (dort stecken die Stecker des Panelkabels) – z. B. mit einem Quetschv
 | **Stecker des Panelkabels im Schrank** | **Übersicht mit Verbinder** |
 | ![Stecker im Schrank](bilder/fahrzeug/gruene_ader_schrank_stecker.jpg) | ![Übersicht im Schrank](bilder/fahrzeug/gruene_ader_schrank_ueberblick.jpg) |
 
-**12-V-Dauerspannung am EBL-Stecker Block 5 (Pin 3):** Den passenden **Crimpkontakt (Stift)** aus dem Steckverbinder-Set
-(siehe Einkaufsliste) auf die Ader crimpen und in den freien Platz am Stecker stecken:
+**Wasserpumpe über die Relaisplatine am EBL (Block 3 Pin 8 und Block 8 Pin 9):** Die Relaisplatine sitzt am EBL. Ihre Spule bekommt
+**+Starterbatterie von Block 3, Pin 8** (Klemme „START“), die grüne Ader geht zur Steuerplatine (Klemme „GRÜN“, das Display zieht sie auf Masse). Die **Plus-Ader der Pumpe**
+(**Block 8, Pin 9**, 5 A, in diesem Fahrzeug **blau**) wird aufgetrennt und läuft über den Relais-Kontakt (Klemmen „+PUMPE“ und „NO“, Pumpe am Schließer).
+Das **Minus** der Pumpe (Block 8, Pin 14, **braun**) bleibt unberührt. Ohne angezogenes Relais bleibt die Pumpe aus. Die Adernfarben können bei anderen Fahrzeugen abweichen: maßgeblich ist Pin 9 = Plus.
 
-| EBL Block 5 – freie Plätze | Passender Crimpkontakt (Stift) |
+![Wasserpumpe über die Relaisplatine am EBL 31](bilder/anschluesse/anschluss_pumpe_relaisplatine_ebl.svg)
+
+| Block 8 am EBL: die Pumpen-Plus-Ader (blau) ist aufgetrennt und zur Relaisplatine geführt | Relaisplatine eingebaut: START/GRÜN, +PUMPE/NO, NOTSCHALTER |
 |---|---|
-| ![Block 5](bilder/fahrzeug/ebl_block5_stecker.jpg) | ![Crimpkontakt](bilder/fahrzeug/ebl_block5_crimpkontakt.jpg) |
+| ![Block 8 Pumpenader](bilder/fahrzeug/ebl31_block8_pumpe_ader.jpg) | ![Relaisplatine eingebaut](bilder/fahrzeug/relaisplatine_eingebaut.jpg) |
+
+Der Stecker an **Block 3** (EBL-Seite „MR-Stiftsockel 12F“) hat 12 Kammern in 3 Reihen zu je 4 (Aufdruck am Stecker: obere Reihe 1·4·7·10, mittlere 2·5·8·11,
+untere 3·6·9·12). **Pin 8 liegt in der mittleren Reihe, dritte Spalte.** Der Gegenstecker trägt die Prägung „TE“ (TE Connectivity), Rastermaß etwa 4,1 mm.
+Dort wurde die rote Ader für Pin 8 eingesteckt:
+
+| Block 3 am EBL mit aufgestecktem Stecker | Gegenstecker abgezogen (rote Ader = Pin 8, +Starterbatterie) |
+|---|---|
+| ![Block 3 Stecker](bilder/fahrzeug/ebl31_block3_stecker_aufgesteckt.jpg) | ![Block 3 Gegenstecker](bilder/fahrzeug/ebl31_block3_gegenstecker.jpg) |
 
 Anschlüsse am Display:
 
@@ -271,9 +283,9 @@ lässt sich unter *Setup → Display → Näherungssensor* ausschalten. Für den
 | SONOFF SNZB-02B (Zigbee-Temperatur/Luftfeuchte) | Temperatur innen, außen, Kühlschrank | [Amazon\*](https://www.amazon.de/dp/B0H4QJQFKM?tag=wohnmobildisp-21) |
 | SONOFF SNZB-04P (Zigbee-Tür-/Fensterkontakt) | Alarmanlage | [Amazon\*](https://www.amazon.de/dp/B0DD3SQYV9?tag=wohnmobildisp-21) |
 | SONOFF SNZB-03P (Zigbee-Bewegungsmelder) | Alarmanlage | [Amazon\*](https://www.amazon.de/dp/B0C1GB4DVR?tag=wohnmobildisp-21) |
+| SONOFF Zigbee-Sirene (09P) | Sirene für die Alarmanlage (optional) | [Amazon\*](https://www.amazon.de/dp/B0H875ZMKF?tag=wohnmobildisp-21) |
 | Mopeka Pro (Ultraschallsensor mit Magnet) | Gasflaschen-Füllstand (optional) | [Amazon\*](https://www.amazon.de/dp/B0GCD1Q4HP?tag=wohnmobildisp-21) |
 | VL53L0X-Näherungssensor (2 Stück) | Display wird hell, wenn jemand davor steht (optional) – getestet, funktioniert sofort | [Amazon\*](https://www.amazon.de/dp/B0FPQRKR9T?tag=wohnmobildisp-21) |
-| Steckverbinder-Set 6-polig MATE-N-LOK (Kalitec KALI-1106, 6,35 mm, inkl. Crimpkontakte und Dichtungen, bis 19 A) | 12-V-Dauerspannung am EBL-Stecker Block 5 Pin 3 abgreifen (dort liegt auch der Wassertank-Anschluss): Crimpkontakt auf die Ader, in den freien Platz am EBL-Stecker einstecken | [Amazon\*](https://www.amazon.de/dp/B0DP58HVVM/?tag=wohnmobildisp-21) |
 | USB-C-Datenkabel (240 W, Set: 1 m + 1 m + 1,5 m + 1,5 m) | Verbindung Display ↔ Steuerplatine und Anschluss am Computer – reines Ladekabel funktioniert nicht | [Amazon\*](https://www.amazon.de/dp/B0GX5WF5B9/?tag=wohnmobildisp-21) |
 | Schrauben M3 × 8 mm (100 Stück, Edelstahl, Flachkopf, vollgewinde) | Montage | [Amazon\*](https://www.amazon.de/dp/B0FHGSGFY4/?tag=wohnmobildisp-21) |
 
