@@ -101,6 +101,8 @@ anhaken, was im Bericht stehen soll.
 
 ![Systemübersicht](bilder/system/systemuebersicht.svg)
 
+![Das Display im Wohnmobil: eingebaut anstelle des LT 100, daneben das Truma-Bedienteil](bilder/fahrzeug/display_eingebaut.jpg)
+
 > **Am Fahrzeug wird nichts abgesägt, ausgeschnitten oder zerstört.** Der gedruckte **Rahmen für das Display** passt
 > genau in den vorhandenen Ausschnitt und die vorhandenen Befestigungslöcher des alten LT 100 – **kein Sägen, kein
 > Schneiden**. Die neue **Steuerplatine** nimmt die **Original-Stecker** auf (ST1, ST2, ST3), alle vorhandenen Halterungen
@@ -116,7 +118,7 @@ Die **Relaisplatine** für die Wasserpumpe ist eine Erweiterung, die man weglass
 
 ### Steuerplatine – notwendig
 
-![Steuerplatine](bilder/platinen/steuerplatine.png)
+![Steuerplatine V2 im Gehäuse mit dem ESP32-H2-Board und den Original-Steckern (oben)](bilder/platinen/steuerplatine_v2_eingebaut.jpg)
 
 Die Steuerplatine ist die Verbindung zwischen Display und Fahrzeug. Sie sitzt dort, wo vorher das LT 100 war,
 und bekommt **die vorhandenen Original-Stecker** – es muss kein neues Kabel durchs Fahrzeug gezogen werden.
@@ -138,7 +140,39 @@ Gemessen werden Starter- und Aufbau-Batterie, 12-V-Kontrolle und Landstrom.
 **Ohne Steuerplatine** zeigt das Display nur die Bluetooth-Geräte – Tanks, Hauptschalter, Landstrom,
 Pumpe und alle Zigbee-Sensoren (Alarmanlage, Rauchmelder, Temperaturen) funktionieren dann nicht.
 
-**Frischwasser: Originalgeber oder Votronic-Tankelektrode** – die Steuerplatine hat dafür zwei Steckbrücken
+![Lage der Anschlüsse auf der Steuerplatine V2](bilder/platinen/steuerplatine_v2_uebersicht.png)
+
+#### Einbau: Original-Stecker einfach umstecken
+
+**Kein neues Kabel durchs Fahrzeug:**
+Die Steuerplatine V2 hat dieselben Stecker (ST1, ST2, ST3) wie die Platine im LT 100 und sitzt an derselben Stelle.
+
+| Original-Platine im LT 100 | Neue Steuerplatine V2 mit denselben Steckern (ST1, ST2, ST3 oben) |
+|---|---|
+| ![LT 100 Platine](bilder/fahrzeug/lt100_platine_stecker.jpg) | ![Steuerplatine V2](bilder/platinen/steuerplatine_v2_eingebaut.jpg) |
+
+![Stecker vom LT 100 abgezogen](bilder/fahrzeug/lt100_stecker_abgezogen.jpg)
+
+| Kabel zum EBL (ST1) | EBL 31, Block 3 „Instr.-Tafel“ |
+|---|---|
+| ![ST1](bilder/fahrzeug/lt100_kabel_st1.jpg) | ![EBL 31](bilder/fahrzeug/ebl31_block3.jpg) |
+
+#### Wichtig: Die grüne Ader durchverbinden
+
+Die freie grüne Ader im Panelkabel misst die **Spannung der
+Motor-(Starter-)Batterie** und **schaltet die Wasserpumpe** (Relaisplatine). Am EBL (Block 3) ist sie das freie grüne
+Aderende. Damit sie an der Steuerplatine ankommt, muss sie **unten im Schrank unter dem Kühlschrank durchverbunden
+werden** (dort stecken die Stecker des Panelkabels) – z. B. mit einem Quetschverbinder und einer Zusatzleitung:
+
+| Die grüne Ader am EBL | Im Schrank unter dem Kühlschrank durchverbinden |
+|---|---|
+| ![Grüne Ader am EBL](bilder/fahrzeug/gruene_ader_ebl_ende.jpg) | ![Grüne Ader durchverbunden](bilder/fahrzeug/gruene_ader_schrank_verbindung.jpg) |
+| **Stecker des Panelkabels im Schrank** | **Übersicht mit Verbinder** |
+| ![Stecker im Schrank](bilder/fahrzeug/gruene_ader_schrank_stecker.jpg) | ![Übersicht im Schrank](bilder/fahrzeug/gruene_ader_schrank_ueberblick.jpg) |
+
+#### Frischwasser: Originalgeber oder Votronic
+
+Für den Frischwasser-Geber hat die Steuerplatine zwei Steckbrücken
 J12/J13 neben ST2. **Beide immer auf dieselbe Seite** stecken, nur stromlos umstecken. Danach im Display unter
 *Setup → Frischwasser → Geber* den passenden Geber wählen:
 
@@ -147,7 +181,40 @@ J12/J13 neben ST2. **Beide immer auf dieselbe Seite** stecken, nur stromlos umst
 | **rechts „ORIG“** (Standard) | Stab Voll | Stab ¼ | Basis | Originalgeber (Stabsonde des LT 100), Stufen 25 / 50 / 75 / 100 % |
 | **links „VOT“** | +12 V (über selbstrückstellende Sicherung) | Signal 0–2,2 V | Masse | Votronic-Tankelektrode 15-50 K, stufenlos |
 
-**Deckel für den Votronic-Tankfühler:** Für den Einbau des Fühlers gibt es einen **Wassertank-Deckel mit 37-mm-Bohrung** und einen
+![Steckbrücken J12/J13: rechts Originalgeber, links Votronic](bilder/anschluesse/frischwasser_jumper_v2.png)
+
+![Frischwasser-Anschluss an der Steuerplatine](bilder/anschluesse/anschluss_frischwasser_original_v2.svg)
+
+#### Abwasser (ST3)
+
+Der Abwassertank hat einen gemeinsamen Stab (Basis) und vier Stäbe für 25, 50, 75 und 100 %. Die 5-adrige Leitung endet im **Original-Stecker ST3**,
+der einfach auf die Steuerplatine gesteckt wird. Der gemeinsame Stab darf **keine Verbindung zur Fahrzeugmasse** haben.
+
+![Abwasser-Elektrodenstäbe an ST3](bilder/anschluesse/anschluss_abwasser_st3_v2.svg)
+
+#### Votronic-Tankfühler anschließen
+
+Der Fühler hat ein 3-adriges Kabel (weiß = +12 V, grün = Signal, braun = Masse). Reihenfolge: **Steuerplatine (Stiftleiste ST2) → Leitung mit 5 Adern → 6-poliger Buchsenstecker hinten am Tank → Fühler**. Der Fühlerstecker (3 Adern, Crimp-Stifte) wird in den Buchsenstecker am Tank gesteckt:
+
+| Fühler-Ader (Stecker) | Kupplung, Ader der Fahrzeugleitung | Pin / ST2 |
+|---|---|---|
+| weiß (+12 V) | grün | Pin 1 = +12 V |
+| grün (Signal) | braun | Pin 4 = Signal 0–2,2 V |
+| braun (Masse) | weiß | Pin 5 = Masse |
+
+Pin 2, 3 und 6 (grau, gelb, frei) bleiben unbenutzt.
+
+| Fühlerstecker mit 3 Adern | Crimp-Stifte der Fühleradern, daneben der Buchsenstecker am Tank (5 Adern) |
+|---|---|
+| ![Fühlerstecker mit 3 Adern](bilder/tankdeckel/tankfuehler_stecker_adern.jpg) | ![Crimp-Stifte und Kupplung](bilder/tankdeckel/tankfuehler_stecker_stifte.jpg) |
+
+![Votronic-Tankfühler am Stecker ST2](bilder/anschluesse/anschluss_frischwasser_votronic_v2.svg)
+
+Der Votronic-Tankfühler 5545 wird im Display eingemessen: bei leerem Tank **Leer = jetzt**, bei vollem Tank **Voll = jetzt** antippen.
+
+#### Tankdeckel für den Votronic-Fühler
+
+Für den Einbau des Fühlers gibt es einen **Wassertank-Deckel mit 37-mm-Bohrung** und einen
 **Dichtungsring** zum Selbstdrucken. **Deckel, Griff und Bolzen gehören zusammen** ([Deckel](druck/wassertank_deckel_votronic_5545.stl),
 [Griff](druck/wassertank_griff_votronic_5545.stl), [Bolzen](druck/wassertank_bolzen_votronic_5545.stl)), dazu der
 [Dichtungsring](druck/wassertank_dichtring_tpu.stl). Den **Deckel in PETG mit 4 Wänden** drucken, den **Dichtungsring in TPU
@@ -179,30 +246,20 @@ sitzt in der 37-mm-Bohrung, der Dichtring dichtet ihn ab, und am unteren Ende is
 
 ![Deckel mit schwarzem TPU-Dichtring auf dem Tankstutzen](bilder/tankdeckel/tankdeckel_mit_tpu_dichtung.jpg)
 
-Der Votronic-Tankfühler 5545 wird im Display eingemessen: bei leerem Tank **Leer = jetzt**, bei vollem Tank **Voll = jetzt** antippen.
+#### Festverdrahtete Temperaturfühler (DS18B20)
 
-**Votronic-Tankfühler anschließen:** Der Fühler hat ein 3-adriges Kabel (weiß = +12 V, grün = Signal, braun = Masse). Reihenfolge: **Steuerplatine (Stiftleiste ST2) → Leitung mit 5 Adern → 6-poliger Buchsenstecker hinten am Tank → Fühler**. Der Fühlerstecker (3 Adern, Crimp-Stifte) wird in den Buchsenstecker am Tank gesteckt:
+Neben den Zigbee-Sensoren kann man **fest verdrahtete Temperaturfühler** anschließen, z. B. für **außen** oder den **Kühlschrank**
+(Kabelfühler vom Typ **DS18B20**, 3 Adern). Sie brauchen weder Batterie noch Funk. Es gibt zwei Klemmen, **J10 „DS18B20“** und
+**J14 „DS18B20 2“** (linker Platinenrand); beide sind parallel geschaltet und haben dieselbe Belegung: **Pin 1 = +3,3 V, Pin 2 = Daten, Pin 3 = Masse (GND)**.
 
-| Fühler-Ader (Stecker) | Kupplung, Ader der Fahrzeugleitung | Pin / ST2 |
-|---|---|---|
-| weiß (+12 V) | grün | Pin 1 = +12 V |
-| grün (Signal) | braun | Pin 4 = Signal 0–2,2 V |
-| braun (Masse) | weiß | Pin 5 = Masse |
+- **Mehrere Fühler:** Alle Fühler hängen **parallel** an derselben Leitung (gleiche Adern zusammenführen) – an J10, J14 oder beiden.
+  Jeder DS18B20 hat eine **eigene Seriennummer**, deshalb unterscheidet das Display sie. **Bis zu 4 Fühler** werden ausgewertet.
+- **Pull-up** (4,7 kΩ) sitzt schon auf der Platine – keinen zusätzlichen einbauen.
+- **Zuordnung im Display:** *Setup → Temperatur-Kachel (Innen, Außen oder Kühlschrank) → Sensor* „**Fest verbaut 1, 2 …**“ wählen.
+  Hinter dem Namen steht die aktuelle Temperatur – so erkennst du, welcher Fühler welcher ist (z. B. kurz in die Hand nehmen).
+  Grenzwerte und Push-Warnungen funktionieren wie bei den Zigbee-Sensoren.
 
-Pin 2, 3 und 6 (grau, gelb, frei) bleiben unbenutzt.
-
-| Fühlerstecker mit 3 Adern | Crimp-Stifte der Fühleradern, daneben der Buchsenstecker am Tank (5 Adern) |
-|---|---|
-| ![Fühlerstecker mit 3 Adern](bilder/tankdeckel/tankfuehler_stecker_adern.jpg) | ![Crimp-Stifte und Kupplung](bilder/tankdeckel/tankfuehler_stecker_stifte.jpg) |
-
-
-![Votronic-Tankfühler am Stecker ST2](bilder/anschluesse/anschluss_frischwasser_votronic_v2.svg)
-
-![Steckbrücken J12/J13: rechts Originalgeber, links Votronic](bilder/anschluesse/frischwasser_jumper_v2.png)
-
-![Lage der Anschlüsse auf der Steuerplatine V2](bilder/platinen/steuerplatine_v2_uebersicht.png)
-
-![Frischwasser-Anschluss an der Steuerplatine](bilder/anschluesse/anschluss_frischwasser_original_v2.svg)
+![Festverdrahtete Temperaturfühler DS18B20 an J10/J14](bilder/anschluesse/anschluss_ds18b20_v2.svg)
 
 #### Steuerplatine aus meinem Restbestand
 
@@ -228,21 +285,6 @@ Angebot. Ich schließe jegliche Gewährleistung, Garantie, Sachmängelhaftung un
 Einbau und Nutzung erfolgen **auf eigene Gefahr**. Für Schäden am Fahrzeug, an der Bordelektronik oder
 Folgeschäden (z. B. durch Kurzschlüsse) wird keine Haftung übernommen.
 
-#### Festverdrahtete Temperaturfühler (DS18B20)
-
-Neben den Zigbee-Sensoren kann man **fest verdrahtete Temperaturfühler** anschließen, z. B. für **außen** oder den **Kühlschrank**
-(Kabelfühler vom Typ **DS18B20**, 3 Adern). Sie brauchen weder Batterie noch Funk. Es gibt zwei Klemmen, **J10 „DS18B20“** und
-**J14 „DS18B20 2“** (linker Platinenrand); beide sind parallel geschaltet und haben dieselbe Belegung: **Pin 1 = +3,3 V, Pin 2 = Daten, Pin 3 = Masse (GND)**.
-
-- **Mehrere Fühler:** Alle Fühler hängen **parallel** an derselben Leitung (gleiche Adern zusammenführen) – an J10, J14 oder beiden.
-  Jeder DS18B20 hat eine **eigene Seriennummer**, deshalb unterscheidet das Display sie. **Bis zu 4 Fühler** werden ausgewertet.
-- **Pull-up** (4,7 kΩ) sitzt schon auf der Platine – keinen zusätzlichen einbauen.
-- **Zuordnung im Display:** *Setup → Temperatur-Kachel (Innen, Außen oder Kühlschrank) → Sensor* „**Fest verbaut 1, 2 …**“ wählen.
-  Hinter dem Namen steht die aktuelle Temperatur – so erkennst du, welcher Fühler welcher ist (z. B. kurz in die Hand nehmen).
-  Grenzwerte und Push-Warnungen funktionieren wie bei den Zigbee-Sensoren.
-
-![Festverdrahtete Temperaturfühler DS18B20 an J10/J14](bilder/anschluesse/anschluss_ds18b20_v2.svg)
-
 ### Relaisplatine für die Frischwasserpumpe – optional
 
 ![Relaisplatine](bilder/platinen/relaisplatine.png)
@@ -259,31 +301,9 @@ Beim originalen LT 100 lässt sich die Wasserpumpe nicht schalten – hier schon
 **Keine Relaisplatine?** Unter *Setup → Allgemein → Wasserpumpe (Relaisplatine)* ausschalten –
 dann verschwinden das Wasserhahn-Symbol und alle Pumpen-Meldungen, alles andere läuft weiter.
 
-**Die Original-Stecker werden einfach umgesteckt – kein neues Kabel durchs Fahrzeug:**
-Die Steuerplatine V2 hat dieselben Stecker (ST1, ST2, ST3) wie die Platine im LT 100 und sitzt an derselben Stelle.
+#### Wasserpumpe über die Relaisplatine am EBL (Block 3 Pin 8, Block 8 Pin 9)
 
-| Original-Platine im LT 100 | Neue Steuerplatine V2 (Stecker ST1, ST2, ST3 oben) |
-|---|---|
-| ![LT 100 Platine](bilder/fahrzeug/lt100_platine_stecker.jpg) | ![Steuerplatine V2](bilder/platinen/steuerplatine_v2_render.png) |
-
-![Stecker vom LT 100 abgezogen](bilder/fahrzeug/lt100_stecker_abgezogen.jpg)
-
-| Kabel zum EBL (ST1) | EBL 31, Block 3 „Instr.-Tafel“ |
-|---|---|
-| ![ST1](bilder/fahrzeug/lt100_kabel_st1.jpg) | ![EBL 31](bilder/fahrzeug/ebl31_block3.jpg) |
-
-**Wichtig: Die grüne Ader muss durchverbunden werden.** Die freie grüne Ader im Panelkabel misst die **Spannung der
-Motor-(Starter-)Batterie** und **schaltet die Wasserpumpe** (Relaisplatine). Am EBL (Block 3) ist sie das freie grüne
-Aderende. Damit sie an der Steuerplatine ankommt, muss sie **unten im Schrank unter dem Kühlschrank durchverbunden
-werden** (dort stecken die Stecker des Panelkabels) – z. B. mit einem Quetschverbinder und einer Zusatzleitung:
-
-| Die grüne Ader am EBL | Im Schrank unter dem Kühlschrank durchverbinden |
-|---|---|
-| ![Grüne Ader am EBL](bilder/fahrzeug/gruene_ader_ebl_ende.jpg) | ![Grüne Ader durchverbunden](bilder/fahrzeug/gruene_ader_schrank_verbindung.jpg) |
-| **Stecker des Panelkabels im Schrank** | **Übersicht mit Verbinder** |
-| ![Stecker im Schrank](bilder/fahrzeug/gruene_ader_schrank_stecker.jpg) | ![Übersicht im Schrank](bilder/fahrzeug/gruene_ader_schrank_ueberblick.jpg) |
-
-**Wasserpumpe über die Relaisplatine am EBL (Block 3 Pin 8 und Block 8 Pin 9):** Die Relaisplatine sitzt am EBL. Ihre Spule bekommt
+Die Relaisplatine sitzt am EBL. Ihre Spule bekommt
 **+Starterbatterie von Block 3, Pin 8** (Klemme „START“), die grüne Ader geht zur Steuerplatine (Klemme „GRÜN“, das Display zieht sie auf Masse). Die **Plus-Ader der Pumpe**
 (**Block 8, Pin 9**, Sicherung 5 A, in diesem Fahrzeug **blau**) wird aufgetrennt und läuft über den Relais-Kontakt (Klemmen „+PUMPE“ und „NO“, Pumpe am Schließer).
 Das **Minus** der Pumpe (Block 8, Pin 14, **braun**) bleibt unberührt. Ohne angezogenes Relais bleibt die Pumpe aus. Die Adernfarben können bei anderen Fahrzeugen abweichen: maßgeblich ist Pin 9 = Plus.
@@ -302,7 +322,7 @@ Dort wurde die rote Ader für Pin 8 eingesteckt:
 |---|---|
 | ![Block 3 Stecker](bilder/fahrzeug/ebl31_block3_stecker_aufgesteckt.jpg) | ![Block 3 Gegenstecker](bilder/fahrzeug/ebl31_block3_gegenstecker.jpg) |
 
-Anschlüsse am Display:
+### Anschlüsse am Display
 
 ![Anschlüsse am Display](bilder/anschluesse/anschluesse_display.svg)
 
