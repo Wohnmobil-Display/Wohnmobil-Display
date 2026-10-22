@@ -10,8 +10,8 @@ Ein 7-Zoll-Touchdisplay, das rund um die Uhr auf dein Wohnmobil aufpasst:
 - 🔥 **Gasflaschen** in Prozent – Warnung, bevor das Gas ausgeht
 - 🌡️ **Temperaturen** innen, außen und im Kühlschrank – Warnung bei zu warm oder zu kalt
 - 🚨 **Alarmanlage** mit Tür-, Fenster- und Bewegungsmeldern, **Rauch- und Gasmelder** rund um die Uhr
-- 📱 **Push-Nachrichten per Telegram** für jede Warnung – du entscheidest, worüber du informiert werden willst
-- 🗓️ **Tagesbericht per Telegram:** einmal am Tag zur Wunschzeit alle wichtigen Werte aufs Handy – Batterien, Tanks, Gas, Solar, Temperaturen, Alarm (ab dem nächsten Update)
+- 📱 **Push-Nachrichten aufs Handy – wahlweise per Telegram oder ntfy** für jede Warnung – du entscheidest, worüber du informiert werden willst
+- 🗓️ **Tagesbericht per Telegram oder ntfy:** einmal am Tag zur Wunschzeit alle wichtigen Werte aufs Handy – Batterien, Tanks, Gas, Solar, Temperaturen, Alarm
 - 📡 **Sensor offline oder Batterie schwach?** Auch das meldet das Display
 
 Es ersetzt das originale Schaudt-Bedienteil **LT 100** und nutzt dessen **vorhandene Stecker und Kabel**.
@@ -33,11 +33,11 @@ Es ist ein **privates Hobbyprojekt**; Einbau und Nutzung erfolgen **auf eigene V
 | **Pumpe** | Wasserpumpe per Fingertipp ein/aus, automatisch gesperrt bei scharfer Alarmanlage |
 | **Gas** | Zwei Gasflaschen mit Mopeka-Pro-Sensoren in Prozent (Bluetooth) |
 | **Temperatur** | Innen (Wohn- und Schlafbereich), außen, Kühlschrank – über Zigbee-Sensoren oder fest verbaute Fühler |
-| **Alarmanlage** | Bis zu 12 Zigbee-Sensoren (Tür/Fenster, Bewegung, Wasser), Nachtmodus, Verlassens-/Eingangszeit, PIN, Summer, Sirene |
+| **Alarmanlage** | Bis zu 12 Zigbee-Sensoren (Tür/Fenster, Bewegung, Wasser), Nachtmodus, Verlassens-/Eingangszeit, PIN, Summer, Sirene (Ausgang der Steuerplatine und bis zu drei Zigbee-Sirenen) |
 | **Rauch / Gas** | Zigbee-Melder, rund um die Uhr überwacht |
 | **Landstrom** | Anzeige, ob 230 V anliegen |
-| **Push-Nachrichten** | Alarm, Grenzwerte, schwache Batterien, Sensor offline – per Telegram aufs Handy |
-| **Tagesbericht** | täglich zur eingestellten Uhrzeit eine Zusammenfassung per Telegram, Inhalte frei wählbar (ab dem nächsten Update) |
+| **Push-Nachrichten** | Alarm, Grenzwerte, schwache Batterien, Sensor offline – aufs Handy, wahlweise per **Telegram** oder **ntfy** (siehe [Push-Nachrichten einrichten](#push-nachrichten-einrichten)) |
+| **Tagesbericht** | täglich zur eingestellten Uhrzeit eine Zusammenfassung per Telegram oder ntfy, Inhalte frei wählbar |
 | **Komfort** | Kachelnamen und Farben frei wählbar, Nachtabschaltung, Näherungssensor weckt das Display, Einstellen per Handy-Webseite |
 | **Updates** | Neue Versionen per WLAN direkt am Display |
 
@@ -76,16 +76,42 @@ Die komplette **[Bedienungsanleitung (PDF)](docs/Bedienungsanleitung.pdf)** zeig
 - **Antippen** öffnet Detailseiten (Solar, BMS, Temperaturen) bzw. die PIN-Eingabe der Alarmanlage.
 - **Setup:** keine Speichern-Taste – alles wird sofort gespeichert.
 
+### Push-Nachrichten einrichten
+
+Das Display schickt Warnungen (Alarm, Rauch/Gas, Grenzwerte, schwache Batterien, Sensor offline) und den
+**Tagesbericht** aufs Handy. Es wird **genau ein Dienst** benutzt – unter *Setup → Push-Benachrichtigungen* oben rechts
+wählen: **Aus**, **Telegram** oder **ntfy**. Die Daten des anderen Dienstes bleiben beim Umschalten gespeichert.
+
+| | **Telegram** | **ntfy** |
+|---|---|---|
+| Handy-App | Telegram | ntfy (Android: Play Store, iPhone: App Store), kostenlos |
+| Einrichtung | eigenen Bot über **@BotFather** anlegen (`/newbot`), **Bot-Token** und **Chat-ID** eintragen | nur einen **Namen** eintragen – er wird zum Thema (Leerzeichen werden zu „-“) |
+| Am Display | Token eintragen (oder per QR-Code am Handy), dem Bot eine Nachricht schicken, **Chat-ID holen** | **Android/iPhone** wählen, **QR 1** = App installieren, **QR 2** = Thema abonnieren (iPhone: Themennamen in der App mit „+“ eintragen) |
+| Testen | **Test senden** | **Test senden** |
+| Besonderheit | Konto und Bot nötig | kein Konto, kein Token; Alarm kommt mit hoher Dringlichkeit, der Tagesbericht leise |
+
+**Wichtig bei ntfy:** Der Server ntfy.sh ist öffentlich – **jeder, der den Themennamen kennt, kann mitlesen.** Deshalb
+einen **eindeutigen, nicht erratbaren Namen** wählen (z. B. „Wohnmobil-Name-4711“), nicht nur „Wohnmobil“.
+
+Der **Tagesbericht** (Taste *Tagesbericht* unten auf der Push-Seite) funktioniert mit beiden Diensten: Uhrzeit wählen und
+anhaken, was im Bericht stehen soll.
+
 ## Hardware
 
 ![Systemübersicht](bilder/system/systemuebersicht.svg)
+
+> **Am Fahrzeug wird nichts abgesägt, ausgeschnitten oder zerstört.** Der gedruckte **Rahmen für das Display** passt
+> genau in den vorhandenen Ausschnitt und die vorhandenen Befestigungslöcher des alten LT 100 – **kein Sägen, kein
+> Schneiden**. Die neue **Steuerplatine** nimmt die **Original-Stecker** auf (ST1, ST2, ST3), alle vorhandenen Halterungen
+> und Stecker werden weiterverwendet. Es muss nur sehr wenig am Fahrzeug geändert werden: im Wesentlichen die freie
+> **grüne Ader** im Schrank unter dem Kühlschrank **durchverbinden** (siehe unten) und, falls gewünscht, die Pumpen-Relaisplatine einsetzen.
 
 Das System besteht aus dem **Display** und der **Steuerplatine** – beide sind nötig.
 Die **Relaisplatine** für die Wasserpumpe ist eine Erweiterung, die man weglassen kann.
 
 - **Display:** Waveshare ESP32-S3-Touch-LCD-7B (7 Zoll, 1024×600, WLAN, Bluetooth).
   Bluetooth-Geräte (Victron, Mopeka, JK-BMS) empfängt es direkt.
-- **3D-Druckteile** im Ordner [`druck/`](druck/): **Rahmen für das Display** (ersetzt das LT 100 im vorhandenen Ausschnitt, mit oder ohne Näherungssensor), **Halter für Türkontakte** (Sensor und Magnet, verschiedene Sockelhöhen), **Gehäuse** für Steuer- und Relaisplatine und ein **Wassertank-Deckel für den Votronic-Tankfühler 5545** (Deckel in PETG mit 4 Wänden, Dichtungsring in TPU mit 3 Wänden – es geht auch der Original-Dichtring).
+- **3D-Druckteile** im Ordner [`druck/`](druck/): **Rahmen für das Display** (ersetzt das LT 100 – passt genau in den vorhandenen Ausschnitt und die vorhandenen Löcher, **ohne Sägen oder Schneiden**; mit oder ohne Näherungssensor), **Halter für Türkontakte** (Sensor und Magnet, verschiedene Sockelhöhen), **Gehäuse** für Steuer- und Relaisplatine und ein **Wassertank-Deckel für den Votronic-Tankfühler 5545** (Deckel in PETG mit 4 Wänden, Dichtungsring in TPU mit 3 Wänden – es geht auch der Original-Dichtring).
 
 ### Steuerplatine – notwendig
 
@@ -104,7 +130,7 @@ Mit dem Display ist sie über **ein USB-Kabel** verbunden.
 | **Klemme GRÜN** | Freie grüne Ader im Panelkabel: misst die **Starterbatterie** und schaltet die Relaisplatine |
 | **Klemme 5V DISPLAY** | Versorgt das Display – ein eigenes Netzteil ist nicht nötig |
 | **Klemme SIRENE** | Alarmsirene (überwacht auf Kurzschluss und offene Leitung) |
-| **Klemmen DS18B20** | Fest verbaute Temperaturfühler (z. B. innen, Kühlschrank) |
+| **Klemmen DS18B20** (J10 und J14) | Fest verbaute Temperaturfühler, z. B. außen oder Kühlschrank – **bis zu 4 Fühler parallel** (siehe unten) |
 | **USB** | Verbindung zum Display |
 
 Gemessen werden Starter- und Aufbau-Batterie, 12-V-Kontrolle und Landstrom.
@@ -201,6 +227,21 @@ Angebot. Ich schließe jegliche Gewährleistung, Garantie, Sachmängelhaftung un
 Einbau und Nutzung erfolgen **auf eigene Gefahr**. Für Schäden am Fahrzeug, an der Bordelektronik oder
 Folgeschäden (z. B. durch Kurzschlüsse) wird keine Haftung übernommen.
 
+#### Festverdrahtete Temperaturfühler (DS18B20)
+
+Neben den Zigbee-Sensoren kann man **fest verdrahtete Temperaturfühler** anschließen, z. B. für **außen** oder den **Kühlschrank**
+(Kabelfühler vom Typ **DS18B20**, 3 Adern). Sie brauchen weder Batterie noch Funk. Es gibt zwei Klemmen, **J10 „DS18B20“** und
+**J14 „DS18B20 2“** (linker Platinenrand); beide sind parallel geschaltet und haben dieselbe Belegung: **Pin 1 = +3,3 V, Pin 2 = Daten, Pin 3 = Masse (GND)**.
+
+- **Mehrere Fühler:** Alle Fühler hängen **parallel** an derselben Leitung (gleiche Adern zusammenführen) – an J10, J14 oder beiden.
+  Jeder DS18B20 hat eine **eigene Seriennummer**, deshalb unterscheidet das Display sie. **Bis zu 4 Fühler** werden ausgewertet.
+- **Pull-up** (4,7 kΩ) sitzt schon auf der Platine – keinen zusätzlichen einbauen.
+- **Zuordnung im Display:** *Setup → Temperatur-Kachel (Innen, Außen oder Kühlschrank) → Sensor* „**Fest verbaut 1, 2 …**“ wählen.
+  Hinter dem Namen steht die aktuelle Temperatur – so erkennst du, welcher Fühler welcher ist (z. B. kurz in die Hand nehmen).
+  Grenzwerte und Push-Warnungen funktionieren wie bei den Zigbee-Sensoren.
+
+![Festverdrahtete Temperaturfühler DS18B20 an J10/J14](bilder/anschluesse/anschluss_ds18b20_v2.svg)
+
 ### Relaisplatine für die Frischwasserpumpe – optional
 
 ![Relaisplatine](bilder/platinen/relaisplatine.png)
@@ -218,10 +259,13 @@ Beim originalen LT 100 lässt sich die Wasserpumpe nicht schalten – hier schon
 dann verschwinden das Wasserhahn-Symbol und alle Pumpen-Meldungen, alles andere läuft weiter.
 
 **Die Original-Stecker werden einfach umgesteckt – kein neues Kabel durchs Fahrzeug:**
+Die Steuerplatine V2 hat dieselben Stecker (ST1, ST2, ST3) wie die Platine im LT 100 und sitzt an derselben Stelle.
 
-| LT 100 mit den Original-Steckern | Stecker abgezogen |
+| Original-Platine im LT 100 | Neue Steuerplatine V2 (Stecker ST1, ST2, ST3 oben) |
 |---|---|
-| ![LT 100 Platine](bilder/fahrzeug/lt100_platine_stecker.jpg) | ![Stecker abgezogen](bilder/fahrzeug/lt100_stecker_abgezogen.jpg) |
+| ![LT 100 Platine](bilder/fahrzeug/lt100_platine_stecker.jpg) | ![Steuerplatine V2](bilder/platinen/steuerplatine_v2_render.png) |
+
+![Stecker vom LT 100 abgezogen](bilder/fahrzeug/lt100_stecker_abgezogen.jpg)
 
 | Kabel zum EBL (ST1) | EBL 31, Block 3 „Instr.-Tafel“ |
 |---|---|
@@ -278,6 +322,7 @@ lässt sich unter *Setup → Display → Näherungssensor* ausschalten. Für den
 |---|---|---|
 | Waveshare ESP32-S3-Touch-LCD-7B (7 Zoll, 1024×600) | Das Display | [Amazon\*](https://www.amazon.de/dp/B0FG354VCN?tag=wohnmobildisp-21) |
 | ESP32-H2-DevKitM-1 (N4) | Zigbee und Steuerplatine | [Amazon\*](https://www.amazon.de/dp/B0D8XR48LF?tag=wohnmobildisp-21) |
+| Temperaturfühler DS18B20, wasserdicht mit Kabel (3 Adern) | fest verbauter Fühler für außen / Kühlschrank (optional, bis zu 4 Stück) – Anschluss an J10/J14, siehe oben | Suchbegriff „DS18B20 wasserdicht Kabel“ |
 | Votronic Tankfühler 5545 (Tankelektrode 15-50 K, 50 cm) | Frischwasser (optional, statt Original-Geber) – 3 Adern: +12 V, Masse, Signal; Steckbrücken J12/J13 auf „VOT“ | [Amazon\*](https://www.amazon.de/dp/B00IG69OOI/?tag=wohnmobil-21) |
 | frient Smoke Alarm (Zigbee-Rauchmelder mit Sirene) | Rauchmelder, auch als Alarm-Sirene nutzbar | [Amazon\*](https://www.amazon.de/dp/B08WXV3G8P?tag=wohnmobildisp-21) |
 | SONOFF SNZB-02B (Zigbee-Temperatur/Luftfeuchte) | Temperatur innen, außen, Kühlschrank | [Amazon\*](https://www.amazon.de/dp/B0H4QJQFKM?tag=wohnmobildisp-21) |
