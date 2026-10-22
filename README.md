@@ -15,7 +15,7 @@ Ein 7-Zoll-Touchdisplay, das rund um die Uhr auf dein Wohnmobil aufpasst:
 - 📡 **Sensor offline oder Batterie schwach?** Auch das meldet das Display
 
 Es ersetzt das originale Schaudt-Bedienteil **LT 100** und nutzt dessen **vorhandene Stecker und Kabel**.
-Für die dauerhafte Nutzung ist ein einmaliger **Freischaltcode** nötig (siehe [Freischalten](#3-freischalten)).
+Ohne **Freischaltcode** ist das Display gesperrt – es gibt keine Testzeit; was das genau bedeutet, steht unter [Freischalten](#3-freischalten).
 Es ist ein **privates Hobbyprojekt**; Einbau und Nutzung erfolgen **auf eigene Verantwortung** (siehe [Hinweis](#hinweis-haftung-und-eigenverantwortung)).
 
 ![Startseite](bilder/display/startseite.png)
@@ -417,8 +417,22 @@ Ohne Freischaltcode zeigt das Display nur diesen Freischalt-Bildschirm. Die Zeil
 > Platinen-Prototypen, Server und Updates zu finanzieren – mir geht es nicht um Gewinn. Wenn dir das Projekt
 > gefällt, freue ich mich über deinen Beitrag. Danke!
 
-Für die dauerhafte Nutzung ist ein persönlicher, 6-stelliger **Freischaltcode** nötig. Du bekommst ihn gegen einen
-einmaligen **Kostenbeitrag von 29 €** – er gilt für immer, auch nach Neustarts und Updates.
+### Was ist gesperrt – und was bringt der Code?
+
+Die Software hat **eine einzige Sperre, die nur ein persönlicher 6-stelliger Freischaltcode aufhebt**:
+
+| | **Ohne Freischaltcode** | **Mit Freischaltcode** |
+|---|---|---|
+| Display | zeigt **nur die Freischalt-Seite** (Chip-ID, Freigabecode, Eingabe des Codes) | **alle Funktionen**: Startseite, Alarmanlage, Setup, Push-Nachrichten, Updates … |
+| WLAN, Bluetooth, Zigbee | **aus** – es läuft nichts im Hintergrund | alles aktiv |
+| Zeitliche Begrenzung | **keine Testzeit, keine Tageslimits** – das Display ist von Anfang an gesperrt | **keine** – der Code gilt **dauerhaft**, auch nach Neustarts und Updates |
+
+Es gibt also **keine „halb freie“ Version** und keine zeitlich begrenzte Nutzung: Entweder ist das Display gesperrt, oder es ist **vollständig und dauerhaft** freigeschaltet.
+Der Code gilt nur für **dein** Display (er ist aus der Chip-ID abgeleitet), **ohne Abo und ohne laufende Kosten**.
+Damit du vor dem Kauf siehst, was du bekommst, zeigen die **Bilder** in diesem Projekt und die
+**[Bedienungsanleitung](docs/Bedienungsanleitung.pdf)** jede Seite und jede Einstellung.
+
+Du bekommst den Code gegen einen einmaligen **Kostenbeitrag von 29 €**:
 
 1. Öffne den PayPal-Link: **[paypal.com/ncp/payment/MHXFBPU9TVV2L](https://www.paypal.com/ncp/payment/MHXFBPU9TVV2L)**
 2. Trage im Feld **„Chip-ID + Freigabecode“** die Zeile vom Display ein – genau so, wie sie dort steht:
