@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="740" viewBox="0 0 1040 740" role="img"><title>Wasserpumpe über die Relaisplatine am EBL 31</title><desc>Block 8 Pin 9 (+Pumpe, 5 A, blaue Ader) wird aufgetrennt und läuft über die Relaisplatine (+PUMPE, Schließer NO) zur Pumpe. Das Minus (Block 8 Pin 14, braun) geht direkt zur Pumpe. Die Relaisspule bekommt +Starterbatterie von Block 3 Pin 8 (Klemme START), ihr Ende (Klemme GRÜN) geht über die grüne Ader zur Steuerplatine. Das Display zieht die Ader auf Masse, dann zieht das Relais an.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="740" viewBox="0 0 1040 740" role="img"><title>Wasserpumpe über die Relaisplatine am EBL 31</title><desc>Block 8 Pin 9 (+Pumpe, Sicherung 5 A, blaue Ader) wird aufgetrennt und läuft über die Relaisplatine (+PUMPE, Schließer NO) zur Pumpe. Das Minus (Block 8 Pin 14, braun) geht direkt zur Pumpe. Die Relaisspule bekommt +Starterbatterie von Block 3 Pin 8 (Klemme START), ihr Ende (Klemme GRÜN) geht über die grüne Ader zur Steuerplatine. Das Display zieht die Ader auf Masse, dann zieht das Relais an.</desc>
 <style>.t{font:14px sans-serif;fill:#2C2C2A}.ts{font:12px sans-serif;fill:#5F5E5A}.th{font:600 14px sans-serif;fill:#2C2C2A}.g rect{fill:#F1EFE8;stroke:#888780}.b rect{fill:#E6F1FB;stroke:#185FA5}.k rect{fill:#E1F5EE;stroke:#0F6E56}.o rect{fill:#FAECE7;stroke:#993C1D}.w{fill:none;stroke-linecap:round;stroke-linejoin:round}.o1{stroke:#444441;stroke-width:9}.n{fill:#FFFFFF;stroke:#444441;stroke-width:1.5}</style>
 <rect width="1040" height="740" fill="#FFFFFF"/>
 <text class="th" x="16" y="28" font-size="18">Wasserpumpe über die Relaisplatine am EBL 31</text>
@@ -9,7 +9,7 @@
 <text class="th" x="136" y="94" text-anchor="middle">Elektroblock EBL 31</text>
 <text class="ts" x="30" y="125">Block 8 (15-polig)</text>
 <text class="t" x="30" y="148">Pin 14: Pumpe −</text>
-<text class="t" x="30" y="178">Pin 9: Pumpe +, 5 A</text>
+<text class="t" x="30" y="178">Pin 9: Pumpe +, Sicherung 5 A</text>
 <text class="ts" x="30" y="222">Block 3 (12-polig, Instr.-Tafel)</text>
 <text class="t" x="30" y="245">Pin 8: +Starterbatterie</text>
 <text class="ts" x="30" y="265">(intern über Polyswitch 2,5 A)</text>

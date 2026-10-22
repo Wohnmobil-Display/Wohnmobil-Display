@@ -285,7 +285,7 @@ werden** (dort stecken die Stecker des Panelkabels) – z. B. mit einem Quetschv
 
 **Wasserpumpe über die Relaisplatine am EBL (Block 3 Pin 8 und Block 8 Pin 9):** Die Relaisplatine sitzt am EBL. Ihre Spule bekommt
 **+Starterbatterie von Block 3, Pin 8** (Klemme „START“), die grüne Ader geht zur Steuerplatine (Klemme „GRÜN“, das Display zieht sie auf Masse). Die **Plus-Ader der Pumpe**
-(**Block 8, Pin 9**, 5 A, in diesem Fahrzeug **blau**) wird aufgetrennt und läuft über den Relais-Kontakt (Klemmen „+PUMPE“ und „NO“, Pumpe am Schließer).
+(**Block 8, Pin 9**, Sicherung 5 A, in diesem Fahrzeug **blau**) wird aufgetrennt und läuft über den Relais-Kontakt (Klemmen „+PUMPE“ und „NO“, Pumpe am Schließer).
 Das **Minus** der Pumpe (Block 8, Pin 14, **braun**) bleibt unberührt. Ohne angezogenes Relais bleibt die Pumpe aus. Die Adernfarben können bei anderen Fahrzeugen abweichen: maßgeblich ist Pin 9 = Plus.
 
 ![Wasserpumpe über die Relaisplatine am EBL 31](bilder/anschluesse/anschluss_pumpe_relaisplatine_ebl.svg)
