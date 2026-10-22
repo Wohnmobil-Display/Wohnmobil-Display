@@ -417,9 +417,25 @@ Ohne Freischaltcode zeigt das Display nur diesen Freischalt-Bildschirm. Die Zeil
 > Platinen-Prototypen, Server und Updates zu finanzieren – mir geht es nicht um Gewinn. Wenn dir das Projekt
 > gefällt, freue ich mich über deinen Beitrag. Danke!
 
-### Was ist gesperrt – und was bringt der Code?
+### Was kostet etwas – und was ist frei?
 
-Die Software hat **eine einzige Sperre, die nur ein persönlicher 6-stelliger Freischaltcode aufhebt**:
+**Kostenpflichtig ist ausschließlich die reine Bediensoftware auf dem Display** – und nur **einmalig** (29 €), als Unterstützung
+für mein Hobby und als Anerkennung für die viele Arbeit. **Alles andere ist frei und kostenlos:**
+
+| **Frei und kostenlos** | **Einmalig 29 € (Freischaltcode)** |
+|---|---|
+| alle **3D-Druckdateien** (Rahmen, Gehäuse, Türkontakt-Halter, Tankdeckel) | die **Bediensoftware auf dem Display** (Startseite, Alarmanlage, Setup, Push, Updates …) |
+| die **Platinen zum Selbstherstellen**: Gerber, Stückliste, Bestückung (Steuerplatine und Relaisplatine) | |
+| die **Software der Zusatzplatine**: Firmware der Steuerplatine (ESP32-H2), Installer auf GitHub Pages | |
+| **Anleitung, Schaltbilder, Einbau-Fotos, Einkaufsliste** | |
+| **alle zukünftigen Updates** – auch für das Display, **ohne weitere Kosten** | |
+
+Mit **„Freischaltcode“** ist also nur gemeint: Die Bediensoftware auf dem Display ist ab Werk gesperrt und wird mit deinem
+persönlichen 6-stelligen Code **einmalig und dauerhaft** freigeschaltet.
+
+### Was ist gesperrt, solange der Code fehlt?
+
+Die Software hat **eine einzige Sperre, die nur der Freischaltcode aufhebt**:
 
 | | **Ohne Freischaltcode** | **Mit Freischaltcode** |
 |---|---|---|
