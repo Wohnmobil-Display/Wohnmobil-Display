@@ -450,11 +450,16 @@ Damit du vor dem Kauf siehst, was du bekommst, zeigen die **Bilder** in diesem P
 
 Du bekommst den Code gegen einen einmaligen **Kostenbeitrag von 29 €**:
 
-1. Öffne den PayPal-Link: **[paypal.com/ncp/payment/MHXFBPU9TVV2L](https://www.paypal.com/ncp/payment/MHXFBPU9TVV2L)**
-2. Trage im Feld **„Chip-ID + Freigabecode“** die Zeile vom Display ein – genau so, wie sie dort steht:
-   `AA:BB:CC:DD:EE:FF 1234`
-3. Nach Eingang der Zahlung bekommst du den Freischaltcode per E-Mail, in der Regel **innerhalb von 24 Stunden**.
-4. Gib den Code am Display ein und bestätige mit **OK**. Fertig – das Display ist dauerhaft freigeschaltet.
+**So läuft es ab – die Reihenfolge ist wichtig:** Den Code gibt es **erst, nachdem du das Display gekauft und die Software aufgespielt hast.**
+Denn die Zeile „Chip-ID + Freigabecode“ gehört zu **deinem** Display und wird **vom Display selbst angezeigt** – du kannst sie dir vorher nicht ausdenken oder woanders nachschlagen.
+
+1. **Display kaufen** (Waveshare ESP32-S3-Touch-LCD-7B, siehe [Einkaufsliste](#einkaufsliste)).
+2. **Software aufspielen:** Die Firmware im Browser installieren (siehe [1. Installation](#1-installation)) und das Display einschalten.
+3. **Das Display zeigt die Freischalt-Seite** mit **Chip-ID** und **Freigabecode** und darunter die fertige Zeile, z. B. `AA:BB:CC:DD:EE:FF 1234`. Diese Zeile brauchst du jetzt.
+4. **Bezahlen:** PayPal-Link öffnen: **[paypal.com/ncp/payment/MHXFBPU9TVV2L](https://www.paypal.com/ncp/payment/MHXFBPU9TVV2L)**
+   und im Feld **„Chip-ID + Freigabecode“** die Zeile vom Display eintragen – genau so, wie sie dort steht.
+5. Nach Eingang der Zahlung bekommst du den **Freischaltcode** per E-Mail, in der Regel **innerhalb von 24 Stunden**.
+6. **Code am Display eingeben** und mit **OK** bestätigen. Fertig – das Display ist dauerhaft freigeschaltet.
 
 Bei einem freigeschalteten Display erreichst du die Seite jederzeit über **Setup → Allgemein → Freischaltung**.
 
