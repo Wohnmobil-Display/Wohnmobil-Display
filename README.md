@@ -266,8 +266,7 @@ Neben den Zigbee-Sensoren kann man **fest verdrahtete Temperaturfühler** anschl
 Die Steuerplatine habe ich im Rahmen meines Hobbys für mich selbst entwickelt und bestellt. Da man bei der
 Fertigung eine Mindestmenge abnehmen muss, sind **9 Stück** übrig. Einzelne Platinen gebe ich zum reinen
 **Selbstkostenpreis von 30,68 € zuzüglich Versand** von Bastler zu Bastler ab.
-(Der Preis ergibt sich aus den Gesamtkosten von 306,80 € für 10 Platinen – darin sind die Kosten einer früheren,
-nicht mehr nutzbaren Kleinserie von 5 Platinen enthalten – geteilt durch 10. Es wird kein Gewinn erzielt.)
+(Der Preis ergibt sich aus den Gesamtkosten von 306,80 € für 10 Platinen, geteilt durch 10. Es wird kein Gewinn erzielt.)
 Die Platinen sind **fertig bestückt – nur das ESP32-H2-Board fehlt** (das steckt man selbst auf, siehe Einkaufsliste). Du kannst die Platine auch **selbst fertigen lassen**:
 Die Fertigungsdaten (Gerber, Stückliste, Bestückung) liegen unter
 [`hardware/steuerplatine_v2/`](hardware/steuerplatine_v2/) und lassen sich bei jedem Platinenfertiger (z. B. JLCPCB) hochladen –
@@ -343,7 +342,7 @@ lässt sich unter *Setup → Display → Näherungssensor* ausschalten. Für den
 |---|---|---|
 | Waveshare ESP32-S3-Touch-LCD-7B (7 Zoll, 1024×600) | Das Display | [Amazon\*](https://www.amazon.de/dp/B0FG354VCN?tag=wohnmobildisp-21) |
 | ESP32-H2-DevKitM-1 (N4) | Zigbee und Steuerplatine | [Amazon\*](https://www.amazon.de/dp/B0D8XR48LF?tag=wohnmobildisp-21) |
-| Temperaturfühler DS18B20, wasserdicht mit Kabel (3 Adern) | fest verbauter Fühler für außen / Kühlschrank (optional, bis zu 4 Stück) – Anschluss an J10/J14, siehe oben | Suchbegriff „DS18B20 wasserdicht Kabel“ |
+| Temperaturfühler DS18B20, wasserdicht mit Kabel (3 Adern) | fest verbauter Fühler für außen / Kühlschrank (optional, bis zu 4 Stück) – Anschluss an J10/J14, siehe oben | [Amazon\*](https://www.amazon.de/dp/B0H463JFK5?tag=wohnmobildisp-21) |
 | Votronic Tankfühler 5545 (Tankelektrode 15-50 K, 50 cm) | Frischwasser (optional, statt Original-Geber) – 3 Adern: +12 V, Masse, Signal; Steckbrücken J12/J13 auf „VOT“ | [Amazon\*](https://www.amazon.de/dp/B00IG69OOI/?tag=wohnmobil-21) |
 | frient Smoke Alarm (Zigbee-Rauchmelder mit Sirene) | Rauchmelder, auch als Alarm-Sirene nutzbar | [Amazon\*](https://www.amazon.de/dp/B08WXV3G8P?tag=wohnmobildisp-21) |
 | SONOFF SNZB-02B (Zigbee-Temperatur/Luftfeuchte) | Temperatur innen, außen, Kühlschrank | [Amazon\*](https://www.amazon.de/dp/B0H4QJQFKM?tag=wohnmobildisp-21) |
