@@ -36,6 +36,7 @@ Es ist ein **privates Hobbyprojekt**; Einbau und Nutzung erfolgen **auf eigene V
 | **Alarmanlage** | Bis zu 12 Zigbee-Sensoren (Tür/Fenster, Bewegung, Wasser), Nachtmodus, Verlassens-/Eingangszeit, PIN, Summer, Sirene (Ausgang der Steuerplatine und bis zu drei Zigbee-Sirenen) |
 | **Rauch / Gas** | Zigbee-Melder, rund um die Uhr überwacht |
 | **Landstrom** | Anzeige, ob 230 V anliegen |
+| **Tiefschlaf** | Rote Taste ⏻: Display, Steuerplatine und Pumpe ruhen – **extrem auf Energiesparen ausgelegt**. Mit dem Schalter *„12-V-Hauptschalter im Tiefschlaf aus“* (Setup → Allgemein) wird dabei auch der **EBL-Hauptschalter ausgeschaltet** – wie die alte Funktion am LT 100; beim Aufwachen schaltet das Display ihn wieder ein |
 | **Push-Nachrichten** | Alarm, Grenzwerte, schwache Batterien, Sensor offline – aufs Handy, wahlweise per **Telegram** oder **ntfy** (siehe [Push-Nachrichten einrichten](#push-nachrichten-einrichten)) |
 | **Tagesbericht** | täglich zur eingestellten Uhrzeit eine Zusammenfassung per Telegram oder ntfy, Inhalte frei wählbar |
 | **Komfort** | Kachelnamen und Farben frei wählbar, Nachtabschaltung, Näherungssensor weckt das Display, Einstellen per Handy-Webseite |
